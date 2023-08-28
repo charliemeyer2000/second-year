@@ -7,7 +7,45 @@ location: Gilmer Hall 301
 
 # Lecture Notes
 
-## Meeting 2 - Boolean Algebra ([slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/2-boolean-algebra.pdf))
+Note that all slides annotated by me are in GoodNotes. 
+
+## Meeting 3 - Binary Arithmetic, SSH ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/3-binary-arithmetic.pdf))
+
+### Transistors
+
+Two types:
+- Push to close - on by default, off when pushed. I.e., adding a voltage to the gate turns it off.
+- Push to open - off by default, on when pushed. I.e., adding a voltage to the gate turns it on.
+    - in diagrams, these have the little circle on the gate
+
+Bad Design:
+- bad design occurs when you have a current that can both flow to the gate and to the drain. This shouldn't happen. 
+
+### NAND Gates
+
+Note that you can implement every other gate using NAND. 
+
+### Building Component out of Gates
+
+Muxes - Selects between one of _N_ inputs to connect to output. **Select** is $\log_2 (N)$ bits - control input. 
+
+To solve this 1-bit mux, when S = 0, the output is whatever D0 is. When S=1, the output is whatever D1 is. 
+
+YOu can then use 1-bit muxes to create 2-bit muxes. 
+
+### BUilding a Digital Adding Machine
+
+How can we support decimal numbers and negative numbers? Fractions? 
+
+
+
+### How can we represent numbers? 
+
+
+
+## Meeting 2 - Boolean Algebra ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/2-boolean-algebra.pdf), [video](https://uva.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a85f815-f052-46a0-85d8-b069010963a2))
+
+
 
 ### Transistor Fundamentals
 
@@ -42,7 +80,7 @@ location: Gilmer Hall 301
 - nMOS 
     * default is off with no voltage
 
-- pMOS
+- pMOS 
     * default is on with no voltage
 
 #### NAND Gate (using pull-up pull-down)

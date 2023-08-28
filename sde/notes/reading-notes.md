@@ -60,10 +60,86 @@ This system separates committing from pushing, resulting in a "committing early 
 
 GitHub didn't invent `git`, but it hosts remote repositories so you don't have to create your own. It also supports CI things and other features. It also supports PR's and can be helpful for the job search.
 
+#### .gitignore
+
+`.gitignore` is a file that tells `git` to ignore certain files. For example, if you have a `.class` file, you don't want to commit that to the repo, so you can add it to the `.gitignore` file.
+
+```
+# Gradle related folders
+build/
+.gradle/
+
+# Local settings files
+gradle-app.setting
+.settings/
+.classpath
+.idea/**/workspace.xml
 
 
+# Ignore java compiled files
+*.jar
+*.class
 
-####
+# Don't ignore gradle wrapper jar
+!gradle-wrapper.jar
+```
+
+I will not be going over how to create a repository and alla that because we know this. 
+
+### Git Branches
+
+When we create a git repo, the default branch is `main` or `master`, but we want to avoid working directly to `main`. 
+
+IntelliJ has a GUI for branching. 
+
+You can view all branches with `git branch` and create a new branch with `git branch my_new_branch`
+
+Checkout means "I want to switch to this branch." You can checkout to branches with `git checkout branch_to_switch_to`. 
+
+You can merge your work with the `merge` command. It is best practice to **first merge from development into our feature branch**, resolve any conflicts _within our branch_, only the emerging our feature branch to development. 
+
+### Repo Operations
+
+- `add`: adding new changes. To add all changes, do `git add .`. 
+- `commit`: Commits require a message, so you can do `git commit -m "your message here"`.
+    - You cannot commit individual files, because commit automatically stores *all staged* changes. So your message describes all staged changes. 
+- `push`: Pushes all commits in your current branch since the last push to the remote repo. **Remember to pull before you push**.
+- `pull`: gets the most recent changes from the remote repo for your current branch. If you get an error when you try to pull, this means that you have changes that have not been committed. 
+    - You can stash changes for changes you don't want to commit but also don't want to save:
+        * `git stash`
+        * `git pull`
+        * `git stash pop`
+
+Each commit has a hash, and is identified by the first 7 hexadecimal characters that identifies the commit. 
+
+Conflicts can occur when you commit to a branch in the remote repository taht someone else has pushed to since your last pull. Here's an example conflict 
+
+```
+public class HelloWho {
+    public static void main(String[] args) {
+<<<<<<< HEAD
+        if (args.length == 0) {
+            String who = args[0];
+            System.out.println("Hello, " + who);
+        } else {
+=======
+        try {
+            String who = args[0];
+            System.out.println("Hello, " + who);
+        } catch (ArrayIndexOutOfBoundsException e) {
+>>>>>>> 7bce35c8b1e70f4b3daf478d772546d554f07e96
+            System.out.println("Error: No command line arguments");
+        }
+    }
+}
+```
+
+1. Between `<<<<<<< HEAD` and `=========` is person 1's code
+1. Between `========` and `>>>>>>>>> + hash` is the incompatible changes on the remote repo. 
+
+We cna resolve teh conflict by **picking which implementation we want**. 
+
+
 
 ## Reading 02 - Required
 
