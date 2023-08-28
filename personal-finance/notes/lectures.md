@@ -31,6 +31,12 @@ Types of Risk:
 
 - Understand the risk/reward trade-off:
 
+### Goals
+
+- Short-Term Savings: Emergencies, car repair/replacement, vacation
+- Medium-Term Savings: Home, education
+- Long-Term Savings: Retirement
+
 
 
 ## Day 1 

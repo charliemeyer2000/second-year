@@ -15,3 +15,17 @@ cso/summer-learning
 
 # ignore summer internships
 summer_internship
+
+# ignore all files except images, md, pdf files.
+*.*
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.bmp
+!*.tif
+!*.tiff
+!*.md
+!*.markdown
+!*.txt
+!*.pdf
