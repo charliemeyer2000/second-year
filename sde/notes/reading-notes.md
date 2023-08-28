@@ -6,6 +6,65 @@ date: Depends
 
 # Reading Notes
 
+## Reading 03 - Version Control
+
+### Git Basics
+
+
+
+### Version Control
+
+A version control system (VCS) is a system that tracks changes to files in a project over time. There are many reasons to use VCS besides just collaboration:
+- Safety: If you mess up, you can quickly revert to a previous version.
+- Debugging: In large software systems, you can run into problems with **stability**, that is, changes in one location of code can negatively impact other parts of the code. With VCS, you can quickly revert to a previous version to see what changed, and with test-driven development, you can quickly see what broke.
+- Collaboration: Allows multiple branches and merging of code. 
+- Conflict Detection: If two people are working on the same file, you can see what changes were made and merge them together. It will **not** resolve conflicts for you, but it will tell you where the conflicts are and **forces** you to take manual effort to resolve them.
+- Deployment: You can deploy your code to a server, and if you mess up, you can quickly revert to a previous version. This can be done quickly using a CI/CD pipeline, like GitHub Actions. 
+- Regression Testing: a VCS system can be set up to reject pushes and merges to important branches like `main` or if a push causes a test to fail to not merge that code.
+
+#### Centralized Repository
+
+Older VCS systems used a centralized repository:
+
+![Centralized Repo](images/centralized-repo.png)
+
+IN this system, the remote repo is where all the shared versions of the software are stored, and when they want to record their work they have to **commit** their changes to the remote repo. When they want to get work from the repo, they **update**.
+
+#### CVS
+
+Concurrent Version Systems (cvs) was an early form of a centralized repo that had branching alongside committing and updating. This had some flaws because it tracked version control separately for each file, meaning commits of multiple files had different numbers. Furthermore, it would reject a commit with a conflict. And if you committed multiple files and only one file had a conflict, every other file would go through! Weird. 
+
+#### SVN
+
+Apache Subversion `svn`, is a more popular centralized-repo VCS system. It had a single commit number for all commits and accepted either all files or no files. 
+
+#### Distributed Version Control Repo 
+
+![Distributed Repo](images/distributed-repo.png)
+
+this is a system that has a local repo and a remote repo. The local repo is where you do all your work, and the remote repo is where you push your changes.
+
+Generic operations are:
+- Commit: store your current changes in the local repo
+- Update: get any changes to your local repo
+- Push: send the state of your local repo to the remote repo
+- Pull 0 get any new changes from the remote repo
+
+#### `git`
+
+`git` is a distributed VCS system. It is the most popular VCS system, and is used by GitHub, GitLab, and BitBucket.
+
+This system separates committing from pushing, resulting in a "committing early and often" mentality. Furthermore, they also support a staging area. 
+
+#### `git` and GitHub
+
+GitHub didn't invent `git`, but it hosts remote repositories so you don't have to create your own. It also supports CI things and other features. It also supports PR's and can be helpful for the job search.
+
+
+
+
+####
+
 ## Reading 02 - Required
 
 ### [How Java Works](https://sde-coursepack.github.io/modules/java/How-Java-Works/)
