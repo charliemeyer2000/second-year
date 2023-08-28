@@ -27,6 +27,10 @@ Types of Risk:
 - **Interest-rate risk**: the risk that the value of an asset will decrease as interest rates increase
 - **Inflation risk**: the risk that the rate of inflation will increase more than the rate of interest on savings. Furthermore, prices will generally increase and the value of your money will decrease. Consider college education!
 
+### Understand, Manage, and Mitigate Risk
+
+- Understand the risk/reward trade-off:
+
 
 
 ## Day 1 
