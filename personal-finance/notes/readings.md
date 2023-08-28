@@ -6,6 +6,12 @@ title: Readings
 
 Personal Finance with Connect 14th edition, through the UVA Canvas inclusive access program. 
 
+## [Chapter 2: Financial Aspects of Career Planning](https://canvas.its.virginia.edu/courses/74463/assignments/365279)
+
+### LO2-1: Career Choice Factors
+
+
+
 ## [Chapter 1: Personal Finance Basics and the Time Value of Money](https://canvas.its.virginia.edu/courses/74463/assignments/365263?module_item_id=836815)
 
 ### LO1-1: The Financial Planning Process

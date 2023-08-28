@@ -10,7 +10,7 @@ date: Depends
 
 ### Git Basics
 
-
+![Git Cheat Sheet](images/GitCheatSheet.png)
 
 ### Version Control
 

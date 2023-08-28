@@ -13,8 +13,14 @@ What is a business?
 What is innovation?
 * Making something new, better, or cheaper. 
 
-What do you think of when yuo think of entrepreneur? 
-*  
+Who do you think of when you think of entrepreneur? 
+*  Bill Gates
+* Steve Jobs
+* Sam Altman
+
+### [Before the Startup](http://www.paulgraham.com/before.html)
+
+Written by Paul Graham, founder of Y Combinator. This is an incubator, which is a company that helps other companies get started. They provide a bootcamp. 
 
 ## Day 1
 

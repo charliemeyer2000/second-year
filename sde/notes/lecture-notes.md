@@ -4,7 +4,11 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
-# Lecture 2
+# Lecture 3 ([slides](slides/03%20Version%20Control%20+%20Git.pdf))
+
+
+
+# Lecture 2 ([slides](slides/02%20Java%20Introduction%20Command%20Lines.pdf))
 
 The hard part isn't coding:
 
