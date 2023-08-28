@@ -17,7 +17,7 @@ cso/summer-learning
 summer_internship
 
 # no DS_Store
-**/.DS_Store
+.DS_Store
 
 # ignore all files except images, md, pdf files.
 *.*

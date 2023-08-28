@@ -54,13 +54,15 @@ What happens if you delay and wait to invest? Even if you wait until 31 and do t
 ![Financial Planning](images/financial-planning.png)
 
 Employ a decision making model:
-1. Identify a decision
+1. Identify a decision 
 1. Gather information'
 1. Identify alternatives
 1. Weight evidence
 1. Choose an option
 1. Take action
 1. Review outcomes
+
+Your decisions could be changing from a long-term to a short-term fix, changing it from a long-term to short-term habit, it doesn't have to be a big change.
 
 ### Opportunity Cost
 
