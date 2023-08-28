@@ -1,0 +1,17 @@
+# ignore all files within any directory of any depth named "homework"
+
+linear/homework
+
+personal-finance/homework
+
+sde/homework
+
+entp/homework
+
+cso/homework
+cso/labs
+# ignore summer
+cso/summer-learning
+
+# ignore summer internships
+summer_internship
