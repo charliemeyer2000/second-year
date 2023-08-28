@@ -37,6 +37,36 @@ Types of Risk:
 - Medium-Term Savings: Home, education
 - Long-Term Savings: Retirement
 
+### Keys to Physical Wellbeing
+
+- Eat healthy
+- Exercise
+- Sleep
+
+Think of your money also like your welbeing. Calories in, calories out. Cash flow in, cash flow out. Some calories/spending is better than others. 
+
+Now is the best time to start saving! If you start now putting $4k into an IRA for 10 years at 10% return and leave it until you're 65, it should be around $2 million. 
+
+What happens if you delay and wait to invest? Even if you wait until 31 and do the same thing ($4k into an IRA for 10 years at 10% return until 65), you'll have less than half of what you would have had if you started at 21.
+
+### FInancial Planning
+
+![Financial Planning](images/financial-planning.png)
+
+Employ a decision making model:
+1. Identify a decision
+1. Gather information'
+1. Identify alternatives
+1. Weight evidence
+1. Choose an option
+1. Take action
+1. Review outcomes
+
+### Opportunity Cost
+
+The costs of making one choice over another. This includes the loss of time, energy, and derived pleasure/utility.
+
+
 
 
 ## Day 1 
