@@ -137,7 +137,32 @@ public class HelloWho {
 1. Between `<<<<<<< HEAD` and `=========` is person 1's code
 1. Between `========` and `>>>>>>>>> + hash` is the incompatible changes on the remote repo. 
 
-We cna resolve teh conflict by **picking which implementation we want**. 
+We can resolve the conflict by **picking which implementation we want**. 
+
+If you get stuck, you can run `git reset --hard`, which resets your repo to the state of the previous commit. If you don't want to lose the changes, you can stash them or copy them into a temp file. 
+
+A nuclear option is also to delete your _local_ repo and re-cloning.
+
+### Best Practices
+
+1. Note that .gitignore is **not retroactive**, if you need to remove files from a repo while keeping the local file, you can do `git rm [file-name] --cached`. the `--cached` file deletes the file from **both the repo and your working copy**. 
+1. Always pull before you start working. 
+1. Always pull before pushing and merging.
+1. Merge into the more specialized branch first:
+    * Commit your changes to the feature branch,
+    * check out to main,
+    * pull main
+    * checkout to feature branch
+    * `git merge main` into your feature branch
+    * resolve any conflicts, commit, and push
+    * Checkout main
+    * `git merge featureBranch`
+1. Always push when you stop working
+1. Commit early and often
+1. Never commit new code directly to main/master
+1. Once a feature is completed, delete the branch
+1. Make good commit messages.  
+
 
 
 
