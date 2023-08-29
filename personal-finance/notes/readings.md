@@ -10,6 +10,167 @@ Personal Finance with Connect 14th edition, through the UVA Canvas inclusive acc
 
 ### LO2-1: Career Choice Factors
 
+The lifework you select is key to financial wel-being and personal satisfaction. You may obtain a **job**, an employment position obtained mainly to earn money. You may also select a **career**, a commitment to a profession that requires continued training for professional growth. 
+
+Trade-offs of career decisions:
+
+Your employment most likely effects most of what you do. This includes time, business associates, income, etc. Career choices often involve opportunity costs based off of personal, social, and economic factors. 
+
+The level of formal training also affects financial success. For example, more education increases your _potential_ earning power and reduces your _potential_ for unemployment, along with other factors. 
+
+![Educational Attainment](images/eduational-attainment.png)
+
+People can also market themselves with _employability skills_, also called _transferrable skills_ which refer to basic capabilities that are needed for obtaining, maintaining, and advancing a career. Your readiness can be put into two categories:
+
+1. **technical skills**: _hard skills_ are needed for a specific profession - including IT, accounting, law, engineering, health care, etc.
+1. **general skills**: _soft skills_ are needed in all careers/work situations, and can be acquired through school or also work experience. They include but aren't limited to:
+    * Work well with others
+    * take initiative to overcome obstacles
+    * An interest in learning
+    * Willingness to cope with conflict
+    * etc.
+
+A career can be influenced by personal factors. _Aptitudes_ are natural abilites that people possess, such as artistic, mechanical, or mathematical. _Interest inventories_ determine activities that give you satisfaction in various work situations. 
+
+Career decision-making is important, and having a good approach to career planning, advancement, and change can help you make good decisions. 
+
+![Career Planning Advancement](images/career-planning-advancement.png)
+
+### LO2-2: Career Opportunities: Now and in the Future
+
+Your job search should start with an assesment of the career choice factors shown below:
+1. Social influences - demographic trends, geographic trends
+    * Demographic trends - the people around you demand certian things and thus create jobs.
+    * Geographic trends - consider salary levels and costs of living.
+    * Cost of living differences: 
+
+    $$\frac{\text{City 1}}{\text{City 2}} = \frac{\text{index number} \times \text{Salary}}{\text{index number}} = \text{buying power}$$
+
+    For example, a person earning $30,000 in Omaha, Nebraska would need to earn $39,550 in Chicago to have comparable buying power. 
+
+1. Economic conditions - interest rates, inflation, demand
+    * INterest rates, price fluctuations, or changing global demand for goods and services affect career opportunities, most of which are out of your control.
+1. Industry trends - foreign competition, changing uses of technology. Most industries that have the greatest potential for employment are:
+    * _Technology_ - analyst, engineer, cloud admin, web dev, service tech, DevOps
+    * _Health Care_ - nurse, physician, therapist, pharmacist, medical assistant, medical records
+    * _Medical Technology_ - medical lab tech, medical records, medical billing
+    * _Environmental Services_ - environmental engineer, environmental scientist, environmental technician
+    * _Business Services_ - accountant, auditor, financial analyst, HR specialist, marketing specialist, management analyst
+    * _Social Services_ - social worker, counselor, teacher, child care worker, clergy
+    * _Marketing, sales, retailing_ - sales rep, sales manager, retail sales, marketing manager, marketing research
+    * _Hospitality/Food Services_ - chef, cook, food prep, waiter, bartender, hotel manager
+    * _Education_ - teacher, administrator, librarian, coach, counselor
+    * _Financial Services_ - accountant, auditor, financial analyst, financial manager, loan officer
+
+### LO2-3: Employment Search Strategies
+
+Obtaining Employment Services
+1. _Part-Time Employment_: summer/part-time is important to get into a career field and get work experience.
+1. _Volunteer Work_: Involve in community organizations and projects.
+1. _Internships_: In competitive fields, they can give needed expertise and contacts for available jobs. 
+1. _Campus Projects_: Clubs, public speaking, planning, finances, etc.
+
+Career Information Sources:
+
+![Career Information Sources](images/career-information-sources.png)
+
+* Career Dev Office - campuses offer this to help with Resume, cover letter, interview prep, and helps to also connect with a network.
+* Networking - the process of making and using contact to obtain and update career information. The main sources of networks include community orgs, professional associations, business contacts, and social media.
+
+For effective networking, you should:
+1. Prepare a 30 second elevator pitch
+1. Ask questions to learn about others
+1. Volunteer at events of professional organizations. 
+
+Yu can get an _informational interview_ which is a meeting at which you gather information about a career or organization. To prep for this, you can:
+* Prepare a list of industries you'd like to work in and contacts within them
+* Prep open-ended questions
+* Make the appointment for a 20 minute meeting strictly about information
+* interact and talk about work environment
+* follow up with a nice email.
+
+Career Planning Strategy:
+
+![Career Planning Strategy](images/career-planning-strategy.png)
+
+To communicate online, you can:
+* Get on LinkedIn
+* Maintain a professional image
+* Use keyworks that describe your skills in your industry
+* Don't post your resume online arbitrarily
+* Follow-up with regular contacts
+* Don't join online groups that are not professional/you won't participate in 
+* Create a blog
+
+Career fairs can help, which allow you to quickly communicate your potential contributions to an organization. 
+
+Employment agencies match job hunters with prospective employers. These are for profit, so be careful. Also be aware of government-supported employment agencies.
+
+Note that you can also employ **job creation** - developing an employment position that matches your skills with the needs of an organization.
+
+To apply for employment, it involves 3 main elements:
+1. **Resume**: a summary of education, training, experience, and qualifications for employers
+1. **Cover Letter**: a letter that accompanies a resume, introducing the applicant to a prospective employer
+1. **Interview**: formal meeting to discuss a job candidate's qualifications.
+
+### LO2-4: Financial and Legal Aspects of Employment
+
+When accepting a position, do additional research about duties and expectations and other factors:
+
+1. The work environment - _corporate culture_ refers to management styles, work intensity, dress codes, and social interactions in an organization. 
+1. Factors affecting salary - to improve your value and enhance salary potential, ask your supervisor for development suggestions, obtain training, expand duties, exceed expectations, and talk with co-workers to contribute to organizational success. 
+
+    To negotiate salary, you should: 
+    1. Research comparable positions 
+    1. Prepare evidence of your contributions
+    1. Plan the appropriate time and message for your meeting w/the supervisor
+    1. Emphasize the value of your work for your employer. 
+
+1. Meeting employee needs - non-salary benefits are incredibly important in companies. this includes child care, elder care, and other things that care for varied life situations. **flexible employee benefit programs** (cafeteria-style benefits) allow workers to base job benefits based on a credit system and personal needs. Others have _flexible spending plans_ otherwise known as _expense reimbursement accounts_ where you set aside some of your salary to pay for medical expenses that are not subject to income/social security tax. Others offer a _medical-savings account_ (MSA) or a _health savings account_ (HSA) to enable account holders to pay health care costs with pretax dollars. 
+
+Some employers offer a retirement plan, such as a 401(k) or for nonprofits, 403(b). All qualified plans must be 100% vested on completion of 5 years of service or (2) have 20% vesting after 3 years and full vesting in stages after 7 years. 
+
+To compare benefits, there are 2 methods:
+1. _Market value_: monetary value of an employee benefit, the cost if you had to pay it to them.
+1. _Future value calculations_: assess the long-term worth of employee benefits like a retirement plan.
+
+You should also consider a _tax-exempt_ benefit so that you don't have to pay income tax, or _tax deferred_ benefits where you pay income tax at the time of retirement. To calculate tax-equivalent employee benefits:
+
+$$\frac{\text{Value of the benefit}}{1 - \text{tax rate}}$$
+
+YOu can also calculate the _after tax value_ of an employee benefit with $\text{taxable value of the benefit} (1- \text{Tax rate})$. 
+
+Make sure you are aware of your employment rights. For example, you cannot be refused to be hired because you're a pregnant woman or have a disability. You cannot be discriminated against on age, race, color, religion, sex, etc. Minimum-wage and overtime pay legislation apply to individuals in certain work settings. Worker's compensation like Social Security and unemployment insurance are required. 
+
+### LO2-5: Long-Term Career Development
+
+Every day you take actions that contribute to career success. This can include:
+* Working well with others
+* Flexibility and openness
+* Developing efficient work habits
+* Learning to anticipate problems and solve them creatively
+
+Training Opportunities: many careers have formal training methods like programs, seminars, and webinars. Informal methods include reading and discussion with colleagues and online courses. 
+
+Career Paths and Development:
+
+You will likely move through _stages_ of your career. A **mentor** is an experienced employee who serves as a teacher and counselor for less-experienced people in a career field. 
+
+![Career Development](images/career-progress.png)
+
+Changing Careers
+
+Changing jobs can be more difficult than selecting your first job. This must include an assessment of financial and personal costs along with benefits based on your goals. 
+
+
+
+
+
+
+
+
+
+
 
 
 ## [Chapter 1: Personal Finance Basics and the Time Value of Money](https://canvas.its.virginia.edu/courses/74463/assignments/365263?module_item_id=836815)
@@ -104,7 +265,7 @@ There are two major factors that change your financial plans - the time frame in
 
 - Timing: 
     1. Short Term Goals - vacation, small debts, something within a year. 
-    1. Intermediate Goals - 1-5 years.
+    1. Intermediate Goals - 1-5 years.a
     1. Long Term Goals - 5+ years, such a retirement, funding education, a home. 
 
 Within timing, you need to have some goal-setting guidelines. You can take the "SMART" Approach - 
@@ -116,7 +277,7 @@ Within timing, you need to have some goal-setting guidelines. You can take the "
 
 ### LO1-4: Opportunity Costs and the Time Value of Money
 
-Opporunity cost is the cost of passing up the next best choice when making a decision.
+Opportunity cost is the cost of passing up the next best choice when making a decision.
 
 ![Opportunity Cost](images/opportunity-cost-financial.png)
 
