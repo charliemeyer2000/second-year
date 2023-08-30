@@ -6,6 +6,56 @@ date: August 22, 2023
 
 # Lecture 3 ([slides](slides/03%20Version%20Control%20+%20Git.pdf))
 
+## Reminders
+
+Homework 1 - Submit groups on Sept 1 at 11:59 PM, assignment 1 due September 8th at 11:59 PM
+
+
+
+### Iterative vs. Incremental
+
+Incremental - implementing "blocked" stages. This means that almost every stage of the project has been planned out. 
+Iterative - Starting with an idea, and then building on it.
+
+### Version Control
+
+Version control tracks multiple file version, allowing multiple version of software to exist simultaneously and recovering old ones. 
+
+It is now a mainstay in SDE, `git` being the most popular. 
+
+### Git vs. SVN
+
+For a centralized version control system like SVN, you have a central server that stores all the files. You can check out a copy of the files, make changes, and then commit them back to the server. The problem with this is that every commit will be seen by everyone, so it made people hesitant to commit
+
+For `git`, each workstation has a local repository and a working copy that you can then commit/update to, and then pull/push to the remote repository. This supported the idea of "commit early and often" 
+
+### Why VC? 
+
+- Backup
+- Bug Fixing: you can "backtrack" commits to find here the bug was introduced. 
+- Collaboration: multiple devs can work together. Branching allows features to be added and developed independently. 
+- Deployment: You can deploy different versions of the software to different servers, AKA CI/CD.
+- Conflict: Humans decide how to resolve conflicts, not the computer.
+- Regression testing: As you add tests for features you're adding, you can run them to make sure you didn't break anything.
+
+### `git` cli
+
+- `git init` - initialize a git repository
+- `git add filename` - add files to the staging area
+- `git commit -m "message"` - commit the files in the staging area to the _local_ repository. 
+- `git push` - push the local repository to the remote repository
+- `git branch branchname` - create a new branch
+- `git switch branchname` - switch to a different branch
+- `git checkout branchname` - switch to a different branch
+    * you can also checkout to a specific commit with `git checkout commitid`
+- `git merge branchname` - merge the branch into the current branch
+- `git pull` - pull the remote repository to the local repository
+- `git status` - show the status of the repository
+- `git log` - show the commit history
+- `git push -u origin branchname` - push the branch to the remote repository
+
+Note that `HEAD` is the most recent commit. 
+
 
 
 # Lecture 2 ([slides](slides/02%20Java%20Introduction%20Command%20Lines.pdf))
@@ -99,8 +149,6 @@ Office: 404 Rice Hall - OH Posted Soon
     - Software that is responsive to change and 
     - resistant to entropy
 - Front-to-back software with database backends and GUI frontend.
-
-##
 
 
 

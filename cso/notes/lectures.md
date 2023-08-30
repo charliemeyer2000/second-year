@@ -9,6 +9,8 @@ location: Gilmer Hall 301
 
 Note that all slides annotated by me are in GoodNotes. 
 
+## Meeting 4 - Binary Arithmetic, ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/4-binary-bitwise.pdf))
+
 ## Meeting 3 - Binary Arithmetic, SSH ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/3-binary-arithmetic.pdf))
 
 ### Transistors
