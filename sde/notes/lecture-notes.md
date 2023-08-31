@@ -6,6 +6,20 @@ date: August 22, 2023
 
 # Lecture 4 - Build Tools ([slides](https://drive.google.com/file/d/1BDfFJ6DUbSitbJ-ttXCW3foW5hpuN0NK/view?usp=drive_link))
 
+## Gradle
+
+Think about everything you have to do to get to stat on HW1 w/o a build tool:
+1. Everyone has to clone the repo
+1. Everyone has to share the same version of Java
+1. Everyone has to set up their IDE the same
+1. Everyone has to use the same libraries
+
+Gradle is a build tool and an automation tool that can:
+* Automatically download all libraries including the correct version number
+* Automate build process
+
+
+
 # Lecture 3 - VCS - ([slides](slides/03%20Version%20Control%20+%20Git.pdf))
 
 ## Reminders
