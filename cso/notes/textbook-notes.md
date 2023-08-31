@@ -392,7 +392,7 @@ Here are three methods to deal with negative numbers
     - For example, `0000 - 0001 = 9999` is `-1`, and thus `9998` is `-2`, and so on. 
 ![Two's Complement](images/two_complement.png)
     - This is the most common way to represent negative numbers in hardware. Notice that there is one more negative number than positive number. This is because we have to represent 0. 
-    - Swapping sign is equivalent to flipping all the bits and adding 1 to the result.
+    - _If you want to convert from negative to positive, flip all the bits, then add 1. If you want to convert from positive to negative, subtract 1, then flip all the bits._
     - To convert from positive to negative easily, find the least significant bit, keep everything UP to that bit, then flip the rest. For example, 20 is "00010100", and so then -20 is "11101100." see the example [here](https://youtu.be/n6taPbsRqV4).
 1. ***Biased***: This version picks a fixed magical number (typically half of the maximum number we can write, rounded _down_) and calls it the "bias." So, for example, for numbers `0000` to `9999`, our bias would be `4999`. We then define the meaning of number `x` to be `x - bias`. 
     - For example, `5006` means `5006 - 4999` = `7`, and `4992 - 4999` = `-7`.  These are generally used to represent the exponent of floating-point numbers stored in binary.

@@ -4,13 +4,13 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
-# Lecture 3 ([slides](slides/03%20Version%20Control%20+%20Git.pdf))
+# Lecture 4 - Build Tools ([slides](https://drive.google.com/file/d/1BDfFJ6DUbSitbJ-ttXCW3foW5hpuN0NK/view?usp=drive_link))
+
+# Lecture 3 - VCS - ([slides](slides/03%20Version%20Control%20+%20Git.pdf))
 
 ## Reminders
 
 Homework 1 - Submit groups on Sept 1 at 11:59 PM, assignment 1 due September 8th at 11:59 PM
-
-
 
 ### Iterative vs. Incremental
 

@@ -11,6 +11,20 @@ Note that all slides annotated by me are in GoodNotes.
 
 ## Meeting 4 - Binary Arithmetic, ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/4-binary-bitwise.pdf))
 
+### Review
+
+We reviewed 1-bit and 2-bit muxes.
+
+### Adder
+
+Understanding Binary:
+
+$1101_2 = 1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 13_{10}$
+
+Convert between decimal to binary:
+
+
+
 ## Meeting 3 - Binary Arithmetic, SSH ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/3-binary-arithmetic.pdf))
 
 ### Transistors

@@ -6,6 +6,349 @@ date: Depends
 
 # Reading Notes
 
+## Reading 05 - Testing ([reading](https://sde-coursepack.github.io/modules/testing/V-and-V/))
+
+### V&V - Verification and Validation
+
+V&V allows you know when you are done and how you know when that time comes. 
+
+Verification - "does our code meet our specification?"
+
+Validation - "is the customer satisfied with our product?"
+
+#### Differences
+
+When we discus _verification_, we are focused on the **internal** perspective as developers. This is code quality, ensuring the code does what's expected, etc. On the other hand, _validation_ is primarily external and asks if this is what the customer wanted. 
+* **Verification**: Did you build the thing right?
+* **Validation**: Did you build the right thing?
+
+#### Defects, Failures, Mistakes, Errors
+
+1. Defect - existing problem according to the software specification in the product that hasn't been discovered yet.
+1. Failure - the inability of the software system to perform its function according to the specification.
+1. Mistake - human error that causes something incorrect, like a bug or misunderstood customer need.
+1. Error - the difference between the current state and the correct state. 
+
+![Feedback Cycle](images/feedback-cycle.png)
+
+### Testing
+
+**Testing** is executing all or part of a program in a controlled manner to find **defects**.
+
+#### Testing Scenario
+
+A testing scenario is where you create a controlled environment with defined inputs and expected behaviors. A **test passes** when the expected results and actual results match.  The purpose of testing is **TO FIND DEFECTS**.
+
+#### Main Method Testing
+
+For now, we write tests in the main method. Consider:
+
+```java
+    public static int max(int a, int b, int c) {
+        if (a > b) {
+            if (a > c) return a;
+            else return c;
+        } else {
+            if (b > c) return b;
+            else return a; // should be return c
+        }
+    }
+```
+
+This function takes in 3 integers, and returns the largest one. 
+
+Also, consider this max function:
+
+
+```java
+public static int max(int a, int b) {
+    return (a + b + Math.abs(a-b)) / 2;
+}
+```
+
+Everything works fine until we reach `Integer.MAX_VALUE` in java, for example, we are trying to do something with the largest number `int x = 2147483647;`. This is where our error happens - if our number is more than half the maximum integer, we cannot represent the number doubled. 
+
+A quick fix is to use `longs` instead of `ints`.
+
+It's important to remmebr why we test - to find defects. Remember - **defects are already there**, and if we don't test properly we won't find the defects.
+
+
+### Types of Testing
+
+#### Unit Testing
+
+**unit testing** is testing individual modules (typically, individual functions). This allows us to catch "silly bugs" immediately. This is great because it can isolate the bug to a method and reduces the amount of code we need to search through.
+
+#### Integration Testing
+
+Where unit testing is used to verify individual modules are operating well by themselves, **integration testing** is when modules are combined. 
+
+For example, if we are testing a method in a class that requires another class to function, we aren't just testing one class, but that class **within the larger operation that comines the class with another class**.
+
+#### System Testing
+
+System testing involves testing the entire system from the user perspective. They generally follow a script to use a feature/set of features within an application. If a defect is found first within **system testing**, this means that there was a lack of thoroughness in unit/integration testing. 
+
+#### Regression Testing
+
+**Regression testing** is when you re-run tests that have already passed to ensure that they still pass. This is because you could introduce a new bug that breaks a previously working feature. Gradle actually performs integration testing for us using `gradlew test` and `gradlew build`.
+
+#### CI
+
+CI is the practice in Software Dev where your code is merged into/added to a "protected" branch, run against a testing suite, and if it passes, it is merged into the protected branch. This is done automatically, and is a great way to ensure that your code is always passing tests.
+
+GitHub offers GitHub Actions. 
+
+#### External Testing (Customers)
+
+1. Internal Testing - testing by the developers
+1. Alpha testing - testing carried out internally by the development organization. 
+1. Beta testing - testing carried out by the customer in a live environment that is closely monitored. 
+1. Acceptance testing - testing with the purpose of **validation** 
+
+### JUnit 5
+
+Testing framework integrated through `gradle`. 
+
+#### WHy not Main method testing?
+
+1. Testing in `main` we have to check whether a test passes or fails by reading the output. 
+1. The `main` method of a class may have responsibilities, like executing the software. We want to isolate testing our software from executing our software. 
+1. If we want to run multiple testes on multiple classes at once, interpreting results can be a pain.
+
+#### Test Class
+
+With JUnit, we organize our unit-test classes into classes that are **parallel** with the class being tested.
+
+For example, We usually make a `MainFunctionsTest` class. When we are testing, gradle will four our `main` and `test` folders together so that the test classes can access the classes in `main`. But when executing the software, gradle only uses the `main` folder and not anything in test. 
+
+#### Test Methods
+
+A test class contains methods. A test fails if it crashes or throws an `AssertionError`. a test passes when it executes completely w/o throwing an AssertionError. 
+
+```java
+package edu.virginia.cs.testingintro;
+
+import org.junit.jupiter.api.*;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class MaxFunctionsTest {
+    @Test
+    @DisplayName("Testing 3-argument max with Descending order arguments: 3, 2, 1")
+    public void testMaxDescendingArguments() {
+        // input
+        int a = 3, b = 2, c = 1;
+        //expected output
+        int expected = 3;
+        //actual output
+        int actual = MaxFunctions.max(a, b, c);
+        //assertion
+        assertEquals(expected, actual);
+    }
+}
+```
+
+@Test? 
+
+This is an identifier for a test method. All test methods include an @Test tag which must meet the specifications of:
+1. Must be `public` and not `static`
+1. Must return `void`
+1. must take in no arguments
+
+#### Assertions
+
+Assertions are the way we check if a test passes or fails. `assertEquals` used above is an assertion. Note that this has an arugment order of `expected` and `actual`.
+
+`assertEquals` with objects uses the `equals` method to check if the objects are equal.
+
+So consider this example where they are equal:
+
+```java
+    @Test
+    public void stringTest() {
+        String a="Will ";
+        a += "McBurney";
+        String b="Will McBurney";
+        assertEquals(a,b);
+    }
+```
+
+but in this example, since the literaly memory addresses are not the same, these two arrays wil not assert equal:
+
+```java
+    @Test
+    public void arrayTestFail() {
+        String[] a = {"Will", "McBurney"};
+        String[] b = new String[2];
+        b[0] = "Will";
+        b[1] = "McBurney";
+        assertEquals(a, b);
+    }
+    // note that you can use "assertArrayEquals" instead to compare the CONTENTS of the arrays, rather than memory addresses
+```
+
+#### AssertEquals with doubles and Doubles.
+
+When considering the impresicion of flaoting point numbers, we have to be careful when testing floats, like `double` or `Double`, or `float`. Thus, we can do `assertEquals(double expected, double actual, double tolerance)`.
+
+#### Boolean Assertion
+
+1. `assertTrue(value)` - passes if true, error if false
+1. `assertFalse(value)` - passes if false, error if true
+
+#### Null Assertion
+
+1. `assertNull(value)` - throws assertionError if x **is not null**.
+1. `assertNotNull(value)` - throws assertionError if x **is null**.
+
+#### Exception Assertion
+
+`assertThrows` is used when we expect the code we are using to throw an exception. Consider this code:
+
+```
+    @Test
+    void initiallyEmptyGetThrowsExceptions() {
+        MySortedList myList = new MySortedList();
+        assertThrows(IndexOutOfBoundsException.class,
+                () -> myList.get(0));
+    }
+```
+
+#### TestingDocumentation
+
+@DisplayName - we can give a display name to a test. This is useful for when we have multiple tests that are similar, but we want to differentiate them. This identifies what function/module was tested, what inputs/outputs, and what a failure indicates. 
+
+Assert fail messages - you can pass an optional message for an assertion failure. 
+* `assertEquals(int expected, int actual, String message)`
+* `assertEquals(double expected, double actual, double tolerance, String message)`
+
+### Testing w/Objects
+
+We can write tests with objects to check for **state changes**:
+
+```java
+    @Test
+    void testAlreadyChangedSetNumberChanged() {
+        //Setup and configure test object
+        NumberChanges nc = new NumberChanges(7, 4);
+        
+        //run operation to be tested
+        nc.setNumber(13);
+        
+        //Check to ensure object behaved as specified
+        assertEquals(13, nc.getNumber(), "Number did not change to 13 correctly");
+        assertEquals(5, nc.getTimesChanged(), "Number of times change did not correctly increment");
+    }
+```
+
+#### Best Practice
+
+1. One Operation per test - just becuase you are testing more things in one test doesn't make it better. 
+1. Sound tests - one that correctly testes against the specification. if a test is _unsound_, it is incorrect and acts as misinformation.
+    * False positive: a test fails, indicating there's a defect, when there's no defect actually
+    * False negative: a test passes, indicating there's no defect, when there is a defect.
+1. One assertion per test (not very important to follow, but you can if you want.)
+1. Call the tested operation **once**
+1. @BeforeEach tag - this is a method that is run before each test. This is useful for when you want to reset the state of an object before each test.
+
+#### What methods to test? 
+
+We want to test all `public` and `protected` methods. We do not test `private` methods because they are implementation details and can change. We want to test how the **object behaves**, not how it's _implemented_. 
+
+#### Protected Fields
+
+IF we want to test some field, we can make it `protected` instead of `private` so that classes in the same package can treat the variable/method as though it were public. 
+
+
+
+## Reading 04 - Build Tools ([reading](https://sde-coursepack.github.io/modules/construction/Build-Tools/))
+
+### Build Tools
+
+When we want to import a library, we can simply write something like `org.json` to then parse JSON. BUt this is not a built-in java library. Thus, we can instead use build tools to do this for us to manage external libraries, building the `.jar` files, testing, and more. The 4 most common tools for Java building:
+
+1. **make**: Part of the GNU project that creates a `makefile` that specifies how to build a project.
+1. **ant**: Apache Software Foundation built ant that used XML configuration files to define the build process. Its biggest weakness was not having any way to manage dependencies like external libraries.
+1. **maven**: also used XML like ant, but added dependency management by adding a `pom.xml` file.
+1. **gradle**: Same features as Maven but better and shorter syntax, and allows you to run the build script without downloading the gradle software itself. 
+
+### Gradle (follow along with [this code](https://github.com/sde-coursepack/NBAExcelTeams))
+
+If you want to simply clone this repo and run it `git clone https://github.com/sde-coursepack/NBAExcelTeams.git`, you'll notice you can't. This is because it has many dependencies! Rather than that, you can just run `cd NBATeams` and `gradlew build` to download deps, optimize build process, compile code, run the testing suite, and output the `.jar` file for you.
+
+once finished, gradle will product the `.jar` file in the `build/libs` folder. You can then run it with `java -jar NBA-Excel-1.0.jar`
+
+#### Gradle Project Structure
+
+The root directory is the projects root folder.
+
+1. `src` folder - contains all source code both for running (`src/main/java`) and for testing (`src/test/java`).
+1. `gradle/wrapper` - folder called `gradle` that contains `wrapper`
+1. `build` - contains all generated files when building the project including `.class`, `.jar`, and test results.
+1. gradle files - `build.gradle`, `settings.gradle`, `gradlew` and `gradlew.bat` are needed files for gradle to run. Most importantly, `build.gradle` is as script to build the project according to `settings.gradle`.
+
+#### build.gradle
+
+This is the heart of the gradle build. It uses Groovy and includes plugins, repositories, dependencies, and tasks.
+
+1. Repositories - tells gradle that you want to download all references from that repository.
+1. Dependencies - lists all external libraries. 
+1. Test - we just use `useJUnitPlatform()` so leave it as is. You can see an outputted html file in `build/reports/tests/test/index.html` that shows the results of the tests.
+1. jar - tells gradle how to build our output jar file.
+    * archiveBaseName - output name of the jar file. It automatically appends version number
+    * group - the group name of the project. This is used for dependency management.
+    * duplicatesStrategy - leave it as "exclude."
+    * manigest - define the properties of our jar manifest. When you are releasing a runnable jar, you must include the `attributes "Main-class"` item. 
+    * fat-jar: contains **not only my code** but all the code of your dependencies. 
+
+#### Gradle BUild
+
+This tells gradle to execute the build script. this is **not** the same as `gradlew build`. 
+
+#### Gradle Wrapper
+
+If you don't have perms to run `gradlew build` you can just do `chmod +x gradlew`. This does the same as `gradle build`, but note that it does not require you to have gradle installed on your computer. 
+
+### Example With POI
+
+APache POI is used to read formats like word, excel, etc. We will be writing information about NBA teams onto an excel spreadsheet. 
+
+To add poi with gralde, we can go to the Apache PO-OOXML library [here](https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml). We then copy the text that says `implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.2'` and paste it into our build.gradle file inside of the dependencies closure. We also need to add log4j: `implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.18.0'` since it's used by `poi-ooxml` at runtime. Note that we can specify that `log4j` is `runtimeOnly` in our deps, since we are not using it in our code so we don't need to load the library. If you're ever unsure though, just leave your deps as `implementation`. 
+
+here are our deps:
+```
+dependencies {
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.2'
+    runtimeOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.18.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}
+```
+
+You'll also notice that JUnit libraries are `testImplementation` and `testRuntimeOnly`, this is because we are separating the testing and running processes. 
+
+... skipping stuff that you should read but i don't need to write down ...
+
+#### Enumerated Types
+
+An enumerated type is a type that has a fixed set of values. For example, we can have a `public enum Conference { EAST, WEST }` and then we can use `Conference.EAST` and `Conference.WEST` as values.
+
+#### Java Streams and Lambda Bodies
+
+Java streams are a way to iterate through a collection of objects. For example, we can do:
+
+```java
+List<String> names = new ArrayList<>();
+names.add("Will");
+names.add("Charlie");
+names.add("John");
+names.add("Jane");
+names.stream().forEach(name -> System.out.println(name));
+// javascript better.
+```
+
 ## Reading 03 - Version Control
 
 ### Git Basics
