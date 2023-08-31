@@ -19,6 +19,9 @@ summer_internship
 # no DS_Store
 .DS_Store
 
+# ignore entp hw
+entp/homeworks
+
 # ignore all files except images, md, pdf files.
 *.*
 !*.png

@@ -18,6 +18,142 @@ Gradle is a build tool and an automation tool that can:
 * Automatically download all libraries including the correct version number
 * Automate build process
 
+### Gradle File Organization (using NBATeams Example):
+
+This is how gradle expects the files to be organized! If you create a new project in IntelliJ, it does this, and so does GitHub classroom. All of your code is in `src`.
+* The code that "runs" is within `main/java`
+* the code in `test/java` is for testing
+
+```
+src
+    main
+        java
+            edu.virginia.cs.somePackage
+                Main.java
+        resources
+            teams.json
+    test
+        java
+            edu.virginia.cs.somePackage
+                MainTest.java
+build 
+    classes
+    generated
+    libs
+        NBA-Excel-1.1.jar
+    reports
+        tests
+            test
+                classes
+                css
+                js
+                packages
+                index.html // open this to see test results
+    test-results
+    tmp
+build.gradle // this is the build file
+gradlew // leave this alone, it's a wrapper that runs gradle
+.gitignore
+
+
+
+
+
+
+
+```
+
+#### Build.gradle
+
+Follow along with this example [here](https://github.com/sde-coursepack/NBAExcelTeams.git) which is also in `class-examples/NBAExcelTeams`
+
+Note that gradle will not re-compile if the `.class` files are already there. This is great for great for incremental development and very large projects - you only recompile things that were changed. 
+
+
+
+
+
+```groovy
+plugins {
+    id 'java'
+}
+
+jar {
+    // this is the base name of the jar file, so it will be NBA-Excel.jar. It will add the version number and the extension automatically
+    archivesBaseName = "NBA-Excel"
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        // aka: "when i run the `.jar`, run this class"
+        attributes "Main-class": "edu.virginia.cs.nbateams.Main"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+group 'edu.virginia.cs.nbateams'
+version '1.1'
+
+repositories {
+    mavenCentral()
+}
+
+// specifies dependencies that will be used in the project
+dependencies {
+    implementation group: 'org.json', name: 'json', version: '20220320'
+
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.2'
+    // used in runtime, not actually compiled. This is becuase POI uses log4j, which is a logging library that is used by POI but we won't use
+    runtimeOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.18.0'
+
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}
+
+// If you want to test, you can do `./gradlew test`
+test {
+    useJUnitPlatform()
+}
+```
+
+### When to use libraries
+
+- If you need to do something complicated, like read/write excel files, use a library. 
+- For example, if you want to read a `.xlxs` file, you can use the `apache-poi` library.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        var workbook = new XSSFWorkbook("filename.xlsx");
+        var sheet = workbook.getSheetAt(0);
+        var rowIterator = sheet.rowIterator();
+        var catList = new ArrayList<Cat>();
+        rowIterator.next(); // skip the header row
+        while (rowIterator.hasNext()) {
+            var row = rowIterator.next();
+            var name = row.getCell(0).getStringCellValue();
+            var age = (int) row.getCell(1).getNumericCellValue();
+            var furPattern = row.getCell(2).getStringCellValue();
+            var rating = row.getCell(3).getNumericCellValue();
+            var newCat = new Cat(name, age, furPattern, rating);
+            catList.add(newCat)
+        }
+
+        // cat comparator
+        Collections.sort(catList, (a, b) -> Double.compare(b.getRating(), a.getRating()))
+        // #javaScriptBetter lmao 
+
+        // print catList
+        catList.forEach(System.out::println); // ok this is kinda cool beuase in js you'd have to do catList.forEach(cat => console.log(cat)) which is still pretty clean lol
+    }
+}
+```
+
+
+
+
 
 
 # Lecture 3 - VCS - ([slides](slides/03%20Version%20Control%20+%20Git.pdf))
