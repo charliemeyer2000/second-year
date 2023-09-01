@@ -6,6 +6,41 @@ title: Readings
 
 Personal Finance with Connect 14th edition, through the UVA Canvas inclusive access program. 
 
+## [Chapter 3: Money Management Strategy: Financial Statements and Budgeting](https://canvas.its.virginia.edu/courses/74463/assignments/368356?module_item_id=843056)
+
+### LO3-1: Successful Money Management
+
+**Money management** refers to the day-to-day financial activities necessary to manage current personal economic resources while working toward long-term financial security. 
+
+Opportunity Cost and Money Management: 
+- current spending reduces money available for long-term saving and investing
+- increased saving/investing lowers what you can spend now
+- credit payments over time reduce future income available for spending and saving
+- using savings to buy things results in lost interest and not being able to use savings for other things
+- comparison shopping results in wiser buying but loses your time. 
+
+![Money Management Activities](images/money-management-activities.png)
+
+Personal records system: reciepts, credit cards, insurance policies, and tax forms report personal financial activities. Organizing a system provides:
+1. handling daily activities like bill paying
+1. measuring financial progress
+1. completing tax forms
+1. making investment decisions
+1. determining resources for spending. 
+
+Where to keep financial records:
+
+![keeping-financial-records](images/keeping-financial-records.png)
+
+Important records should be stored in a **safe deposit box** which is a private storage area at a financial institution with maximum security for valuable and difficult-to-replace documents. It requires two keys. 
+
+
+
+
+
+
+
+
 ## [Chapter 2: Financial Aspects of Career Planning](https://canvas.its.virginia.edu/courses/74463/assignments/365279)
 
 ### LO2-1: Career Choice Factors
