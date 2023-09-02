@@ -34,11 +34,117 @@ Where to keep financial records:
 
 Important records should be stored in a **safe deposit box** which is a private storage area at a financial institution with maximum security for valuable and difficult-to-replace documents. It requires two keys. 
 
+If you are storing records electronically, you should:
+1. Download copies to local storage
+1. Back up files externally to cloud or to a hdd
+1. secure data with encryption
+1. Scan copies of documents you need with paper versions. 
+
+You should keep certificates like wills, birth certs, and social security data. You should keep investment records loins term and tax records for at least three years. 
+
+### LO3-2: Personal Financial Statements
+
+_personal financial statments_ are the starting point for your financial jouirnet. They are documents that provide information on your current financila position and a summary of income spending. Their main purpose is to:
+    * report current financial position based on the value of items you own and amounts you owe
+    * Measure your progress toward financial goals
+    * Maintain information about your financial activities
+    * Provide data for preparing tax forms or applying for credit
+
+A _balance sheet_, otherwise known as a _net worth statement_ or _statement of financial position_ reports what you own and whawt you owe. For example:
+
+$$\text{Items of value (what you own)} - \text{Amounts owed (what you owe)} = \text{Net worth (your wealth)}$$
+
+Listing items of Value:
+* **assets** are cash or other tanigble property with a monetary value. 
+    * Liquid assets are cash items and items of value that can quickly be converted to cash. 
+    * Real estate includes a home, apartment, or other land that a person/family owns
+    * Personal possessions are a major portion of assets for many people. These include cars, furniture, appliances, jewelry, etc. These are usually hard to convert to cash. 
+    * INvestment assets are funds set aside for long-term financial needs.
+
+Determine Amounts Owed:
+* **Liabilites** are amounts owed to others but do not include items yet due, such as next month's rent. 
+    * Current Liabilities - debts you must pay within a short time, less than a year. 
+    * Long-term liabilities - debts you do not have to pay in full until more than a year from now. A _mortgage_ is an amount borrowed to buy a house or other real estate paid over 15 years or more.
+
+Compute Net Worth
+
+$$\text{Assets} - \text{Liabilities} = \text{Net Worth}$$
+
+**insolvency** is the inability to pay debts when they are due, when their liabilities exceeded available assets. Actions to increase net worth include increasing savings, reducing spending, increasing value of investments/possessions, and reducing amounts owed. 
+
+Cash Flow Statement - **cash flow** is the actual inflow and outflow of cash during a time period. Income is the most prominent _inflow_ of cash, whereas payments like food/rent are cash _outflows_. 
+
+A Cash flow statement, also known as a _personal income and expenditure statement_ is a summary of cash receipts and payments for a time period.  Deposits are _inflows_, and purchases are _outflows_. 
+
+To prepare a cash flow statement:
+1. Record income - _income_ is the inflows of cash for a person/individual/household. **Take home pay** and _net pay_ is a person's income after taxes and other deductions. **discretionary income** is money left over after paying for a house, food, and other necessities. 
+1. Record cash outflows:
+    * _fixed expenses_: payments that don't vary from month to month. Rent, mortgage, loans, wifi service, etc. 
+    * _variable expenses_: food, clothing, utilities, recreation, etc. 
+1. Determine net cash flow. This can either be a positive (_surplus_) or negative (_deficit_). Set aside money for an _emergency fund_. 
+
+Ratios for Evaluating Financial Progress:
+
+|Ratio| Calculation | example | interpretation | 
+|---|---|---|---|
+Debt ratio | liabilities divided by assets | $25000 / 50000 = 0.5$ | shows relationship between debts and assets, a low debt ratio is best. |
+Current ratio | liquid assets divided by current liabilities | $4000/2000 = 2 | indicates 2 dollars in liquid assets for every 1 dollar of current liabilities. |
+Liquidity ratio | liquid assets divided by monthly expenses | $10000 / 4000 = 2.5 | indicates the number of months in which living expenses can be paid if an emergency comes up, a high liquidity ratio is good. | 
+|debt-payments ratio | monthly credit payments divided by take-home pay | $540 / 3600 = 0.15 | how much of a person's earnings goes for debt payments| 
+Savings Ratio | Amount saved each month divided by gross income | $648 / 5400 = 0.12 | financial advisors recommended monthly savings of 5-10%. |
 
 
+### LO3-3: Budgeting for Skilled Money Management
 
+An _achiever_ is a personal with a strong financial base whereas an _explorer_ is a person seeking to get to the next level of financial success. A _striver_ is a personal with minimal financial resources. 
 
+A _budget_ is a spending plan necessary for financial planning. It serves the purpose of:
+1. Living with your income
+1. Spending money wisely
+1. reaching financial goals
+1. Preparing for financial emergencies
+1. develop wise financial management goals. 
 
+![Creating Making Budget](images/creating-making-budget.png)
+
+Budgeting Process:
+1. Set Financial Goals - Your goals should take a SMART approach and nbe specific to who you are (single, married, single parent). You should be aided by your _balance sheet_ reporting your current financial position, your _cash flow_ reporting your inflows and outflows, and your _budget_ setting a plan for spending and saving. 
+1. Estimate Income - Estimate it usually monthly (or usually whenever you get paid). 
+1. Budget an emergency fund and savings - Financial advisors suggest an _emergency fund_ of 3-6 months for living expenses in bad times. Also, _sinking funds_ are for non-monthly expenses that occur during the year. People also can put these funds into separate savings accounts, called _savings buckets_. The time value of money refers to increases in savings as a result of interest earned. 
+1. Budget fixed expenses - Define A budget involves both fixed expenses and _projected_ income/expenses. 
+1. Budget Variable Expenses - You can look at the CPI. 
+1. Record spending amounts - A **budget variance** is the difference between the amount of budget and the actual amount received/spent. 
+1. Reviewing Spending and Savings Patterns - Budgeting is an ongoing progress. 
+
+Characteristics of a good budget:
+* Well planned - take time and learn lessons. 
+* Realistic - A budget is not to prevent you from enjoyingl ife but also won't let you immediately get a car. 
+* Flexible - be prepared for unexpected circumstances
+* Clearly Communicated - Should be available and understood by all family members.
+
+Types of Budgeting Systems
+1. Mental budget - a budget that is not written down but kept in mind. can be dangerous if you forget.
+1. Physical budget - involves physical ways to hold money and tracking. 
+1. a written budget contains a plan and a budget record book
+1. digital budget - created with a spreadsheet and other financial institutions offer budgeting tools.
+
+### LO3-4: Money Management and Achieving Financial Goals
+
+You can achieve financial statements with:
+1. A balance sheet - where you are now
+1. A cash flow statement detailing income and spending during a month
+1. A budget recording plans for spending/saving your financial goals.
+
+Identifying Saving Goals - common uses for saving reasons include:
+* Create an emergency fund
+* pay for expensive items like appliances, cars, or to make a down payment on a house
+* Buy expensive items
+* long-term expenses like education for children
+* Earn income from interest on savings
+
+To expand saving, use payroll deductions to automatically deposit money into a savings account, save 5-10% of your income, and take advantage of employer retirement funds.
+
+![Using savings to achieve financial goals](images/savings-to-get-financial-goals.png)
 
 
 ## [Chapter 2: Financial Aspects of Career Planning](https://canvas.its.virginia.edu/courses/74463/assignments/365279)
