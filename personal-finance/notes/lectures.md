@@ -94,7 +94,7 @@ location: Comm School 258
 ### Workplace Environment
 
 * Large or small employer? 
-    * 
+* Competitive or collaborative work environment?
 
 
 

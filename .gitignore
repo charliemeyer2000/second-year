@@ -22,7 +22,7 @@ summer_internship
 # ignore entp hw
 entp/homeworks
 
-# ignore all files except images, md, pdf files.
+# ignore all files except images, md, pdf, R, java, class
 *.*
 !*.png
 !*.jpg
@@ -35,3 +35,6 @@ entp/homeworks
 !*.markdown
 !*.txt
 !*.pdf
+!*.R
+!*.java
+!*.class
