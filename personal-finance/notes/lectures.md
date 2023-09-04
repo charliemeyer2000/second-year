@@ -96,6 +96,33 @@ location: Comm School 258
 * Large or small employer? 
 * Competitive or collaborative work environment?
 
+### Analyze First, then Decide
+
+* Use tools to analyze
+* On Day 1:
+    - Figure out what's expected of you. What are your responsibilities? Who do you report to? Will you have a mentor? 
+    - Establish relationships with colleagues and HR
+    - Find the go-to source for answers to your questions. 
+    - Take initiative!!
+* Play by the rules
+    - Put in a full day and a full week
+    - Meet deadlines
+    - Seek feedback and apply what you learn. 
+
+### Bottom Line
+
+* Choose the job that will best meet your goals. "Go where you believe you can do your best work." 
+* Be sensitive to the workplace environment. Know your job, and do it well
+
+### Why Track your Money? 
+
+* **Balance Sheet** - Shows net worth; a snapshot of assets and liabilities on a specific date. $\text{assets} - \text{liabilities} = \text{net worth}$. Aka, $\text{what you own} - \text{what you owe} = \text{net worth}$.
+* **Income Sheet (or P&L - profit and loss)** - What happened. Measures income and expenses over a period of time.
+* **Cash Flow Statement** - What happened. Measures cash inflows and outflows over a specified period of time. 
+    * Note that something like student loans are cash flows! Money comes in to pay for tuition, money goes out to pay for tuition.
+
+
+
 
 
 
