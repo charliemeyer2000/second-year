@@ -6,6 +6,122 @@ title: Readings
 
 Personal Finance with Connect 14th edition, through the UVA Canvas inclusive access program. 
 
+## [Chapter 4: Planning your Tax Strategy](https://canvas.its.virginia.edu/courses/74463/assignments/368361?module_item_id=843061)
+
+### Taxes and Financial Planning
+
+Types of Taxes:
+1. Tax on Purchases - _sales tax_ is both a state and local tax added to the purchase of products. Many states except food/drugs from sales tax. An _excise tax_ is imposed by federal and state governments on specific goods like gasoline, cigarettes, alcoholic beverages, tires, air travel, and phone service
+1. Taxes on Property - _Real estate property tax_ is a major source of revenue for local government that taxes based on the value of land/buildings. Some areas also impose a _personal property tax_ that assesses taxes on the value of boats, cars, furniture, and other stuff. 
+1. Taxes on wealth - _estate taxes_ are imposed on the value of a person's property at the time of their death. This tax is based on the fair market value of their investments, property, and bank account less deductions/other taxes. An _inheritance tax_ is levied on the value of property bequeathed by a deceased person. 
+1. Taxes on Earnings - two main taxes on waves and salaries are Social Security and income taxes: 
+    * _Social security_ is a federal program that provides disability and retirement benefits. It is funded by a tax on earnings paid by employees and employers.
+    * _income tax_ is a tax on earnings that funds the federal government. It is based on the amount of income earned during a period. It can also be taxed thorough state and local governments.
+
+### Income Tax Fundamentals
+
+Americans are required to pay their share of income taxes to the federal government, which involves calculating taxable income, determining amount paid, and comparing this amount with the income tax payments withheld or made during the year. 
+
+1. Determine Adjusted Gross Income - **taxable income** is the net amount of income, after allowable deductions, on which income tax is computed.There are various types of income:
+    * **earned income** money from personal effort - wages, salary, etc. 
+    * **investment income** money from property owned - interest, dividends, etc.
+    * **passive income** - results from business activities in which you do not actively participate, such as a limited partnership.
+    - >Total income is also affected by **exclusions** - an amount not included in gross income. Exclusions are also called **tax-exempt income** which is income not subject to tax. **tax deferred income** is income that will be taxed at a later date. This is something like an IRA. Finally, **adjusted gross income (AGI)** is gross income after certain additions/reductions have been made. This may be rental income or business profits. **Tax shelters** are investments that provide immediate tax benefits and a reasonable expectation of financial return. 
+1. Computing Taxable Income - a **tax deduction** is the amount subtracted from adjusted gross income to arrive at a taxable income. Each taxpayer recieves a **standard deduction**, a set amount on which no taxes are paid. Some people qualify for **itemized deductions** which are expenses a taxpayer is allowed to deduct from adjusted gross income. This includes medical/dental expenses, state/local taxes (up to $10,000), interest on mortgages (up to $750,000 loan limit), contributions to charity, theft losses, moving expenses for active duty servicepersons, and job-related expenses. 
+1. Calculating taxes owed - Your taxable income is the bases for computing the amount of your income tax. Use your taxable income in conjunction with the tax rate schedule to determine the amount of tax owed. Each of the tax rates represents a range of income levels. these are called _brackets_. To calculate tax on an amount of income, calculate the tax from each of the brackets as you progress up to your taxable income. On the other hand, the **average tax rate** is based on the total tax due divided by taxable income. The _alternative minimum tax (AMT)_ is designed to ensure that those who receive tax breaks with high incomes pay at least a minimum amount of tax. Tax owed can also be reduced by a **tax credit** which is an amount subtracted from the amount of taxes owed. This can be given for something like child care. Low-income workers benefit from _earned income credit (EIC)_ which is a refundable tax credit for low-income workers who have a job. There are more tax credits for education, adoption, and retirement savings.
+1. Making Tax Payments - you can pay taxes through payroll withholding or through estimated tax payments:
+    * **withholding** - the pay-as-you-earn system of tax payments. Employers withhold federal income taxes from your paycheck and send it to the IRS. At the end of the year you get a W2 which reports your annual earnings and the amount deducted for income/social security/state income tax. 
+    * **estimated payments** - These people pay during the year and are based on a person's estimate of taxes due at year-end. These are made by self-employed people, those with investment income, and those with other income not subject to withholding.
+
+    ![computing taxable income](images/computing-taxable-income.png)
+
+### Filing your Federal Income Tax Return
+
+Who must file? 
+
+Every citizen of the US must file taxes. This amount is based on the person's _filing status_. There are 5 categories:
+1. Single
+1. Married, filing joint return
+1. Married, filing separate return
+1. Head of household
+1. Qualifying widow or widower
+
+the _marriage penalty_ occurs for couples that have simliar income levels, and is an additional tax that couples pay filing as _married, filing jointly_ compared to filing as _single_.
+
+What tax forms and schedules should you use? - the Tax Cuts and Job Act simplified the form when filing your taxes, as there's now one for (1040) to report your cumulative income.
+
+Completing the federal income tax return:
+
+1. Filing status - determine your filing status
+1. Income - earnings from employment and other income
+1. Adjustments to income - can deduct contributions to an IRA
+1. Taxable income - your adjusted gross income is reduced by your itemized deductions or by the standard deduction for your tax situation. 
+1. Other taxes - any special taxes
+1. Tax credits - any tax credits are subtracted
+1. Payments - total withholding and other payments
+1. Refund or amount you owe - if your payments exceed the amount you owe, you are entitled to a refund. 
+1. Signature
+
+If you made an error, file a 1040X to pay additional tax/obtain a refund. 
+
+Don't forget to file state income tax!
+
+### Tax Assistance and the Audit Process
+
+IRS Services:
+1. Publications - IRS has lots of publications
+1. Phone hot line
+1. Walk in service
+1. Interactive Tax Assistance
+1. IRS2GO App
+
+Tax Preparation Services
+
+1. Tax services include one-person operations or national firms
+1. Enrolled agents - government-approved tax experts
+1. Accountants
+1. Attorneys can help with a tax-related transaction when you disagree with the IRS
+
+Warnings - when you hire a professional tax preparer, you are responsible for providing accurate and complete information. 
+
+What if your return is audited? a **tax audit** is a detailed examination of your tax return by the IRS. They usually request more information to support he entries on your tax return. Keep receipts, and other things to prove your claim. Note that < 1% of people are audited. There are types of audits:
+    * _office audit_ requires you to visit the IRS office
+    * _field audit_ an IRS agent visits your home and accesses your records. 
+
+Know your audit rights - bring a lawyer, be on time, be consistent with your information. 
+
+### Tax Planning Strategies
+
+People practice **tax avoidance** which is the use of legitimate methods to reduce taxes (in contrast to illegal **tax evasion**). 
+
+Here are some general strategies to avoid taxes:
+1. If you have the same or lower tax rate next year, accelerate deductions into the current year. Pay real estate property taxes early, make charitable contributions, etc.
+1. If you expect to have lower or the same tax next year, delay the recipes of income until next year, as it will be taxed at a lower rate.
+1. If you expect to have a higher tax rate next year, consider _delaying deductions_ since they will have a greater impact on your taxes next year.
+1. If you expect to have a higher tax rate next year, consider _accelerating income_ into the current year.
+
+Special Tax Situations
+1. Business in your home - deduct ordinary expenses relating to your business, which could include your home/mortgage
+1. Divorced persons - child support payments have no tax consequences. 
+1. Single parents - can claim _head of household_ filing status 
+1. Retired persons - can withdrawal tax-deferred funds without penalty (over 59.5)
+
+
+
+
+
+
+
+
+![1040-1](images/1040-1.png)
+
+![1040-2](images/1040-2.png)
+
+
+
+
+
+
 ## [Chapter 3: Money Management Strategy: Financial Statements and Budgeting](https://canvas.its.virginia.edu/courses/74463/assignments/368356?module_item_id=843056)
 
 ### LO3-1: Successful Money Management
