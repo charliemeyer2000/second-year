@@ -106,6 +106,29 @@ Special Tax Situations
 1. Single parents - can claim _head of household_ filing status 
 1. Retired persons - can withdrawal tax-deferred funds without penalty (over 59.5)
 
+Consumer purchasing affects your taxes:
+1. Place of Residence - owning a home is a tax shelter - real estate property taxes and interest on mortgage are deductible.
+1. Consumer Debt - tax laws allow homeowners to borrow for consumer purchases. You can deduct interest on loans (up to 100k). 
+1. Health Care Expenses - _Flexible spending accounts (FSAs)_ allow you to reduce your taxable income when paying for medical or child care costs. _Health Savings Accounts (HSAs)_ are another type of health savings account that allows you to reduce your taxable income when paying for medical expenses.
+
+Investment Decisions 
+1. Tax-Exempt investments - interest from bonds are tax-exempt. 
+1. Tax-deferred investments
+    * _tax deferred annuities_ - allow you to postpone taxes on your investment earnings until you withdraw the money.
+    * _section 529 savings plans_ - state run tax-deferred plans to set aside moeny for a child's education
+    * _Retirement plans_ - such as an IRA, Keogh or 401(k) allow you to postpone taxes on your investment earnings until you withdraw the money.
+1. Capital gains and losses - a _capital gain_ is the profit from the sale of assets such as stocks, bonds, or real estate. YOu only pay taxes once the asset is sold A _capital loss_ is the sale of an investment for less than its purchase price. Capital gains are taxed at a lower rate than ordinary income. 
+1. Self employment - you can write off home costs as a business expense.
+1. Children's Investments - _income shifting_ allows you to shift income to children who are in a lower tax bracket.
+
+Retirement and Education Plans
+1. Traditional IRA - contributions are tax deductible, but withdrawals are taxed as ordinary income.
+1. Roth IRA - allows a $6k annual contribution which is not tax deducitble but the earnings on the account are tax free after five years and after age 59.5
+1. Coverdell Education Savings Account - assists parents to pay for children's education. 
+1. 529 Plan - educational savings plan. 
+1. Keogh plan - tax-deferred retirement plan for self-employed people.
+1. 401(K) plan - tax-deferred retirement plan for employees of corporations.
+
 
 
 

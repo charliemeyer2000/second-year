@@ -4,6 +4,210 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+# Lecture 5 - V&V and Testing ([slides](https://drive.google.com/file/d/17I6eKfAXFvfu7JEgxyhkwNywusNeMEX-/view?usp=drive_link))
+
+## Verification and Validation
+
+Verification:
+- Evaluating a system or a component to determine whether products of a given development phase satisfy the conditions imposed at the start of the phase
+    * "Did we build the thing right?"
+- Validation: 
+    * Evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements. 
+
+## Testing Softawre
+
+- You will never be certain that your code is correct
+- Even trivial software systems can have theoretical inputs, states, etc. 
+    * Conventionally a finite number, but a finite number that is too big to practically constrain
+- You cannot test all possible inputs, states, etc.
+
+## Software Testing Cannot Prove Code Works
+
+* Software testing - **_executing_ a piece of software with the intention of _finding_ defects/faults/bugs**.
+
+## Software Testing
+
+- The mindset of a tester should be to **find bugs**, not to prove the system works.
+- Testing typically involves executing a portion of the program in a series of controlled state:
+    - Expected output
+    - Actual output
+- Programs can pass verification but fail validation (can pass tests but it's not what the customer wants)
+
+## Unit testing
+
+```java
+public static int max(int a, int b, int c) {
+    if (a > b) {
+        if (a > c) { return a; }
+        else { return c; }
+    } else {
+        if (b > c) { return b; }
+        else { return a; } // bug, this should be c
+    }
+}
+```
+
+```java
+public static int max(int a, int b) {
+    return (a + b + Math.abs(a - b)) / 2; // works, but integer overflow!
+}
+```
+
+You cannot look at code and find bugs. No matter how hard, you will miss obvious bugs. Thus, we need help finding bugs. **Test** the code to find bugs!!
+
+## Important Quote
+
+- Program testing can effectively show the presence of bugs, but it is hopeless for showing their _absence_. 
+- We test to _find_ bugs. Testing allows us to reduce (but not remove) _uncertainty_.
+
+## Testing Scenarios
+
+Has three things:
+1. Input
+    - function params
+1. Expected output
+    - what the function should return
+1. Actual output
+    - what the function actually returns
+
+## Testing Errors
+
+- Be careful constructing your expected output. If your expected output is incorrect, your test will be useles and misleading.
+- Make sure tests are **sound** first!!
+
+## Junit
+
+- Create a class in the `test/java` folder, generally make the class name that you're testing `[x]Test`
+
+```java
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class MathFunctionsTest {
+
+    @Test
+    void max_3arg_descending() {
+        // assertEquals(expected, actual)
+        assertEquals(3, MathFunctions.max(3, 2, 1)); // this is a static function btw
+    }
+
+    @Test 
+    void max_3arg_ascending() {
+        assertEquals(3, MathFunctions.max(1, 2, 3));
+    }
+
+    @Test
+    void max_3arg_middle() {
+        assertEquals(3, MathFunctions.max(1, 3, 2));
+    }
+
+}
+
+```
+
+## Testing Classes with JUnit
+
+Consider the class `NumberChanges`:
+
+```java
+/**
+ * This class tracks a number as well as how many times that number has changed.
+ */
+
+public class NumberChanges {
+    private int number;
+    private int timesChanged;
+
+    /**
+     * Constructor where the initial value of the number is specified
+     */
+    public NumberChanges(int initialNumber) {
+        this.number = initialNumber;
+        this.timesChanged = 0;
+    }
+
+    /**
+     * Constructor where the initial value of the number defaults to 0
+     */
+    public NumberChanges() {
+        this(0);
+    }
+
+    /**
+     * Returns the value of number
+     */
+    public int getNumber() {
+        return number;
+    }
+
+    /**
+     * Returns the number of times the number has been changed
+     */
+    public int getTimesChanged() {
+        return timesChanged;
+    }
+
+    /**
+     * Sets the value of number. If the value of newNumber value is different from before,
+     * this increments the number of times the number has changed.
+     */
+    public void setNumber(int newNumber) {
+        if (newNumber == number) {
+            return;
+        }
+        number = newNumber;
+        timesChanged++;
+    }
+}
+
+```
+Mow consider NumberChanges test!!
+```java
+
+import org.junit.jupiter.api.Test;
+
+class NumberChangesTest {
+
+    // constructor testing
+    @Test
+    void constructor() {
+        var testNumberChanges = new NumberChanges(5);
+
+        assertEquals(5, testNumberChanges.getNumber());
+        assertEquals(0, testNumberChanges.getTimesChanged());
+    }
+
+    @Test
+    void setNumber_differentNumber() {
+        var testNumberChanges = new NumberChanges(5);
+
+        testNumberChanges.setNumber(7);
+
+        // now use getters to check the fields!
+        assertEquals(7, testNumberChanges.getNumber());
+
+        // check that timesChanged was incremented
+        assertEquals(1, testNumberChanges.getTimesChanged());
+    }
+
+    @Test void setNumber_sameNumber() {
+        var testNumberChanges = new NumberChanges(5);
+
+        testNumberChanges.setNumber(5);
+
+        // now use getters to check the fields!
+        assertEquals(5, testNumberChanges.getNumber());
+
+        // check that timesChanged was incremented
+        assertEquals(0, testNumberChanges.getTimesChanged());
+    }
+
+}
+
+```
+
+
 # Lecture 4 - Build Tools ([slides](https://drive.google.com/file/d/1BDfFJ6DUbSitbJ-ttXCW3foW5hpuN0NK/view?usp=drive_link))
 
 ## Gradle
