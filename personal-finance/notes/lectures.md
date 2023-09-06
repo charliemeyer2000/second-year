@@ -6,6 +6,102 @@ location: Comm School 258
 
 # Lecture Notes
 
+# Day 5
+
+## Statements
+
+- Income statement - how much money you make
+- Cash flow Statement - what happened: measures cash inflows and outflows over a period of time.
+
+1. Beginning Balance sheet (where you are)
+1. Income statement (what happened); Cash flow statement (what happened)
+1. Ending balance sheet (where you are). 
+
+### Balance Sheet
+
+* If income > expenses, your net worth goes up. 
+* If expenses > income, net worth goes down.
+
+## General Budget - 20/30/50
+
+- Financial Goals/Priorities > 20%: Savings/investment contributions, HSA, debt repayments
+- Essential Expenses < 50%: Housing, transportation, utilities, groceries, and insurance
+- Lifestyle choices: < 30%: cable, internet, giving, childcare, entertainment, hobbies, pets, personal care, misc. 
+
+## Planning Your Tax Strategy
+
+Saving money avoids taxes. You are helping your bottom line! Thus, "A penny saved > a penny earned" due to income tax!!
+
+Ex: Scholarship vs. Stipend
+1. Scholarship - income from a qualified scholarship is not taxable. Amounts used for costs like tuition, course books, room and board are not taxable.
+1. Stipend - a stipend is defined as a fixed sum of money paid periodically for services or to defray expenses. The fact that enumeration is termed a "fee" or "stipend" rather than salary or wages. 
+
+Consider that if you are in teh 24% tax bracket, a 30k tuition is equivalent to around a 40k pre-tax equivalent. 
+
+## Lower your Taxes
+
+1. Minimize your taxable income
+1. Don't receive a huge tax refund (if you pay too much in taxes) - this is because the treasury is holding your money, rather than you!
+1. Increase your current/future net income
+1. Pay your share, no more, no less
+1. Maintain good records.
+1. stay informed
+1. Be proactive
+1. Use the decision-making model
+
+## Levels of Taxes
+
+* Federal/Sovereign Government
+* State/Provincial Government
+* Local/City/County Government
+
+## Types of Taxes
+
+* Sales Tax
+    * General
+    * Excise Tax (to deter people to buy bad things, like alcohol or gasoline)
+    * Value-added tax
+* Property/Wealth Tax
+    * Real estate (at the local level)
+    * Personal property
+    * Assets
+* Estate Tax - tax due when you're dead
+* Inheritance Tax
+* Income tax
+    * Payroll
+    * Medicare
+    * Income
+
+## Tax Income Categories (US Tax Law)
+
+* Taxable
+    * Earned: wages, salary, commissions, fees, tips, bonuses
+    * Unearned income:
+        * Investment income
+        * Retirement benefits/distributions
+        * PAssive (rental income, business partnerships, trusts)
+* Tax-Deferred
+    * Investment income in 401(k)'s and other advantaged accounts
+    * Deferred compensation plans
+* Tax-exempt 
+    * Interest from municipal bonds
+    * Funds in health savings accounts when used for qualified medical expenses
+    * Scholarships
+
+## Tax Income Law
+
+* Progressive in nature
+* 5 filing status categories
+* 7 tax brackets
+* more than 500 forms
+* $17,000 pages of laws and regulations.
+* standard deduction vs. itemized deduction -> choose the bigger one!
+
+
+
+
+
+
 # Day 4
 
 ### Common Insurance Benefits
@@ -117,7 +213,7 @@ location: Comm School 258
 ### Why Track your Money? 
 
 * **Balance Sheet** - Shows net worth; a snapshot of assets and liabilities on a specific date. $\text{assets} - \text{liabilities} = \text{net worth}$. Aka, $\text{what you own} - \text{what you owe} = \text{net worth}$.
-* **Income Sheet (or P&L - profit and loss)** - What happened. Measures income and expenses over a period of time.
+* **Income Sheet (or P&L - profit and loss)** - What happened. Measures income and expenses over a period of time. Income - expenses = net income.
 * **Cash Flow Statement** - What happened. Measures cash inflows and outflows over a specified period of time. 
     * Note that something like student loans are cash flows! Money comes in to pay for tuition, money goes out to pay for tuition.
 
