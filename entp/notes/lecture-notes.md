@@ -5,6 +5,24 @@ author: Charlie Meyer
 
 # Lecture Notes
 
+## Day like 6
+
+### Major Takeaways from Interviewing Entrepreneurs
+
+- lots of up front risk
+- bet on yourself and your skills
+- keep your cards close to your chest
+- Be especially careful about the business partners that you work with/give equity to 
+- Adaptability to change/willingness to change. 
+- Re-using resources (code, investors, customer base)
+- Updated with technology (don't let your products become obsolete)
+- Stay in touch with your clients (especially in service-based businesses)
+- High highs, low lows. 
+- Care about not having a boss! (literally me though)
+- Find funds anywhere you can (friends, family, etc.)
+
+
+
 ## Day 2
 
 What is a business? 
