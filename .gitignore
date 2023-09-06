@@ -1,6 +1,7 @@
 # ignore all files within any directory of any depth named "homework"
 
 linear/homework
+linear/quizzes
 
 personal-finance/homework
 
