@@ -6,6 +6,91 @@ title: Readings
 
 Personal Finance with Connect 14th edition, through the UVA Canvas inclusive access program. 
 
+## [Chatper 5: Financial Services - Savings Plans and Payment Methods](https://canvas.its.virginia.edu/courses/74463/assignments/368364?module_item_id=843064)
+
+### LO5-1: Financial Services for Financial Planning
+
+![Banking Services](images/banking-services.png)
+
+Mistakes when managing cash include:
+1. overspending due to impulse buying
+1. Having insufficient liquid assets to pay bills
+1. using savings/borrowing for living expenses
+1. Failing ot put funds into an interest-earning savings account/investment program.
+
+Types of Financial Services
+1. Savings - _time deposits_ are storage of funds for future use. 
+1. Cash Availability and Payment Services - transferring money is necessary. Checking accounts (_demand deposits_) are the most common.
+1. Borrowing - people use things like credit cards, cash loans, and long-term borrowing
+1. Investing, other services - a _trust_ is a legal agreeement that provides for the management and control of assets by one party for the benefit of another. To monitor multiple accounts, use an _asset management account_ which is a comprehensive financial services package in a single account.
+
+
+Banking
+
+Banking transactions can be concducted with an ATM to minimize fees and save time. Video teller machines (VTMs) provide personalized service after hours with bank representatives. A _debit card_ activates banking and buying transactions. 
+
+Banking Apps/Digital Wallets
+
+Digital wallets are being used more and more. They allow storage of credit/debit/loyalty cards and allow P2P money transfers. 
+
+Prepaid debit cards are a common payment methods. They can be loaded by cash/check, direct deposit, transfer, etc. and allow purchases, and P2P purchases, but are associated with heavy fees. Thus credit cards are the new alternative - _pay later_ rather than paying now. 
+
+![Interest Rates on Personal Finance](images/interest-rates-on-personal-finance.png)
+
+### LO5-2: Financial-Service Providers
+
+Deposit Institutions - 
+1. Commerical bank - offer a full range of financial services. They operate as corporations. 
+1. Credit Unions - user-owned, nonprofit financial institution. 
+1. Thrifts - S&L's offer financial services and _mutual savings banks_ are owned by depositors and specialized in savings/mortgages. 
+
+Other Financial Institutions
+* Life INsurance Companies - life insurance policies can contain savings/investment features. 
+* Investment Companies - _mutual funds_ often offer the **Money market fund** which is a combination savings-investment plan in which the investment company uses your money to purchase short-term financial instruments. They are not covered by the FDIC.
+* Brokerage Firms - serve as agents between buyer and seller for stocks & bonds. 
+* Finance companies - making loands to customers and small businesses. Have short/intermediate term loans. 
+* Credit Card Companies - specialize in short term retail lending. 
+* Mortgage Companies - provide loans to buy homes. 
+
+How to Compare Financial Service Providers
+
+1. Identify most important features for a provider:
+    * Services
+    * Fees, earnings
+    * Convenience
+    * Online/mobile
+1. Rank top features based on importance to your life situation
+    * College student
+    * Young Family
+    * Older
+1. Prepare a list of local, regional, national banks and credit unions
+1. Research
+1. Decide
+
+### LO5-3: Savings Plans
+
+![savings alternatives](images/savings-alternatives.png)
+
+Savings Plans:
+1. Savings Accounts: 
+    * _regular savings accounts_ require a low minimum balance or none at all. They can allow withdraws. 
+    * _high-yield savings accounts_ are offered by traditional banks and online-only banks but have restrictions on minimum balance and withdrawal limits. 
+1. Certificates of Deposit - a _certificate of deposit_ (CD) is a savings plan requiring that for a certain amount be on deposit for a stated period (ranging from 30 days to 5 years or more) to earn a specific rate of return. Consider earnings and costs. If interest rates have dropped, consider a shorter maturity. Consider a portfolio of CDs that mature at different times. 
+    * Rising-rate/bump-up CDs - higher rates at set intervals.
+    * Liquid CDs - allow withdrawal without penalty. 
+    * Zero-coupon CD - purchased at a deep discount with no interest payments. 6% annual return
+    * Indexed CDs - have earnings based on the stock market. 
+    * Callable CDs - start with higher rates and have long maturities like 10/15 years, 
+    * Promotional CDs - "too good to be true" - often just sell you high-cost financial products. 
+1. Money Market Account/Fund - a _money market account_ is a savings account that requires a minimum balance and has earnings based on the market. _accounts_ at banks and credit unions have federal deposit insurance but _funds_ don't. this is b/c funds invest in the short term (less than a year). 
+1. Savings Bonds - bonds are a low risk investment in the treasury. 
+    * EE Bonds - bonds over $25 that mature over time. SHould be redeemed after at least 5 years or you don't get all of your money. 
+    * I Bonds - Has an interest rate based on (a) a fixed rate for the life of the bond and (b) an inflation rate calculated twice a year. EE bonds must be held at least a year. They are better for long-term savings. 
+    * 
+
+
+
+
 ## [Chapter 4: Planning your Tax Strategy](https://canvas.its.virginia.edu/courses/74463/assignments/368361?module_item_id=843061)
 
 ### Taxes and Financial Planning
