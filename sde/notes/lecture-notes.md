@@ -1,8 +1,180 @@
 ---
-title: Lecture 1 
+title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+# Lecture 6 - Test Plans & Strategies ([slides](https://drive.google.com/file/d/1AdOHBPjC0IlxoXd5y1r9Hi6BG4gz4uDw/view?usp=drive_link))
+
+## Announcements
+
+HW1
+* Part 1 - due monday 9/11
+* Part 2 - release Tuesday, 9/12 morning, due 9/18. Same groups/repos for part 2
+* Quiz 3  -due wednesday 9/13 covers content from lecture today/readings
+
+## Test Plans
+
+### Aside
+
+Note that if you have multiple assert statements in a test, if the first one fails, it won't run the rest of the test. So that is why you can add the optional `message` string argument in `assertEquals` - to tell you which test failed if you have multiple assertions in a test. 
+
+Consider the [Vote Tally](class-examples/06-testing-plans/VoteTally.java) class stored at `class-examples/06-testing-plans/VoteTally.java`. 
+
+With the test for `addVotes_existingCandidates` in the accompanying test class, you can create a `protected` constructor in `VoteTally.java` which directly injects state into the field. Protected - public to everything inside of the same package, private otherwise. Thus, it's great for testing! That way we don't have to do multiple `testVoteTally.addVotes()` calls, but we can just do one. 
+
+```java
+    protected VoteTally(Map<String, Integer> candidateVotes) {
+        this.candidateVotes = candidateVotes;
+    }
+```
+
+So now our test can be:
+
+```java
+    @Test
+    void addVotes_existingCandidates() {
+        var testVoteTally = new VoteTally(new HashMap<>(
+                Map.of("John Smith", 20, "Votey McVoteface", 10))); // make a new HashMap since Map.of is immutable
+
+        // now you're only calling addVotes once! And the test is still the same!
+        testVoteTally.addVotes(Map.of("John Smith", 10, "Jane Doe", 15));
+
+        assertEquals(3, testVoteTally.getNumCandidates());
+        assertTrue(testVoteTally.getCandidates().contains("John Smith"));
+        assertTrue(testVoteTally.getCandidates().contains("Jane Doe"));
+        assertTrue(testVoteTally.getCandidates().contains("Votey McVoteface"));
+        assertEquals(30, testVoteTally.getVotesForCandidate("John Smith"));
+        assertEquals(15, testVoteTally.getVotesForCandidate("Jane Doe"));
+        assertEquals(10, testVoteTally.getVotesForCandidate("Votey McVoteface"));
+
+    }
+```
+
+### Assert Functions
+
+In addition to assertEquals, there are:
+* `assertTrue` - pass iff is true
+* `assertFalse` - pass iff is false
+* `assertArrayEquals` - passes if arrays are same size and expected[i].equals(actual[i]) for all i
+* `assertNull` - pass iff value is null
+* `assertNotNull` - fail iff is not null
+* `fail()` - automatically fails the test. 
+* With object classes, assertEquals uses the object `.equals()` method. 
+
+### AssertEquals with Doubles
+
+Doubles in Java are imprecise. As such, assertEquals functions with java take in an additional "tolerance" argument. If the expected and actual values are within the tolerance it's considered true. This optional "tolerance" argument is also true in `assertArrayEquals` with a `double[]`.
+
+### How many Tests is Enough? 
+
+If you are testing something like "is _x_ a leap year on the gregorian calendar?" you can test every year from 1582 to 2400. However, this is not feasible for most programs.
+* If we test 2024, do we need to test 2028? - **no**
+* If we test 2100, do we need to test 2200? - **no**
+* If we test 2000, do we need to test 2400? - **yes**
+
+- Note this is "black box testing" - given an _interface_, we design test cases to test the _functionality_ of the interface.
+
+### Test Plan Strategies
+
+- A test plan is a set of tests to search for bugs
+- TDD - is the process of writing tests before writing code. This relies on writing tests based on specification. **"Red, green, refactor"**
+    * Red - write a test that fails
+    * Green - write enough code to make the test pass
+    * Refactor - clean up the code
+    * Advantages:
+        - Unit tests demonstrate clearly that a function behaves as intended
+        - able to rapidly test bugs
+        - encourages highly-cohesive, loosely-coupled code (good thing)
+        - Demonstrated to significantly reduce debugging time. 
+
+### Testing Strategies
+
+1. Black Box Testing - selects tests considering the specification and interface of a module. 
+    * Focus on the interface, not the implementation
+    * NOt just _arguments_ and _return_ values, also _state_
+1. White Box testing - selects tests using understanding structure and details of the code of a module
+    * Focuses on implementation
+
+### Code Coverage
+
+1. Statement Coverage - what % of statements executed by test
+1. Condition Coverage - Have all boolean variables/expressions been both true/false in at least one test? 
+1. Branch Coverage - for every if, do we evaluate both enter and skip/else? For every switch, do we evaluate every case? For every loop, do we evaluate normal iteration, one pass, zero pass? 
+1. Path Coverage - for every path through the code, do we have a test that executes that path?
+
+We want to maximize code coverage. However, it is not feasible toe expect 100% converge across all measures. We can avoid things like trivial getters and setters that have no logic (aka auto-generated getters and setters).
+
+### Code Refactoring Example
+
+let's refactor this:
+
+```java
+	public double calculateBill(int coursesTaken) {
+		double total = 0;
+		if (coursesTaken < 3) {
+			total = 8000 * coursesTaken;
+		} else if (coursesTaken >= 3 && coursesTaken <= 6) {
+			total = 6000 * coursesTaken;
+		} else {
+			total = 5500 * coursesTaken;
+		}
+		if (amountOverdue <= 2000 && isInterestExempt) {
+			return total + amountOverdue;
+		} else if (amountOverdue > 2000) {
+			if (isInterestExempt) {
+				return amountOverdue * 1.1 + total;
+			} else {
+				return (total + amountOverdue) * 1.1;
+			}
+		} else {
+			return total + amountOverdue * 1.1;
+		}
+	}
+```
+
+* Let's turn the first `if` statement block into a new function called `getTotal(int coursesTaken)` (a static method not reliant on fields).
+* Let's clean the second `if` statement block:
+
+```java
+var overdueBill = amountOverdue;
+if (!interestExempt) {
+    overdueBill *= 1.1;
+}
+return total + overdueBill
+
+```
+
+Now let's see this refactoring in action:
+
+```java
+public double calculateBill(int coursesTaken) {
+    double total = getTotal(coursesTaken); // you can do this automatically by doing "refactor -> extract -> method" 
+    if (amountOverdue > 2000) {
+        total *= 1.1;
+    }
+    var overdueBill = amountOverdue;
+    if (!interestExempt) {
+        overdueBill *= 1.1;
+    }
+    return total + overdueBill;
+}
+```
+
+So much more readable and understandable! And most importantly, **testable** and **debuggable**. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Lecture 5 - V&V and Testing ([slides](https://drive.google.com/file/d/17I6eKfAXFvfu7JEgxyhkwNywusNeMEX-/view?usp=drive_link))
 
@@ -14,7 +186,7 @@ Verification:
 - Validation: 
     * Evaluating a system or component during or at the end of the development process to determine whether it satisfies specified requirements. 
 
-## Testing Softawre
+## Testing Software
 
 - You will never be certain that your code is correct
 - Even trivial software systems can have theoretical inputs, states, etc. 

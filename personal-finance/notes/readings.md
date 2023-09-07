@@ -86,7 +86,18 @@ Savings Plans:
 1. Savings Bonds - bonds are a low risk investment in the treasury. 
     * EE Bonds - bonds over $25 that mature over time. SHould be redeemed after at least 5 years or you don't get all of your money. 
     * I Bonds - Has an interest rate based on (a) a fixed rate for the life of the bond and (b) an inflation rate calculated twice a year. EE bonds must be held at least a year. They are better for long-term savings. 
-    * 
+
+### LO5-4: Evaluating Savings Plans
+
+![choosing a savings plan](images/choosing-a-savings-plan.png)
+
+
+Rate of return - the earnings on savings are called the _rate of return_ or _yield_, which is a percentage of increase in the value of your savings from earned interest. The rate of return is calculated by:
+
+$$\text{Rate of Return} = \frac{\text{Interest Earned}}{\text{Amount Saved}}$$
+
+Compounding - the yield on your savnigs will usually be greater than the stated interest rate. _COmpounding_ refers to the interest earned that is earned on previously earned interest. 
+
 
 
 
