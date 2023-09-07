@@ -6,6 +6,75 @@ date: Depends
 
 # Reading Notes
 
+## Reading 06 - Testing([reading](https://sde-coursepack.github.io/modules/testing/Test-Plans/))
+
+### Test Plans
+
+A colleciton of tests is a **test plan** and is necessary to ensure that you are testing all the features of your software. There is _no perfect number_ of tests to write, but we want to use a systematic approach to write _enough_ tests to ensure that our software is working as expected.
+
+#### Types of Tests
+
+Consider the class `MySortedList` with functions `get(int index)`, `add(int value)`, `contains(Object target)`. 
+
+1. Equivalence Tests - shows how the software behaves under normal, predictable conditions
+1. Boundary - shows how the software behaves at the boundaries of the specification
+1. Exception - test cases that cannot be meaningfully executed correctly ands should throw exceptions.
+1. Robustness - cases that are **syntactically valid** but **semantically meaningless**. 
+
+#### How many do i need? 
+
+* We want to test our code thoroughly enough so that we are justifiably confident in its correctness.
+* We don't want to **test for the sake of testing**, because that is a waste of time and resources.
+
+We can't have a perfect test plan, but we can modify it as we go to catch all the things we encounter as we keep working. 
+
+### Black Box Testing
+
+Black box testing is an idea where we test what scenarios to write according to the specification of the modules we are testing (a function). We are testing the _interface_, not the _implementation_. 
+
+Testing Strategies:
+1. Equivalence Partitioning - partitioning breaks up something big into something small. For our case, this is breaking up our _equivalence cases_ into groups that largely behave the same. 
+    * For example, if we wanted to test the `Math.abs()` function we could partition the inputs into 3 groups:
+        1. Positive numbers
+        1. Negative numbers
+1. Boundary Testing - in our example with `Math.abs()`, this would be testing boundary cases like "0".
+
+### Test Driven Development
+
+Test Driven Development (TDD) is a development process where you write tests before you write the code. 
+
+Process:
+1. Write a stub - a stub is a function that does nothing but return a value. 
+1. Write your first test!
+
+With TDD, you are supposed to write **one test** at a time, and for each test write just enough code to make the last test pass. 
+
+### White Box Testing
+
+Also known as "glass box testing," **white-box testing** selects tests while considering the existing implementation of the code being tested. THis is different from black-box testing because we are considering the implementation, not just the interface.
+
+With white box testing, we want to consider code _coverage_, that is what percentage of _statements_ have been covered by our tests. 
+
+#### Branch Coverage
+
+Branch coverage is a type of white-box testing that considers the _control flow_ of the code. This means that we want to test all possible paths through the code. So for example, for every `if` statement, test the conditions `true` and `false`, and for every loop we test `enters loop` and `does not enter loop`.
+
+#### Conditional Coverage
+
+While we want to catch every true/false case, we also need to consider cases like `if (a > b && b > 0)`, we need to consider every possible case. 
+
+#### Path Coverage
+
+Path coverage is interested in what percentage of possible paths through our code we have taken. 
+
+### TDD Workflow
+
+
+
+
+
+
+
 ## Reading 05 - Testing ([reading](https://sde-coursepack.github.io/modules/testing/V-and-V/))
 
 ### V&V - Verification and Validation
