@@ -96,7 +96,80 @@ Rate of return - the earnings on savings are called the _rate of return_ or _yie
 
 $$\text{Rate of Return} = \frac{\text{Interest Earned}}{\text{Amount Saved}}$$
 
-Compounding - the yield on your savnigs will usually be greater than the stated interest rate. _COmpounding_ refers to the interest earned that is earned on previously earned interest. 
+Compounding - the yield on your savings will usually be greater than the stated interest rate. _Compounding_ refers to the interest earned that is earned on previously earned interest. 
+
+The more frequently compounding occurs, the higher your rate ofe return will be. To calculate the effective rate of return, use the following formula:
+
+$$\text{Effective Rate of Return} = \left(1 + \frac{\text{Stated Interest Rate}}{\text{Number of Compounding Periods}}\right)^{\text{Number of Compounding Periods}} - 1$$
+
+Truth in savings - the _Truth In Savings Law_ requires financial institutions to provide information about:
+1. fees on deposit accounts
+1. interest rates
+1. annual percentage yield (APY)
+1. other terms/conditions
+
+This law defines the _annual percentage yield_ as the percentage rate expressing he total amount of interest that would be received on a $100 deposit based on the annual rate and frequency of compounding for a 1-year period.
+
+$$\text{APY} = 100 [(1 + \text{Interest/Principal}^{\frac{365}{\text{Days in term}}})-1]$$
+
+* Principal - amount of funds on deposit
+* Interest - dollar amount earned during the term on the principal
+* Days in term - number of days over which interest is earned. 
+
+When the days of the term is 365 or the account doesn't have a stated maturity, the APY formula is just
+
+$$APY = 100(\text{Interest/Principal})$$
+
+Inflation - the reata of return your earn should be compared with the inflation rate. For example, at a time when inflation was over 10%, people earning 5-6% were experiencing a loss in buying power. 
+
+Tax Considerations - taxes reduce interest on earned savings. For example, a 10% return for a saver in a 24% bracket means a real return of 7.6%. 
+* To calculate:
+    1. Determine your top tax bracket for federal income taxes
+    1. Subtract this rate, expressed as a decimal, from 1.0
+    1. Multiply the result by the yield on your savings account
+    1. This number expressed as a percentage is your after-tax rate of return.
+
+Safety - Savings accounts at every bank are insured by the FDIC to prevent a loss of money due to bank failure. Credit unions are insured by the NCUA. The FDIC insures up to 250k per depositor per insured financial institution. FDIC and NCUA also provide deposit insurance for retirement accounts. 
+
+### LO5-5: Payment Methods
+
+Payment Alternatives:
+1. Digital - debit cards, online payments, prepaid cards, phones
+1. Checking Accounts - traditional checking acccounts, checkless checking accounts
+1. Other - certified checks, cashier's checks, money orders, travelers checks. 
+
+Digital Payments:
+1. Debit Cards - Processes transactions from your account. Can be used with your signature or PIN.
+1. Online Payments - Banks and online companies serve as third parties to process payments. 
+1. Mobile Transfers - Mobile transfers require registering a credit/debit card. P2P payments are also available.
+1. Prepaid Cards - used for services and can be reloaded.
+1. Digital Wallet - Smart cards can store data and your banking transactions. You can use digital wallets to make contactless transactions.
+
+Checking Accounts
+1. Traditional Checking Accounts
+    * _regular checking accounts_ - usually have a monthly service charge and a minimum balance requirement.
+    * _interest-earning checking accounts_ - pay interest on the balance in the account. If it goes below an amount you won't get your interest. a _share draft account_ is an interest-earning checking account at a credit union. 
+    * _Activity Accounts_ - charge a fee for each check written/deposit but do not require minimum balance. 
+1. Special Feature Checking accounts:
+    * Targeted group accounts for seniors, adults, or military personnel
+    * Rewards checking accounts - earn points, cash back, or a bonus interest rate
+    * Premier checking accounts - offer several services for a monthly fee or a high min balance. 
+1. Checkless checking accounts - no paper checks, all transactions through debit card, online, or mobile.
+
+To evaluate a checking account...:
+- Restrictions - minimum balance, fees, etc.
+- Fes and Charges - consider monthly service charges, per-check fees, ATM fees, overdraft fees, etc.
+- Interest - interest rate, frequency of compounding, interest computation method. 
+- other services. _overdraft protection_
+
+Managing your Checking Account
+1. getting a checking account - determine if you want an _individual_ or _joint_ account. Get a signature card. 
+1. Make deposits. Deposit tickets list cash and check amounts being deposited. Each check requires an endorsement: (a) a blank endorsement, just your signature, a (b) restrictive endorsement, consisting of the words "for deposit only", (c) a special endorsement, allowing the transfer of a check to someone else, and (d) a remote deposit capture deposits a check with an app photo. 
+1. writing checks - record ate, write name of person/org receiving payment, record the check amount in figures, write the check amount in words, sign the check, note reason for payment. 
+1. Reconciling your checking account - you can access your _bank statement_ and prepare a _bank reconciliation statement_ to compare your records with the bank's records.
+
+
+
 
 
 
