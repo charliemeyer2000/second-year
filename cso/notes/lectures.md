@@ -9,6 +9,10 @@ location: Gilmer Hall 301
 
 Note that all slides annotated by me are in GoodNotes. 
 
+## Meeting 7 - clocks, registers ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/8-clocks-hw.pdf))
+
+
+
 ## Meeting 6 - Floating Point ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/6-floating-point.pdf))
 
 ## Meeting 5 - Bitwise ([empty slides](https://researcher111.github.io/uva-cso1-F23-DG/lectures/5-bitwise-fp.pdf))
