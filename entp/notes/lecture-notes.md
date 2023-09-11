@@ -3,6 +3,10 @@ title: Lecture Notes
 author: Charlie Meyer
 ---
 
+## Day like 9 - 9 memory hw
+
+
+
 # Lecture Notes
 
 ## Day like 6

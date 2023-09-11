@@ -1,12 +1,51 @@
 # Summer Notes & Practice for CSO
 
-Table of Contents
+<!-- Table of Contents
 
 - [Meetings 1 - 3](#meetings-1-3)
     - [Introduction](#introduction)
     - [Boolean Algebra](#boolean-algebra)
         - [Reading](#booleans---reading)
-        - [Slides](#boolean-algebra---slides)
+        - [Slides](#boolean-algebra---slides) -->
+
+## Components of Digital Computers
+
+### Current, Voltage, Power, Head
+
+* **Current**: Rate at which electrons flow. 
+* **Voltage**: the desire electrons to have flow; the electrical pressure (if you will). 1 is "high voltage" and 0 is "low voltage."
+* **Power**: $\text{current} \times \text{voltage}$. It does not require power to maintain voltage without current, nor to maintain current without voltage.
+* **heat**: the result of power dissipation. 
+
+### Multi-bit "wire's" and "gates"
+
+A multi-bit extension of a wire is just a cluster of wires/wires that run next to each other. Eight wires running next to each other can transmit 8 bits of information in their voltages. 
+
+Note that it is almost never the case that all of the gates on all of the individual wires change at the same time at the same speed. That means that there are instances where outputs of logical components cannot be trusted for a value until completion. You can see this example with a 4-bit adder: when adding `0b0001` and `0b0110`, you get `0b0111`. Now change the second input to `0b0111`, there will be a moment in time where the adder is outputting `0b0100`, even though this is not correct. 
+
+### Registers
+
+Registers have one input and output, as well as a single-bit input or the clock. They store a value inside of them, and most of the time they completely ignore their input and output that internal value. 
+
+Clock speed is measured in Hertz, which is the number of times per second that the clock changes from 0 to 1 and back to 0. Faster clocks mean more changes per second -> more power -> more heat. To overcome the limit on effective clock speed, we can make chips smaller and reduce the work done between each clock cycle (pipelining).
+
+### Memory
+
+Memory is a huge array/list of bytes, like a giant mux in front of a huge bank of registers. Processors interact w/memory through **loads** and **stores**. In a _store_, the processor sends it an address and one or more bytes and it changes the contents of the memory at those addresses. In a _load_, the processor sends it an address and a number of bytes and it sends back that many bytes from that address and the next few addresses.
+
+### Code-to-Hardware Compilation
+
+The process of compiling code to hardware is a multi-step process. There is software like VHDL and Verilog. 
+
+1. Variables and assignment - a multi-bit of wires can be named as a variable but only named once. 
+1. Operators - operators allow us to combine variables and constants to create new variables.
+1. Registers/Memory - Registers are used to implement any type of circular dependency or change over time. Each register has an input/output, and with very few exceptions all computations register inputs from register outputs. 
+1. Register-Transfer Level Coding - Each clock cycle runs as follows:
+    * The clock signal goes low, causing registers to take their current inputs into their internal storage
+    * The registers output their new values
+    * The logic, with new inputs, begins to adjust, new values rippling through the gates until eventually a steady state is reached
+    * Outputs of the logic are inputs to registers. 
+    * Next rising edge causes everything to repeat. 
 
 ## Meetings 1-3
 

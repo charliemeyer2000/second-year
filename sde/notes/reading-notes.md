@@ -6,6 +6,8 @@ date: Depends
 
 # Reading Notes
 
+## Reading 07 - 
+
 ## Reading 06 - Testing([reading](https://sde-coursepack.github.io/modules/testing/Test-Plans/))
 
 ### Test Plans
