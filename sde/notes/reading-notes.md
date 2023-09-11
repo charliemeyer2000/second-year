@@ -6,7 +6,76 @@ date: Depends
 
 # Reading Notes
 
-## Reading 07 - 
+## Reading 07 - Defensive Programming ([reading](https://sde-coursepack.github.io/modules/refactoring/Defensive-Programming/))
+
+### Defensive Programming
+
+Defensiveness considers things that could fail to no fault of the developer: 
+1. The user may not include any command line arguments
+1. The user may link to an invalid file
+1. The user may have errors in their input file
+1. The user may have the file open in excel, which may cause errors
+
+With respect to these eros, the users should never see a programmer error, and should be informed when they make a user error with a clear description of what went wrong.
+
+#### Client Classes
+
+We have to consider our _clients_ and can make a _client class_ that uses our code, and ensures that (1) the client uses the class as intended (2) they will be made aware if they aren't using it properly (3) our class cannot be incorrectly used by the client to create an erroneous state. 
+
+#### Rollback and Throw
+
+If an erroneous state is detected, we can _rollback_ any changes the method made _before_ throwing an exception. 
+
+#### Assert
+
+the `assert` keyword throws an assertionError if the statement is false. This is useful for checking preconditions and postconditions. Note that you must allow AssertionErrors by adding the `-ea` flag to your run-configs. 
+
+### Exceptions Best Practices
+
+Throw exceptions when the return value would not make sense given the inputs. For example, you'd throw an exception in an `isPrime()` function if the user passes in a 0/negative value. However, if you have a `try/catch` block, don't throw exceptions if yuo're just trying to return a `true/false` output. 
+
+You'd use try-catch blocks if you want to allow the user to continue using the program even if there is an error.
+
+#### Exceptions you Can't handle
+
+There are instances for a function where you don't even need to catch the exception. For example, if you wanted to execute a `reverseString()` method, there's no need to catch a nullPointerException because you can't do anything about it.
+
+#### Exception Types
+
+1. Checked Exceptions - exceptions that Java forces you to either handle or throw. 
+1. Unchecked Exceptions - exceptions that Java does not force you to handle or throw.
+
+#### CustomExceptions
+
+Writing custom exceptions is a way to **communicate intent** as to why an exception occurred. 
+
+### Testing With Exceptions
+
+We can use `assertThrows` to test that an exception is thrown.
+
+```java
+    @Test
+    void testGetThrowsException() {
+        MySortedList myList = new MySortedList();
+        assertThrows(IndexOutOfBoundsException.class,
+                () -> myList.get(0));
+    }
+```
+
+#### Rolling Back
+
+We must make sure that when exceptions are thrown, we do not create any unintended side effects. 
+
+
+
+
+
+
+
+
+
+
+
 
 ## Reading 06 - Testing([reading](https://sde-coursepack.github.io/modules/testing/Test-Plans/))
 
