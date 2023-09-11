@@ -2,10 +2,11 @@
 title: Lecture Notes
 author: Charlie Meyer
 ---
+## Day 10
+
+
 
 ## Day like 9 - 9 memory hw
-
-
 
 # Lecture Notes
 
@@ -24,8 +25,6 @@ author: Charlie Meyer
 - High highs, low lows. 
 - Care about not having a boss! (literally me though)
 - Find funds anywhere you can (friends, family, etc.)
-
-
 
 ## Day 2
 

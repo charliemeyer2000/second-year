@@ -6,6 +6,105 @@ title: Readings
 
 Personal Finance with Connect 14th edition, through the UVA Canvas inclusive access program. 
 
+## [Chapter 6: Introduction to Consumer Credit](https://canvas.its.virginia.edu/courses/74463/assignments/368355)
+
+### LO6-1: What is Consumer Credit
+
+**Credit** is an arrangement to receive cash/goods/services now and pay for them in the future. **consumer credit** refers to the use of credit for personal needs (except a home mortgage) by individuals/families. 
+
+Consumers usually have three alternatives in financing purchases - draw on savings, use present earnings, or borrow against their _expected_ future earnings. 
+
+Credit can be used to buy stuff. College students are primary targets for credit card companies. Using credit increase the amount of money a person can spend to purchase goods/services now. However, make sure to consider the cost of credit. 
+
+Credit cards permit the purchase of goods even when funds are low. They are also more efficient with returns in stores. They also are safer, as they let you shop and travel without carrying a large amount of cash. Some credit cards offer a "float" time in which you can pay off your balance without interest. Others offer cash back and other benefits, as well. Other benefits include death/injury insurance up to 250k, rental car insurance, roadside assistance, and extended warranties.
+
+Despite the benefits, credit can be dangerous as it is very easy to overspend. Note that your credit does not increase your total purchasing power. Credit purchases are paid out of future income. 
+
+### LO6-2: Types of Credit
+
+1. **close ended credit**: Pay back one-time loans in a specific period of time in equal amounts. 
+    * Mortgage loans
+    * Automobile loans
+    * installment loans
+1. **open-ended credit**: 
+    * Cards issued by stores/banks/cards
+    * Travel/entertainment cards
+    * Overdraft protection
+
+Closed-End Credit
+
+Used for a specific purpose and involves a specified amount. The borrower must repay the amount of the loan in a specified number of equal payments. The interest rate is usually fixed. Generally contains an agreement/contract with the terms. Three most common types are (1) installment sales credit (loan that allows you to receive merchandise and repay over a period of time) (2) installment cash credit (direct loan of money with no down payment and a payback plan) and (3) single lump-sum credit (loan that must be repaid in total on a day). 
+
+Open-End (revolving) credit
+
+Such as using your credit card. a _line of credit_ is a maximum dollar amount of credit th lender has available to you. You may have to pay interest (a periodic charge for the use of credit) or other finance charges. _incidental credit_ is credit arrangement that has no extra costs and no specific repayment plan. Banks extend _revolving check credit_ which is a pre-arranged loan for a specified amount that you can use by writing a special check (also called a _bank line of credit_).
+
+Credit cards are super popular but only less than half pay off their balances in full each month. These cardholders are called _convenience users_. The rest are called _revolvers_ who pay only a portion of the balance each month. _co-branding_ is the practice of using a credit card with a business to offer points to a good/service. 
+
+Stored-value cards, debit cards, and t&e cards are not ways to get credit.
+
+Home equity loans are based on the difference between the current market value of your home and the amount you still owe on your mortgage. You can borrow up to 100k or more on your home. Home equity loans are generally set up as a revolving line of credit.
+
+Don't be stupid with your credit cards, be safe, avoid phishing, etc. 
+
+### LO6-3: Measuring your Credit Capacity
+
+Before taking out a loan, make sure that you meet all your essential expenses. 
+
+General rules of credit capacity:
+* Debt payments to income ratio - calculated by dividing your monthly debt patens (not including house payments) by your net monthly income.
+
+![calculate debt payments to income ratio](images/debt-payments-to-income.png)
+
+* Debt to equity ratio - calculated by dividing total liabilities by your net worth. Do not include your home value/its mortgage value. $\text{Ratio} = \frac{\text{Liabilities}}{\text{Net worth}}$
+* If you are cosigning a loan, make sure you understand what that involves. Creditors are required to give you a notice to help explain your obligations. 
+* Maintain your credit - credit experience can effect your job/ability to get insurance
+
+
+**credit bureaus** or consumer reporting agencies (CRAs) collect credit and other information about consumers. 
+
+Fair Credit Reporting: the _Fair Credit Reporting Act_ regulates the use of credit reports which requires the deletion of obsolete information and gives consumers access to their files. You can only get a creidt report to properly identified persons for approved purposes. Furthermore, it may only be reported for 7 years. 
+
+### LO6-4: Applying for Credit
+
+the Equal Credit Opportunity Acts starts all credit applicants on the same footing. Creditors are looking for character, capacity, capital, collateral, and conditions.
+* Character - will you repay the loan? (borrower's attitude toward credit obligations)
+* Capacity - can you repay the loan? (financial ability to meet credit obligations)
+* Capital - what are your assets/net worth? (assets/net worth)
+* Collateral - what if yuo don't repay the loan? (asset that you pledge to a financial institution to obtain a loan)
+* Conditions - what general economic conditions affect your repayment of the loans?
+
+If you are old enough to sign a legally binding contract, you cannot be turned down or decreased in credit because of age, you cannot be denied credit because of using Social Security. ECOA covers application for mortgage or a home improvement loan, bans discrimination on the obvious stuff. 
+
+FICO Credit Store - number between 300 - 850 that rates how risky a borrower is. 
+
+### LO6-5: Avoiding/Correcting Credit Mistakes
+
+Best way to maintain credit is to repay debts on time. the Fair Credit Billing Act sets procedures for correcting billing mistakes, refusing to make credit card payments on defective goods. In case of billing error, notify the creditor in _writing_ within 60 days or after the bill was mailed. Creditor must acknowledge in 30 days.
+
+Your credit rating cannot be threatened during a billing dispute. The FCBA ensures that you may withhold payment on any damaged or shoddy goods or poor services that you have purchased with a credit card. 
+
+If you get your identity stolen, call fraud departments of Equifax, Experian, and TransUnion. Contact creditors for any accounts that have been tampered with/fraudulently opened, and file a police report. 
+
+### LO6-6: Complaining about Consumer Credit
+
+If you have a complaint with a creditor, contact them directly. If you have a complaint about a bank, get advice from the Federal Reserve System. 
+
+Protection under Consumer Credit Laws:
+1. truth in lending and consumer leasing acts - if a credit fails to give information/inaccurate information, you may sue for damages
+1. Equal credit opportunity act - sue for damages if you think you've been discriminated against.
+1. Fair Credit Billing Act - may sue credit reporting agency or creditor for violating rules regarding access to your credit records and corrections of errors in your credit file.
+1. Consider Credit Reporting Reform Act - places burden of proof for accurate credit information on the credit reporting agency.
+1. Credit Card Accountability, Responsibility ,and Disclosure Act of 2009 - places restrictions on credit card lending and eliminates certain fees.
+
+
+
+
+
+
+
+
+
 ## [Chatper 5: Financial Services - Savings Plans and Payment Methods](https://canvas.its.virginia.edu/courses/74463/assignments/368364?module_item_id=843064)
 
 ### LO5-1: Financial Services for Financial Planning
