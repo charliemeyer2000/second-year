@@ -6,6 +6,169 @@ location: Comm School 258
 
 # Lecture Notes
 
+# Day 6
+
+### US Income Tax Law
+
+* Progressive
+* 5 filing status categories
+* 7 tax brackets
+* More than 500 forms
+* 17,000 pages of laws and regulations
+
+### Taxable Income: Standard Deduction
+
+* Standard deduction vs. itemized deduction - pick one which is more, and use that one.
+
+### Changes to Standard Deduction from TCJA (Tax Cut Jobs Act)
+
+* 2017: $6,350 for single filers, $12,700 for married filing jointly. If you were married with children, you could claim a deduction for each child.
+* Now, it's $12,000 for single filers, $24,000 for married filing jointly, no matter how many kids you have. 
+* TCJA - attempt to make it possible for more people to not have to file their itemized deductions and take the easy standard deduction.
+
+### Payroll Takes
+
+2023 Fica Rate (Social Security + Medicare withholding):
+* Employee: 7.65%
+* Employer: 7.65%
+* Self-Employed: 15.3%
+
+Note that no self-employment tax is payable if annual net earnings are less than $400. 
+
+### ACA (Affordable Care Act)
+
+Additional Medicare Tax of 0.9% on over 250k to married taxpayers who file jointly, married taxpayers who file separately, 125k, single and all other taxpayers, 200k. 
+
+
+### What's your tax rate? 
+
+* Marginal rate
+* Effective (average/blended) rate
+
+### Paying Federal Tax
+
+1. Witholding:
+    * Employers withold federal and state income tax from employee paychecks
+    * From W-4 (Employee's Withholding Allowance Certificate)
+    * Bonuses
+    * 401(k) contributions
+    * Winnings
+    * penalties for over/under paying/witholding:
+        * Too much - interest free loan to US treasury
+        * Too little - interest owed to the US Treasury
+        * Too late - penalty of 5% or more
+        * Not paying at all - penalties of 25 - 100%
+1. Quarterly Estimated Taxes
+    * For income not subject to withholding (self-employed income, interest, dividends, rents, alimony, unemployment, social security benefits, capital gains)
+    * Form 1040 ES (Estimated Tax for Individuals)
+
+### Income Taxes & Returns
+
+* Taxes must be paid in full by April 15 of the following year. 
+* How? To file a tax return, self-reporting:
+    * Income, deductions, taxes owed, taxes paid, net due
+* 6-month extension available to file (not pay). 
+
+### Are you an Employee?
+
+* W2 Employee
+    * If you are an employee, your employer is legally required to:
+        * Collect taxes withheld from wages
+        * Federal income tax, employees share of FICA/social security
+    * Pay employer's share of FICA 
+* 1099 Contractor
+    * If you are an independent contractor, you are:
+        * self employed, subject to FICA taxes, have no taxes withheld from pay, must set aside money from taxes, must pay estimated taxes quarterly.
+
+### Common Types of income/deductions
+
+* Income
+    * salary, wages, tips, earnings - W2
+    * Dividends - 1099-DIV
+    * interest - 1099-INT
+    * capital gains - 1099-B
+    * non-employee compensation - 1099-MISC
+    * Distributions from pensions, retirement accounts, 529 - 1099-R and 1099-Q
+* Deductions
+    * Charitable donations (cash, property, mileage)
+    * Medical expenses > 10% of AGI
+    * State and local taxes (SALT) <= $10k
+    * interest on mortgage <= $750k - 1098
+    * Student loan interest paid - 1098-E
+
+### Filing your return
+
+* Filing Forms:
+    * 1040EZ (1040-NR-EZ)
+    * 1040A
+    * 1040 (1040NR)
+* W2 from employer(s)
+* 1099s from banks, other institutions
+* Receipts (charitable gifts, etc).
+
+### Forms
+
+1. Form 1098 - Mortgage Interest Statement
+1. Retirement Distribution - 1099-R
+
+### Tax Deductions vs. Credits
+
+* Tax deductions - reduce taxable income (benefit people in highest tax brackets the most)
+* Tax credits - reduce taxes owed (low and high earners benefit equally, save dollar-per-dollar)
+
+### Completing a W4
+
+* You today:
+    * single/no dependents
+    * charitable contributions
+    * State and local taxes
+    * Student loan interest paid during the tax year
+* You in the future:
+    * Married/2 children
+    * Charitable donations
+    * State/local taxes
+    * Home mortgage
+    * property taxes
+
+### Investment Income
+
+* INerts
+* Dividends
+    * Qualified
+    * non-qualified
+* Capital Gains
+    * Short-term 
+    * Long-term (held for more than a year)
+
+### Dividends
+
+* **qualified**:
+    * Paid during the tax year from either domestic/qualified foreign corporation
+    * Holding period > 60 days during 120-day period beginning 60 days before the ex-dividend rate
+    * foreign corporations qualify if incorporated in a US possession or eligible for benefits of US tax treaty.
+* **Non-Qualified**:
+    * money-market funds
+    * IRAs
+    * REITs
+    * Employee Stock Options
+
+### Net-Investment Tax
+
+* 3.8% tax on net investment income for individuals, estates, and trusts if you modified gross adjusted income is greater than $200k. (changes depending on your filing status).
+
+### Measuring Income
+
+* Gross Income
+* Taxable Income
+* Adjusted Gross Income (AGI)
+* Modified Adjusted Gross Income (MAGI) - introduced because of the ACA.
+
+### Tax Cuts and Jobs Act
+
+High US general and state corporate tax rates make it difficult for businesses to compete internationally. While other countries are reducing corporate taxes, the uS is virtually tied with Japan for the highest and has maintained rates significantly higher than the OECD average.
+
+
+
 # Day 5
 
 ## Statements
@@ -97,7 +260,18 @@ Consider that if you are in teh 24% tax bracket, a 30k tuition is equivalent to 
 * $17,000 pages of laws and regulations.
 * standard deduction vs. itemized deduction -> choose the bigger one!
 
+### Takeaways
 
+* American workers pay:
+    * Payroll takes (7.65%)
+    * Federal income tax (10-37%)
+    * State and local taxes
+* Understand & employ:
+    * marginal/effective tax rate
+    * standard/itemized deductions
+    * tax dependency (qualifying child/relative, if you are a dependent and have not provided more than half of your own support)
+* tax credits > tax deductions
+* Taxable income = gross income - adjustments - deductions
 
 
 
