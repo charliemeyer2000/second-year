@@ -3,6 +3,46 @@ title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+# Lecture 7 - Exceptions & Defensive Programming (no slides, see example code)
+
+## Testing Types
+
+Example: Consider a function called `nextDay` that takes in an `int year`, `int month` and `int day` and returns an `int[]` of the next day. 
+
+1. Equivalence - "this is a usual test case. basic operations."
+    * `nextDay(2023, 9, 12)` -> `[2023, 9, 13]`
+1. Boundary - 
+    * `nextDay(2023, 9, 30)` -> `[2023, 10, 1]`
+    * Leap year
+    * new year
+1. Exception
+    * `nextDay(2023, 9, 31)` -> `IllegalArgumentException`
+
+
+### Exceptions
+
+Exceptions mean "exceptional event." 
+* That is, our program cannot handle a certain condition, and so an exception is thrown
+* Exception must either be handled or the program crashes.
+
+Ex:
+* `Integer.parseInt("Five") -> NumberFormatException`
+
+### Checked vs. Unchecked Exceptions
+
+* Checked - compiler forces you to handle the exception. These exceptions happen when you're fetching data from external sources.
+    * Ex: `FileNotFound`, `IOException`
+    * Don't just make the method `throws Exception` - that's lazy and bad practice, and requires you to make the caller of that method handle the exception which could cascade into a lot of `throws Exception` statements for the caller if you're layers deep.
+* Unchecked - compiler does not force you to handle the exception. 
+    * Ex: `IllegalArgumentException`, `NullPointerException`
+
+
+
+
+
+
+
+
 # Lecture 6 - Test Plans & Strategies ([slides](https://drive.google.com/file/d/1AdOHBPjC0IlxoXd5y1r9Hi6BG4gz4uDw/view?usp=drive_link))
 
 ## Announcements
