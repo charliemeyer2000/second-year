@@ -3,6 +3,99 @@ title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+# Lecture 8 - Analyzability, Code Quality, Refactoring ([slides](https://drive.google.com/file/d/1rxvHVGJpBKdXy-nsj9RXuLrw0u1rNGkF/view?usp=drive_link))
+
+## Analyzability
+
+* Other people have to read your code:
+    * Teammates, TAs, office hours, etc.
+* You will read your code far more times than you will write it
+    * You won't remember what you were thinking when you wrote it.
+
+When do we need analyzability? 
+* Vital for maintenance:
+    * Debugging
+    * Program comprehension
+    * Concept location
+* Every time you:
+    * Bug fix
+    * Improve/optimize
+    * Add new features
+* Whenever you do maintenance, you start by reading the code!
+
+### Code Style
+
+* Good style is important:
+    * Using consistent style makes code easier to read
+    * Repeating similar patterns means learning one part of a codebase prepares you for other parts
+* Even a "bad" code style, if consistent, is better than no style at all
+    * I'd rather be on a team that does something I don't like as a rule than a team with no rules
+* However, no code style leads to some useless debates. 
+
+### Readability vs. Understandability
+
+* Readability: 
+    * The ease that readers can identify and different tokens and their _syntactic_ meaning
+    * Understands the mechanics of the code
+* Understandability:
+    * The ease with which a reader can identify the _semantic_ meaning of the code.
+    * Understand why the code exists, what it does, etc. 
+
+#### Readability
+
+* Readability refers to how easy it is to derive the syntactic meaning from code
+* What affects readability:
+    * Whitespace usage
+    * identifier length
+    * Use of dictionary words
+    * Variable between identifiers (i.e. appleCount vs. applesCount)
+
+
+#### Understandability
+
+* Readability is necessary, but _insufficient_ requirement for understandable code. 
+    * Readable code is not necessarily understandable. 
+* Understandability can be improved by:
+    * Meaningful identifier names
+    * comments and documentation can help but aren't a substitute for understandable code.
+    * Adhere to naming conventions, i.e. `CONSTANT_VARIABLE` or `camelCase`. 
+
+#### Conventions
+
+* Avoid single-letter variable names
+    * Only use stuff like i and j in a for loop, but nowhere else. 
+* Variable names should be:
+    * camelCase - never capitalize a variable, or it will look a class name
+    * Exception - PROGRAM_CONSTANTS - all capitalized, underscores between words
+* Focus on communicating **high level intent**
+* Avoid jargon when possible, abbreviate
+* Units in variable names - `distanceFeet` is better than `distance`
+
+#### Informative Comments
+
+* Comments shouldn't explain how code works, the code should explain itself. Comments should exist on code for stuff like regex or other things that cannot be easily understood.
+
+#### Obstacles to Understandability
+
+* Complexity:
+    * Keep functions shorter by extracting sub-methods
+        * decompose long functions into chains of shorter functions
+    * try to make code readable rather than "clever." 
+* Structural
+    * the number of paths through code shouldn't be too large
+        * Try to avoid nesting loops by using method extraction
+        * When possible, limit nested if statements
+* Number of identifiers
+    * Too many identifiers can be confusing
+
+#### Rules for Writing Functions
+
+* Functions should be small
+    * Functions are good at doing one thing, bad at doing multiple things.
+* Functions should do one thing, well, and only!
+* 
+
+
 # Lecture 7 - Exceptions & Defensive Programming (no slides, see example code)
 
 ## Testing Types

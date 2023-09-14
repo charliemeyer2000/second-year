@@ -8,6 +8,47 @@
         - [Reading](#booleans---reading)
         - [Slides](#boolean-algebra---slides) -->
 
+## [Designing a Processor](https://researcher111.github.io/uva-cso1-F23-DG/readings/isa.html)
+
+### Von Neumann Architecture
+
+* the _memory_ unit acts like an array/list of numbers. Given an address, (an index to the array, per se), it gives back the number stored at that address.
+* The _control unit_ has several parts:
+    * a _program counter_ (instruction pointer), a register that holds the address where the next instruction is found in memory
+    * _intstruction register_ that holds the instruction currently being executed
+    * logic to adjust the program counter to point to the next instruction
+    * logic to control the ALU
+* _arithmetic logic unit_ (ALU) is:
+    * A small number of _program registers_ for storing operands and results
+    * A set of logical gates that perform basic arithmetic operations
+
+### Instruction-Set Architecture
+
+The idea of Instruction-Set Architecture (ISA) is:
+1. Moves (corresponding to assignment of operators in most programming languages)
+    * Like the `=` operator. This takes a value which exists in one place and put it into another place. 
+1. Maths (Mathematical operations)
+    * implementation of +, -, *, /, %, etc. alongside comparators/boolean operators
+1. jumps (corresponding to control constructs in most programming languages)
+    * include loops, conditionals.
+
+### Encoding Instructions
+
+Example: SUppose we want tehse four operations:
+
+1. Move a literal value into a register
+1. Jump to a specific address if a given register is non-zero
+1. Move into a register a value found at a memory address stored in another register
+1. Move a value from a register into a memory address stored in another register
+1. `a = a op b` where `op` is one of plus, minus, times, and less-than, `a` and `b` are registers.
+
+That's 8 operations, so we need 3 bits to encode which is which. We also need 4 bits to encode up to 2 registers and 8 more to encode a literal value (15 bits in total). 
+
+Look up the high-order 3 bits of the first byte on the following table
+
+
+
+
 ## Components of Digital Computers
 
 ### Current, Voltage, Power, Head

@@ -6,6 +6,217 @@ date: Depends
 
 # Reading Notes
 
+## Reading 08 - Code Quality, Refactoring, Method Extraction ([readings](https://docs.google.com/document/d/1V2Nf22FrBFdPgAxJ2IqzUHad3nYL2jRL1mJ_F-OHSJw/edit))
+
+### Analyzability
+
+Analyzability breaks down into two parts:
+* Readability - to what extend we can read and understand the code's syntax
+* Understandability - To what extend we read and understand the code's semantics.
+
+#### Readability
+
+- Spacing: 
+    * indentation, line breaks, and other things make code more readable without any syntactic changes.
+- Identifier Names
+    * Variable names should be made up of human-readable and human-pronounceable words.
+    * Variable names should be distinct from each other that they can be told apart from each other at a glance.
+
+#### Understandability
+
+Understandability is the measure of the extend to which the _semantics_ or meaning/intent, of the code can be understood. Readability is a _necessary but insufficient condition_ for **understandability**. That is, our code **cannot** be understandable if it isn't readable. 
+
+- Names that communicate intent: add spacing in names
+- Use enums or final constants for "magic numbers" (random indices, etc).
+- Encapsulation:
+    * Hide implementation details.
+    * As long as the _interface_ of a function remains unchanged, classes will be unaffected if we change the inner workings of a function/that class.
+
+#### Conclusions
+
+1. Analyzability is vital and helps us understnad code while allowing it to be reusable and maintainable.
+1. Readability is a part of analyzability that relates to being able to correctly interpret the syntax of the software.
+1. Understadability is the part of analyzability that relates to understand the sematics, or the _high level_ meaning of the code.
+
+### Code Quality/"Good Code"
+
+#### Software Entropy
+
+this means that as we add more features to our software, it becomes more complex and harder to maintain.
+
+The problem is that you sometimes don't spend time cleaning-up after you finish a task. By not doing this, you accrue **technical debt** which then accrues interest. As our software builds technical debt, it gets harder and harder to edit. 
+
+The best time to improve your code is after you write it. The second best time is now. The worst time is "later," as "later equals never." 
+
+Note that you always read more than you write code. Thus, there is no trade-off of quality vs speed in software development. Writing clean code pays off the very next time you have to re-read your code. 
+
+### Code Smells
+
+A **code smell** refers to problems within the design and structure of the underlying code in software. Code smells aren't bugs/defects, but problems with _internal quality_ like manageability, readability, and maintainability, etc. 
+
+Common Mistakes:
+1. Large/Long methods - Functions should be doing one thing and one thing only. If they are long with multiple loops/conditionals, the function is probably doing several things. 
+1. Large Classes
+    * Don't put everything inside of Main.java. 
+    * A class can be hard to understand if it has too many fields that have not much to do with each other, the class has too many methods that do wildly different things, and the class has _thousands_ of lines of code
+1. Long Parameter List - can lose argument order for functions with many inputs. It's easier to make multiple monadic calls. 
+    * Monadic - 1 argument function
+    * Dyadic - 2 argument function
+    * Triadic - 3 argument function
+1. Boolean parameters - if you have a boolean parameter, you should probably have two separate functions.
+    * You can also replace booleans with polymorphism - you can have two different classes that extend the same class, and then you can call the same method on both classes and they will do different things. So, for example yo could have an `InterestExemptStudent` and a `Student` rather than a boolean `isInterestExempt`.
+1. Primitive Obsessions - A lot of fields in a class can create a lot of bloat, especially if you're already writing 2 methods (a getter and a setter) for each field. 
+1. Duplicate Code - if you are copying and pasting code, you should probably make a function. We want to be **DRY** (Don't Repeat Yourself) rather than **WET** (Write Everything Twice).
+1. Message Chains - if you have a chain of method calls like `a.getB().getC().getD()`, you can break that up into multiple lines. It's okay, less lines of code doesn't always mean it's better.
+
+## Refactoring
+
+* **refactoring** is the process of making changes to the code to improve the **internal** software quality without making changes to the functionality of the software. 
+
+### Code Quality
+
+* No one writes easily understandable/changeable code the first time. 
+* Refactoring code ensures that we don't change functionality but internal maintainability. 
+* Tests are the scaffolding that allow us to remodel our code. 
+
+Some ways to improve quality:
+1. Extract constnats - use constant values rather than "magic numbers" 
+1. Renaming identifiers - variables/functions/constants can  be renamed. Don't use find-and-replace, because you might change something you didn't want to.
+1. Renaming classes
+1. Moving classes between packages - can click and drag in the project explorer. Make sure to move your `[ClassName]Test.java` file accordingly, too.
+1. Change signature - 
+1. Replace Array with Object - if you have an array of values, you can make a class that holds those values and then make an array of that class.
+1. Inline variable - if you have something that is a boolean value, don't return true/false. just return the boolean value.
+1. Abstract conditional logic - if you have a bunch of conditionals, you can make a function that returns a boolean value and then use that function in your conditionals.
+1. Replace error code with exception - rather than returning -1, throw an exception.
+1. Replace exception with optionals - the Java `Optional<T>` class is useful for describing a value that may or may not be present. Optionals allow us to communicate syntactically that a method may either return a value or not.
+1. Replace null with optionals - if you have a null value, you can use optionals instead.
+
+## Extract Method
+
+### Breaking up Big Methods
+
+Functions do one thing and one thing only!
+
+### Well-Written Prose
+
+Well-written prose is easy to read and understand. It has a clear structure, and each paragraph has a clear purpose.
+
+## Duplicate Code and Clean Test
+
+### Clean Testing
+
+Here's a Library class:
+
+```java
+public class Library {
+    public static final int MAX_BOOKS_PER_PATRON = 3;
+
+    private Map<Book, Integer> bookCopies;
+    private List<Patron> patrons;
+
+    public Library(Map<Book, Integer> bookCopies, List<Patron> patrons) {
+        this.bookCopies = bookCopies;
+        this.patrons = patrons;
+    }
+
+    public int getNumCopies(Book b) { ... }
+
+    public void addBooks(Book b, int copies) { ... }
+
+    public void checkOut(Patron p, Book b) { ... }
+```
+
+and here is a LibraryTest:
+
+```java
+public class LibraryTest {
+    @Test
+    public void addBooksNewBooksTest() {
+        Map<Book, Integer> testBookCopies = new HashMap<>();
+        List<Patron> testPatronList = new ArrayList<>();
+        Library testLibrary = new Library(testBookCopies, patronList);
+        Book gardensOfTheMoon = new Book(1,
+                "Gardens Of The Moon: Book 1 of Malazan Book of the Fallen",
+                "Steven Erikson");
+
+        testLibrary.addBooks(gardensOfTheMoon, 2);
+
+        assertTrue(testBookCopies.containsKey(gardensOfTheMoon), "Test book not added to Map");
+        assertEquals(2, testBookCopies.get(gardensOfTheMoon), "Incorrect number of copies after add");
+    }
+
+    @Test
+    public void addBooksExistingBooksTest() {
+        Map<Book, Integer> testBookCopies = new HashMap<>();
+        List<Patron> testPatronList = new ArrayList<>();
+        Book gardensOfTheMoon = new Book(1,
+                "Gardens Of The Moon: Book 1 of Malazan Book of the Fallen",
+                "Steven Erikson");
+        Library testLibrary = new Library(testBookCopies, patronList);
+        testBookCopies.put(gardensOfTheMoon, 2);
+
+        testLibrary.addBooks(gardensOfTheMoon, 2);
+        assertTrue(testBookCopies.containsKey(gardensOfTheMoon), "Test book no longer in Map");
+        assertEquals(4, testBookCopies.get(gardensOfTheMoon), "Incorrect number of copies after add");
+    }
+}
+```
+
+This is not good.
+
+### @BeforeEach test setup
+
+We can re-initialize each value at the start of every test using JUnit's @BeforeEach. This tells JUnit to run this function **before each test**. We need to do this because we want to make sure every test run is independent; that is, no single test affects any other. This is b/c we want our tests to fail on their **own** conditions. 
+
+Here's a setup:
+
+```java
+    @BeforeEach
+    public void setupDefaultTestObjects() {
+        testBookCopies = new HashMap<>();
+        testPatronList = new ArrayList<>();
+        testLibrary = new Library(testBookCopies, testPatronList);
+
+        gardensOfTheMoon = new Book(1,"Gardens Of The Moon: Book 1 of Malazan Book of the Fallen", "Steven Erikson");
+
+        testCheckOutList = new ArrayList<>();
+        testPatron = new Patron(12, "John", "Smith", patronCheckedOut);
+    }
+
+```
+and now we can rewrite our test to:
+
+```java
+@Test
+    public void addBooksNewBooksTest() {
+        testLibrary.addBooks(gardensOfTheMoon, 2);
+
+        assertTrue(testBookCopies.containsKey(gardensOfTheMoon), "Test book not added to Map");
+        assertEquals(2, testBookCopies.get(gardensOfTheMoon), "Incorrect number of copies added");
+    }
+```
+
+#### Custom Assertions
+
+We can make our own assertions by refactoring a test, for example:
+
+```java
+    @Test
+    public void addBooksNewBooksTest() {
+        testLibrary.addBooks(gardensOfTheMoon, 2); // add copies of a new book
+
+        assertLibraryHasNCopiesOfBook();
+    }
+    // notice no @Test tag
+    private void assertLibraryHasNCopiesOfBook() {
+        assertTrue(testBookCopies.containsKey(gardensOfTheMoon), "Test book not added to Map");
+        assertEquals(2, testBookCopies.get(gardensOfTheMoon), "Incorrect number of copies added");
+    }
+```
+
+
+
 ## Reading 07 - Defensive Programming ([reading](https://sde-coursepack.github.io/modules/refactoring/Defensive-Programming/))
 
 ### Defensive Programming
