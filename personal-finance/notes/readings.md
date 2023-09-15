@@ -4,6 +4,150 @@ title: Readings
 
 # Readings
 
+## [Chapter 7: Choosing a Source of Credit: The Costs of Credit Alternatives](https://canvas.its.virginia.edu/courses/74463/assignments/368375?module_item_id=843075)
+
+### LO7-1: Sources of Consumer Credit
+
+Avoid credit in two situations:
+1. Do not need or really want a product that will require financing
+1. You can afford to pay it in cash instead. 
+
+What type of loan do you seek? There are two types of credit: closed-ended and open-ended. Installment loans may carry a lower rate, but credit cards are more flexible. 
+
+Inexpensive Loans:
+* Parents/family members. Can be complicated because of family relationships
+* Commercial banks. Offer a variety of loans, interest rate on such loans range from 5-7%. 
+* Financial aid like Stafford Loans
+
+Medium-Priced Loans
+* New-car loans,
+* Borrow from credit unions (can offer same range of consumer loans that banks can). 
+
+Expensive Loans
+* Finance companies - Interest ranges from 8 to 20% and generally lend to ppl who cannot obtain credit from banks/credit unions.
+* Check cashers/finance companies/others make small, short-term high-rate loans called "payday loans" which are extremely expensive. 
+    * Suppose you write a personal check for 115 to borrow $100 for 14 days, the lender holds the check until your next payday, when you redem the check by paying $115 in cash. Your cost of this loan is a $15 finance charge that is a 391% APR
+
+Summary of Major credit Sources:
+
+|Credit Source | Type of Loan | Lending Policies | 
+| --- | --- | --- |
+| Commerical Banks | single-payment loans, personal installment loans, savings account loans, check-creidt loans, credit card loans, second mortgages | Seek customers with established credit, often require collateral, deal with large loans, determine repayment schedules according to the purpose of the loan, vary credit rates according to the type of credit, time period, customer's credit history and security offered. | 
+| Consumer Finance Companies | personal installment loans, second mortgages | often lend to consumers without credit history, often make unsecured loans, rates vary, offer repayment schedules that vary, higher percentage of loans are for small amounts, often charge higher rates than banks. |
+|Credit Unions | Personal installment loans, share  draft-credit plans, credit card loans, second mortgages | lend to members only, make unsecured loans, may require collateral, may require payroll deductions, may submit large loan applications to a committee of members for approval | 
+| Life insurance companies | single-payment or partial-payment loans | lend on cash value of life insurance policy, no date or penalty on repayment, deduct amount owed from value of policy | 
+| federal savings banks | personal installment loans, education/savings account loans, second mortgages | will lend to all credit worthy individuals, have collateral, loan rates depend on size/length of payment. | 
+| Payday loan | short term, immediate cash loans | high interest rates, allow a roll over period with additional fees | 
+| online lenders | single-payment, small loans, short term, high-cost loans | loan applications are completed on website, funds transferred w/direct deposit, can be risky |
+
+### LO7-2: Cost of Credit
+
+_Truth in lending law_ fo '69 made creditors state the cost of borrowing as a dollar amount.
+
+Finance Charge & Annual Percentage Rate
+* **finance charge** is the dollar amount you pay to use credit. It includes interest costs and other service charges.
+* ***Annual percentage rate (APR)** is the percentage of cost (relative cost) of credit on a yearly basis. This is key for comparing costs.
+![APR Calculation](images/apr-calculation.png)
+* To calculate APR, do $r = \frac{2 \times n \times 1}{P(N + 1)}$
+    * $r$ is Approximate APR
+    * $n$ isi the number of payment periods in one year
+    * $I$ is the total dollar cost of credit
+    * $P$ is principal, or net amount of loan
+    * $N$ is the total number of payments scheduled over the life of the loan
+
+Trade Offs:
+* Term versus interest costs - Many people choose longer-term financing because they want smaller monthly payments. Compare wisely. 
+* Render risk versus interest rate - you may prefer financing that requires low fixed payments with a large final payments, or you may prefer a loan with a higher interest rate but no final payment.
+    * Variable interest rate - inters rates can be variable or fixed. Decide which you want. 
+    * Secured loan - if you pledge property/assets as collateral, you'll receive lower interest rate
+    * up-front cash - can get better terms if you pay a larger down payment. You forgo interest that you may earn in a savings account though.
+    * Shorter Term - shorter period of time for which you borrow, smaller chance that something prevents you from repaying/lower risk to lender. 
+
+Calculating cost of Credit
+
+* **simple interest** is computed on principal only and without compounding. Based on amount borrowed (_principal_), rate of interest, and the amount of time for which principal is borrowed. 
+    * $\text{Interest} = \text{Principal} \times \text{Rate} \times \text{Time}$
+* **Simple interest on the declining balance**: when more than one payment is made on a simple intererst loan, the method of computing is the _declining balance method_.
+* **Add-on interest**: Interest is calculated on the full amount of the original principal. Immediately added to the original principal, and payments made by dividing principal + interest by the number of payments.
+
+Cost of open-end credit:
+* Credits must tell you how they calculate the finance charge.
+* Creditors finance charges after subtracting the balance on which they assess finance charges. Some creditors add finances charges to the balance on which they assess finance charges (**adjusted balance method**). 
+    * Others give you no credit for payments made during the billing period (**previous balance method**)
+    * Under the third method, the **average daily balance method**, creditors add your balances for each day in the billing period and then divide by numbers of days in the billing period.
+
+Cost of Credit and Expected Inflation:
+
+Lenders seek to protect their purchasing power add expected rate of inflation to interest they charge. Ex: if a lender expects a 3% inflation rate and want 6% return, they charge 9%. 
+
+Cost of credit and Tax Considerations - you can no longer deduct interest paid on consumer loans
+
+RUle of 78s:
+* **rule of 78s** is used to determine how much interest you have to pay at any point in a loan. Favors lenders. 
+
+Compound Interest: $F = P(1+r)^T$ where:
+* F = total future repayment value of a loan 
+* P = principal amount borrowed
+* R = rate of interest per year
+* T = time in years
+
+**Credit Insurance** ensures the repayment of your loan in the event of death, disability, or loss on property. Can include credit life, credit accident/health, and credit property. 
+
+The Credit CARD AAct - 
+* Limits card issuers' ability to raise APR on transferred balances
+* Restricts card iussuers from applying new (higher) interest rates on existing card balances
+* Requires companies to inform customers of rate increaes or other significant charges at least 45 days in advance
+* Teaser rates must stay in effect for 6 months
+* Requires card issuers to mail bills at least 21 days before payment is due
+* Makes new disclosure statements clear and timely
+* Display dates of statements on due dates with potential fees
+* Restricts penalties that companies can charge
+* Car issuers can't issue cards to consumers under 21 unless they have a cosigner or can demonstrate that they have independent means to repay debt
+
+### LO7-3: Managing Your Debts
+
+Debt Collection Practices - the FTC enforces the **Fair Debt collection Practices Act (FDCPA)** which prohibits certain practices by agencies that collect debts from creditors. Debt collectors are not allowed to contact you about a debt at a time/place that is inconvenient, can't contact you at work if your employer prohibits it. 
+
+Don't be stupid w/your money and debt. 
+
+### LO7-4: Consumer Credit Counseling Services
+
+The **Consumer Credit Counseling Service (CCCS)** is a nonprofit with the National Foundation for Consumer Credit that provide debt counseling services. They have two main activities:
+1. Aiding families with serious debt problems
+1. Preventing debt problems with family budget planning and money management education.
+
+
+Alternative counseling services:
+* American Consumer Credit Counseling
+* Financial Counseling Association of America
+* InCharge Institute of America
+* Money Management International
+
+### LO7-5: Declaring Personal Bankruptcy
+
+**Bankruptcy** is a legal process in which some or all assets of a debtor are distributed among the creditors became the debtor cannot pay their debts. This is a last resort option and damages your credit rating severely.
+
+Bankruptcy Abuse Prevention and Consumer Protection Act of 2005 - avoided people from using bankruptcy as a way to avoid paying their debts. You have to pay back at least a portion of your debts. This makes credit more affordable. Law also required that
+* Director of the Executive Office for the US Trustees develop financial management curriculum
+* Debtors complete an approved instructional course on financial management
+* Clerk of each bankruptcy district maintain a list of credit agencies/courses. 
+
+**Chapter 7 Bankruptcy** is where a debtor is required to draw up a petition listing his/her assets and liabilities. Submits a petition to the US district court and pays a filing fee. 
+
+**Chapter 13 Bankruptcy** is where a debtor with regular income proposes a plan for using future earnings/property to eliminate debts over time. It can have some costs:
+* Court Costs - debtor pays filing fee to clerk of court. 
+* Attorney's Fees - between 2-5k.
+* Trustee's fees and costs - trustee is appointed by the court to administer the case.
+
+Bankruptcy makes finding credit more difficult. But it can also make it easier since you cleared all your debts and they know you can't file for bankruptcy for another 7 years. Sometimes having a lawyer can help you get a better deal.
+
+Chapter 
+
+
+
+
+
+
 Personal Finance with Connect 14th edition, through the UVA Canvas inclusive access program. 
 
 ## [Chapter 6: Introduction to Consumer Credit](https://canvas.its.virginia.edu/courses/74463/assignments/368355)
