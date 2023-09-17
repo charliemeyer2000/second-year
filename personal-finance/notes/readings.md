@@ -11,6 +11,8 @@ title: Readings
 Avoid credit in two situations:
 1. Do not need or really want a product that will require financing
 1. You can afford to pay it in cash instead. 
+    * their interest rates are often lower than credit card rates.
+    * they are cheaper over many months or years when an extended payment period is needed.
 
 What type of loan do you seek? There are two types of credit: closed-ended and open-ended. Installment loans may carry a lower rate, but credit cards are more flexible. 
 
@@ -26,7 +28,7 @@ Medium-Priced Loans
 Expensive Loans
 * Finance companies - Interest ranges from 8 to 20% and generally lend to ppl who cannot obtain credit from banks/credit unions.
 * Check cashers/finance companies/others make small, short-term high-rate loans called "payday loans" which are extremely expensive. 
-    * Suppose you write a personal check for 115 to borrow $100 for 14 days, the lender holds the check until your next payday, when you redem the check by paying $115 in cash. Your cost of this loan is a $15 finance charge that is a 391% APR
+    * Suppose you write a personal check for 115 to borrow $100 for 14 days, the lender holds the check until your next payday, when you redeem the check by paying $115 in cash. Your cost of this loan is a $15 finance charge that is a 391% APR
 
 Summary of Major credit Sources:
 
@@ -48,7 +50,7 @@ Finance Charge & Annual Percentage Rate
 * **finance charge** is the dollar amount you pay to use credit. It includes interest costs and other service charges.
 * ***Annual percentage rate (APR)** is the percentage of cost (relative cost) of credit on a yearly basis. This is key for comparing costs.
 ![APR Calculation](images/apr-calculation.png)
-* To calculate APR, do $r = \frac{2 \times n \times 1}{P(N + 1)}$
+* To calculate APR, do $r = \frac{2 \times n \times I}{P(N + 1)}$
     * $r$ is Approximate APR
     * $n$ isi the number of payment periods in one year
     * $I$ is the total dollar cost of credit
