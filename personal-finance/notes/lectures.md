@@ -6,6 +6,123 @@ location: Comm School 258
 
 # Lecture Notes
 
+# Day 8
+
+## 5 C's of Credit Management
+
+1. Capacity - Financial ability to meet credit obligations
+    * I.e. people will show their pay stub/income
+1. Capital - Borrower's net worth
+    * Show your balance sheet
+1. Collateral - Asset pledged to ensure repayment
+1. Conditions - Economic conditions affecting the borrower
+1. Character - Borrower's attitude and reputation financial obligations/responsibilities
+
+## How do companies evaluate Character?
+
+1. 30% - Amounts owed
+1. 10% - new credit
+1. 15% - credit history length
+1. 10% - credit mix
+1. 35% - payment history
+
+## Managing your Credit
+
+* Pay bills on time
+* Use creidt wisely
+    * Do not apply for credit for the wrong reasons
+    * Pay off credit on time
+
+## Credit Inquiries
+
+* Soft Inquiry:
+    * When a person/company checks your creidt report as a background check, like when you check your credit score/apply for a mortgage
+    * Occur without your permission, but they wont affect your credit in any way
+* Hard Inquiry:
+    * Whe a prospective lender checks your credit report to make a lending decision
+    * Hard inquiry can slightly lower your credit score and will typically stay on your report for two years
+    * Rate shopping: Some models combine multiple inquiries within a certain time period into one:
+        * When shopping for a mortgage or a car loan, stay consistent and work fast (within a month)
+
+### Freezing vs. Locking
+
+* Freezing - Federal law allows you to freeze your credit
+* Locking - locks all access to your credit report, including your own.
+
+### Right Side of the Balance Sheet
+
+* Liabilities
+    * Current liabilities - less than 12 months due
+        * Rent, taxes, payables, credit card balance
+    * Long-term liabilities
+        * Auto loan, student loans, mortgage
+
+### Credit Cards vs. Charge Cards
+
+* Credit Card 
+    * Entitles bearer to revolving line of creidt whose size/interest rate are determined by borrower's worthiness
+    * issued by lenders
+    * processed by visa/mastercard
+* Charge Card
+    * Card that requires a full payment of the charge by the due date
+    * Charge cards do not allow a carrying balance, and no interest is charged. 
+
+### Types of Debt
+
+* Revolving (Open-ended) debt
+    * Credit cards, 
+    * Home equity line of credit
+* Installment (closed-ended, fixed term, non-revolving) debt
+    * Education loan
+    * Auto loan
+    * Mortgage loan
+    * Home equity loan
+
+### Debt Characteristics
+
+* Secured:
+    * Backed by collateral which provides the lender the security that the borrower will repay the debt
+    * Collateral is an asset pledged in trust for the purpose of obtaining financing:
+    * Ex: home, car, boat, etc.
+* Unsecured:
+    * Not backed by collateral
+    * Higher interest rates
+    * Ex: credit cards
+* Interest rates:
+    * Fixed
+    * Variable
+
+### APR is based on a Reference Rate
+
+* U.S. Prime Rate
+* LIBOR - London Interbank Offered Rate - 
+
+### Comparing Credit Cards
+
+You can use nerdwallet, creditkarma, consumer reports, etc. to compare credit cards.
+
+Perks:
+* Up front bonuses
+* Teaser rates
+* Free airfare
+* Waved annual fees
+
+Pitfalls:
+* Spending tiers
+* Hidden caps
+* expiration dates
+* Missed-payment penalties
+* Seasonal savings
+
+### Minimum Payment Trap
+
+* Amount **due** vs. amount **owed**. People were inadvertently paying less than they owed. Thus they were incurring interest on the amount they owed without even knowing it. 
+
+### When to use a credit card? 
+
+* When you can pay off the balance in full each month. 
+* Aka, don't use a credit card to live beyond your means. 
+
 # Day 7
 
 ## Are you a Tax Dependent
