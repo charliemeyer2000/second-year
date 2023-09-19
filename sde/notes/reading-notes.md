@@ -6,6 +6,186 @@ date: Depends
 
 # Reading Notes
 
+## Reading O9 - Functional Programming, Streams ([readings](https://docs.google.com/document/d/1jVMEZecfmRBgytroPihewTan3589N2Vu2B6qxdn_DWY/edit?usp=drive_link))
+
+### Functional Programming
+
+Functional interfaces are interfaces used to define a **single abstract method** (SAM). This includes:
+* Comparator: `int compare(T o1, T o2)`
+* Runnable: `void run()`
+* Callable: `V call()`
+* ActionListener: `void actionPerformed(ActionEvent e)`
+* Consumer: `void accept(T t)`
+* Predicate: `boolean test(T t)`
+* Supplier: `T get()`
+
+#### Anonymous Classes
+
+We can supply a comparator to a `.sort()` method directly. For example:
+
+```java
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+        names.add("Will");
+        names.add("Charlie");
+        names.add("John");
+        names.add("Bob");
+        names.add("Alice");
+        names.add("Zach");
+
+        names.sort(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
+
+        System.out.println(names);
+    }
+```
+
+#### Lambda Functions
+
+Rather than doing anonymous classes, we can use unnamed functions called lambda functions that are only the fly, used at _runtime_. 
+
+```java
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+        names.add("Will");
+        names.add("Charlie");
+        names.add("John");
+        names.add("Bob");
+        names.add("Alice");
+        names.add("Zach");
+
+        names.sort((String o1, String o2) -> {
+            return o1.compareTo(o2);
+        });
+
+        System.out.println(names);
+    }
+```
+
+We've also seen this in things for JUnit testing like `assertThrows`, for example - we can pass in a lambda function to test if an exception is thrown. This is becauase `assertThrows` takes in a `Executable` object, which is a functional interface. This method takes in nothing and returns nothing. 
+
+```java
+@Test 
+
+public void testWithdrawInsufficientFunds() {
+    BankAccount account = new Account(500);
+
+    assertThrows(InsufficientFundsException.class, () -> account.withdraw(700));
+}
+```
+
+#### Functional Interfaces to Know
+
+1. Comparator:
+    * Method - `public int compare (E e1, E e2)`
+    * Use - used in sorting lists (collections.ort) and defining tree sets.
+1. Executable: 
+    * method: `public void execute()`
+    * use - use in assertThrows, dynamicTest, and assumingThat. 
+1. Runnable
+    * method: `public void run`
+    * use: describe a procedure to be executed (typically by a thread)
+1. Predicate
+    * method: `public boolean test(T t)`
+    * use - for checking if a value meets a condition
+1. Consumer
+    * Method: `public void accept (E e)`
+    * use: take in some value and doing something with it, but don't return it. (specifically `forEach`)
+1. Supplier:
+    * method: `public T get()`
+    * use: get results from some source and do something with it It doen't take in any input. An example is `() -> (int) (Math.random() * 6) + 1`
+1. Function<E, R>
+    * method: `public R apply(E e)`
+    * pass some instance of T as an argument, return an instance of R. used in the `map` function in streams. Includes something like `x -> x.toString().toUpperCase()`
+1. ActionListener:
+    * Method: `public void actionPerformed(ActionEvent e)`
+    * used in a GUI, such as `e -> handleButtonPress()`
+
+### Java Streams
+
+a **stream** is like an assembly line - it's a sequence of operations that are performed in order. Take, for example, we can do fancy things with streams to reduce code bloat. For example, we can do:
+
+```java
+public int getTotalPopulation(List<State> stateList) {
+    return stateList.stream()
+        .mapToInt(State::getPopulation)
+        .sum();
+}
+```
+
+and the list goes on. Check out the examples [here](https://sde-coursepack.github.io/modules/refactoring/Java-Streams/)
+
+#### How does it Work?
+
+1. Beginning `.stream()`
+    * Starts with a collection that allows us to perorm intermediate operations on and one terminal operation on.
+1. Intermediate Operations
+    * sorted
+        * method: `sorted(Comparator<E> comparator)`
+        * example: `.sorted((a, b) -> a.size() - b.size())`
+    * filter - outputs only elements that meet a condition
+        * method: `filter(Predicate<E> predicate)`
+        * example: `.filter(e -> e.size() > 5)`
+    * limit - outputs only first `n` elements
+        * method: `limit(long n)`
+        * example: `.limit(5)`
+    * map - transforms elements
+        * method: `map(Function<E, R> function)`
+        * example: `.map(e -> e.size())`
+    * distinct - outputs only unique elements
+        * method: `distinct()`
+        * example: `.distinct()`
+    * peek - allows you to look at the elements in the stream
+        * method: `peek(Consumer<E> consumer)`
+        * example: `.peek(e -> System.out.println(e))`
+    * flatmap - flattens a stream of streams into a single stream
+        * method: `flatMap(Function<E, Stream<R>> function)`
+        * example: `.flatMap(e -> e.stream())`
+1. Terminal Operations
+    * forEach - performs an action on each element
+        * method: `forEach(Consumer<E> consumer)`
+        * example: `.forEach(e -> System.out.println(e))`
+    * count - returns the number of elements in the stream
+        * method: `count()`
+        * example: `.count()`
+    * collect - collects the elements into a collection
+        * method: `collect(Collector<E, ?, R> collector)`
+        * example: `.collect(Collectors.toList())`
+    * average, sum, min, max - returns the average, sum, min, or max of the elements in the stream
+        * method: `average()`, `sum()`, `min()`, `max()`
+        * example: `.average()`
+    * reduce - reduces the elements in the stream to a single value
+        * method: `reduce(R identity, BinaryOperator<R> accumulator)`
+        * example: `.reduce(0, (a, b) -> a + b)`
+
+#### Parallel Streams
+
+We can use `.parallelStream()` to run operations in parallel. This is useful for large data sets.
+
+If you notice that printing parallel streams breaks the printing in order, do something like this:
+
+```java
+    public void printRepresentationAlpabeticalOrder(Representation representation) {
+        Representation.getStateList().parallelStream()
+        .sorted((s1, s2) -> s1.getName().compareTo(s2.getName()))
+        .map(state -> state.getName() + representation.getRepresentativesForState(state))
+        .forEachOrdered(string -> System.out.println(string)); // note forEachOrdered
+    }
+```
+
+
+#### Files
+
+We can use `Files.lines()` and `BufferedReader.lines()` as a `Stream<String>` for File reading.
+
+
+
+
+
 ## Reading 08 - Code Quality, Refactoring, Method Extraction ([readings](https://docs.google.com/document/d/1V2Nf22FrBFdPgAxJ2IqzUHad3nYL2jRL1mJ_F-OHSJw/edit))
 
 ### Analyzability

@@ -63,6 +63,33 @@ Consumer agencies estimate annual consumer losses due to fraud are over $30 bill
 
 ### LO8-4: Legal Options for Consumers
 
+Small Claims Cort
+* A _small claims court_ is where you can settle small disagreements ot a dollar limit, set by the state. 
+* This often takes place without a lawyer. The steps generally go as follows:
+    1. notify the defendant to request a payment for damages with a deadline
+    1. Determine location for filing the case
+    1. Obtain/complete filing documents from courthouse/online
+    1. FIle forms and pay fee, which are sent to defendant who must either deny or not contest the claim
+    1. A hearing will be set. 
+    1. Be clear and concise at the hearing
+    1. Collect funds
+
+Class Action Suits
+
+a **class action** suit is a legal action taken by few individuals on behalf of all people who have suffered from the same alleged injustice. They are represented by a lawyer/group of lawyers. Funds are generally divided among the "class," which is the group of people who have suffered from the same injustice.
+
+Using a Lawyer
+
+Lawyers can come from the local bar association. Complicated matters like writing a will, real estate purchases, or other things may involve an attorney. 
+
+Legal Alternatives
+* _prepaid legal services_ are reduced-fee legal assistance for a set fee 
+* _Legal aid society_ - network of publicly supported community officers providing legal assistance to people who cannot afford their own attorney. 
+* _LegalZoom, Nolo, and Rocket Lawyer_ provided basic legal documents and other things
+
+
+
+
 
 
 ## [Chapter 7: Choosing a Source of Credit: The Costs of Credit Alternatives](https://canvas.its.virginia.edu/courses/74463/assignments/368375?module_item_id=843075)

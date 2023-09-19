@@ -3,6 +3,175 @@ title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+# Lecture 9 - Functional Programming, Comparators, Lambda Bodies, Streams ([slides](https://drive.google.com/file/d/12NfJ82dAi6KNxdVDFyDVlZRO4x3SBReS/view?usp=drive_link))
+
+
+## `compareTo()`
+
+* TreeSet
+    * Inherently sorted. They are sorted in order. As a result a TreeSet<String> will be in alphabetical order (with the exception of around case)
+* Collections.sort(List<T> list)
+    * Sort any list using the object's `compareTo()` method.
+* To have a class use these features, it must implement comparable. For example, `public class Student implements Comparable<Student>`
+* `compareTo()` returns an int. In the example of compare(a, b):
+    * if A comes BEFORE B, we want to return a negative result
+    * if A comes AFTER B, we want to return a positive result
+    * if A and B are equal, we want to return 0
+
+Defining compareTo override methods and also making comparators:
+
+```java
+private static final Comparator<Student> DEFAULT_STUDENT_COMPARATOR = Comparator.comparing(Student::getLastName).thenComparing (Student::getFirstName).thenComparing(Student::getLevel);
+
+// syntax of (Student::getLastName) is the same as (student -> student.getLastName()). We can write it like that since we're not doing anything with the student object, we're just calling a method on it.
+
+public int compareTo(Student student) {
+    return DEFAULT_STUDENT_COMPARATOR.compare(this, student)
+}
+```
+
+If you want to make an inline comparator, you could do something like 
+
+```java
+myList.sort(new Comparator<Student>() {
+    public int compare(Student o1, Student o2) {
+        return Double.compare(o1.getGpa(), o2.getGpa());
+    }
+});
+```
+
+### Functional Programming
+
+* In functional programming we think of functions as "first class citizens"
+    * Variables can be functions
+    * Parameters can be functions
+
+### Lambda
+
+* "function" used without being defined in the context of a class
+* Lambda function is an anonymous function
+
+### Lambda Examples
+
+* Details:
+    * Parameter types may be inferred or states
+    * Parenthesis may be omitted for a single inferred-type parameter
+    * Lambda function **creates an object** to be used
+* Examples:
+    * (int x, int y) -> x + y
+    * (x, y) -> x - y
+    * c -> {int s = c.size; c.clear(); return s;}
+        * takes in a collection, gets the size, clears it, returns the size.
+    * () -> 42
+        * takes in nothing, returns 42
+
+### Why bother w/Lambda Bodies?
+
+* Java doesn't have a function datatype . Named functions cannot be passed as arguments easily.
+* Java creates function interfaces:
+    * SAM - single abstract method interfaces examples:
+        * Comparator
+        * Runnable
+        * Comparable
+        * Callable
+* Function Type - SAM 
+    * Function object - Instance of SAM
+
+```java
+// we can do simple stuff like this!!
+
+// sorting them in ascending order
+Arrays.sort(words, (s1, s2) -> s1.length() - s2.length());
+
+// you can also do (which does the same thing as above!):
+Arrays.sort(words, Comparator.comparing(String::length));
+
+// to do it reversed, you can do:
+Arrays.sort(words, Comparator.comparing(String::length).reversed())
+
+// to sort a string based on its own compareTo method, you can just do
+Arrays.sort(words, Comparator.comparing(string -> string))
+
+```
+
+### Functional Interfaces (SAMS)
+
+| Interface | Method | Concept | 
+| --- | --- | --- |
+| `Runnable` | `void run()` | ADo something |
+| `Comparator<T>` | `int compare(T o1, T o2)` | Compare two objects |
+| `ActionListener` | `void actionPerformed(ActionEvent e)` | Respond to an event (think GUI) | 
+| `Callable<V>` | `V call()` | Return a value |
+| `Consumer<T>` | `void accept(T t)` | Do something with "t" | 
+| `Supplier<T>` | `T get()` | Give me something |
+| `Function<T, R>` | `R apply(T t)` | Take t and give something |
+| `Predicate<T>` | `boolean test(T t)` | Is t true? |
+
+### Consumer Accept
+
+Takes in some input and does something user defined with it. 
+
+```java
+String[] words = {"hi", "hello", "hey", "howdy"};
+List<String> wordList = Arrays.asList(words);
+wordList.forEach(word -> System.out.println(word));
+// you can also do
+wordList.forEach(System.out::println);
+``` 
+
+### Method Capture
+
+* Capture an instance methods of a particular object
+    * Syntax: `objectInstance::methodName`
+    * Ex: `intList.forEach(System.out::println);`
+* Capturing a static method:
+    * Syntax: `ClassName::methodName`
+    * Ex: `Arrays.sort(myIntegerArray, Integer::compare);`
+* Capturing an instance method without capturing the object
+    * Syntax: `ClassName::methodName`
+    * Example: `Function<Object, String> stringConverter = Object::toString;`
+* Capturing a constructor:
+    * Syntax: `ClassName::methodName`
+    * Example: `Supplier<List<String>> listFactory = ArrayList<String>::new;`
+
+
+### Java Streams
+
+* A stream is a sequence of elements from a source that supports aggregate operations
+    * Source - collection, array, generator function, I/O channel, etc.
+    * Aggregate operations - filter, map, reduce, find, match, sort, etc.
+        * Filter - exclude items from a astream. Takes a predicate as its parameter and any thing that passes the predicate is included in the stream.
+        * Map - transform an element in some way/extract information. Takes a function as oits parameter, output is the return type of that function
+        * Limit - truncates a stream to no more than n elements
+        * sorted - rearranges elements in a stream according to a comparator
+        * distinct - removes duplicates from a stream
+    * Terminal Operation
+        * ForEach - consume each element applying a function parameter
+        * Collect - reduce a stream to a collection
+        * Count - return the number of elements in a stream
+* Note when performing operations on the stream, you are not editing the original collection.
+* Stream sources:
+    * Call `stream()` or `parallelStream()` on any List or Set. 
+        * For map, you can do `myMap.EntrySet().stream()`
+    * From a file, call `.lines()`
+* To use a stream:
+    * get a a stream
+    * Ue intermediate operations
+    * Finally
+
+```java
+slist.stream()
+    .filter(s -> s.getLevel() === level.UG)
+    .filter(s -> s.getGpa() >= 3.5)
+    .sorted(Comparator.comparing(Student::getGpa).reversed()) // can also do .sorted((s1, s2) -> s2.getGpa() - s1.getGpa())
+    .forEach(System.out::println);
+```
+
+
+
+
+
+
 # Lecture 8 - Analyzability, Code Quality, Refactoring ([slides](https://drive.google.com/file/d/1rxvHVGJpBKdXy-nsj9RXuLrw0u1rNGkF/view?usp=drive_link))
 
 ## Analyzability

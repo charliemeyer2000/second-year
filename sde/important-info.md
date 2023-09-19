@@ -6,6 +6,8 @@ date: August 22, 2023
 
 # Important Info
 
+## MIDTERM REVIEW PAGES
+
 ## Readings
 
 Do the readings every day. They are in the Drive.
