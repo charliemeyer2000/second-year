@@ -4,6 +4,67 @@ title: Readings
 
 # Readings
 
+## Chapter 8: [Consumer Purchasing Strategies and Legal Protection](https://canvas.its.virginia.edu/courses/74463/assignments/368371?module_item_id=843071)
+
+### LO8-1: Consumer Buying Activities
+
+There are various influences that change buying habits. This includes economic factors, social factors, and personal factors. COnsider buying things to maximize purchasing satisfaction. 
+
+_comparison shopping_ is the process of evaluating alternative stores/brands/prices, in contrast to _impulse buying_ which is unplanned purchasing. Try timing purchases so that they go on sale or when you have a coupon.
+
+Pay attention to weather reports, news, economic conditions, political conflicts ads they affect your prices of daily goods. 
+
+**cooperatives** are nonprofit organizations whose member-owners save money on various products and services. Cooperatives buy things in bulk and the savings are then passed on to members.
+
+Branding:
+* National brand products are highly advertised items in stores. 
+* _store brand_ and _private label_ products are low-cost alternatives to name brand products.
+* 
+
+Pricing Comparison
+* _unit pricing_ uses a standard unit of measurement to compare prices of different sizes. This can be done by dividing cost by number of units.
+* _rebate_ is a partial refund of the price of a product. 
+* _warranty_ is a written guarantee from the manufacturer/distributer that specifies the conditions under which the product can be returned/replaced. an _express warranty_ is created by the seller/manufacturer and has two forms: 
+    * _full warranty_ - can be replaced/repaired during a reasonable amount of time
+    * _limited warranty_ - covers certain aspects of the product.
+* _implied warranty_ covers a product's intended use or other basic understandings that aren't in writing. 
+
+Car Warranties:
+* Used-car warranties - the FTC requires businesses that sell used cars to place a buyer's guide sticker in the window of the car. Most used cars come without a warranty. It should be inspected by a mechanic and receive a list of 14 major systems indicating major problems that may occur.
+* New-car warranties - comes with a warranty including car part coverage, power train coverage, and corrosion warranty. Other conditions that will be incurred for major repairs happen in the form of a _deductible_. 
+
+Service Contracts:
+* **service contracts** are agreements b/w a business and a consumer to cover the repair costs of a product. They are also called _extended warranties_ but aren't actually warranties. 
+
+### LO8-2: Major Consumer Purchases: buying a car
+
+Phases:
+1. Preshopping Activities:
+    * Problem identification: Determine whether you need a car or just transportation.
+    * Information Gathering: Reach out to personal contacts, business organizations, media sources, testing organizations, and others.
+1. Evaluating Alternatives: can you afford it? How should you pay? What quality of car do you want? Can you rent instead of buying? 
+    * Selecting Vehicle Options: consider mechanical devices, convenience options, and aesthetic features. 
+    * Comparing Used vehicles: Consider the age, mileage, and condition of the car. They can be bought from many places and are often about 19k less than a new car.
+    * Leasing: _leasing_ is a contractual agreement with monthly payments for the use of a car over a time period and then is returned. When leasing, know the _capitalized cost_ (cost of the car), _money factor_ (interest rate being paid on the capitalized cost), monthly payments and # of payments, and the _residual value_ (expected value of the car at the end of the lease). 
+1. Determining Purchasing Price
+    * Used-car price negotiation - find fair prices for your car depending on mileage and quality.
+    * Price bargaining for new cars - the _sticker price_ is the manufacturer's suggested retail price. The _dealer's cost_ or _invoice price_ is an amount less than the sticker price. Negotiate for that. Some dealers are a _set price dealer_ with a no haggling strategy. 
+    * Comparing alternatives: consider loans and _preapproval_ for loans. Avoid having an upside-down loan, wherein the car's value is less than the loan.
+1. Postpurchase Activities:
+    * Repairs - The largest fixed expense is due to _depreciation_, in addition to gas, oil, tires, and fixes. 
+    * Maintenance - follow the manufacturer's recommendations for maintenance.
+
+### LO8-3: Revolving Consumer Complaints
+
+Consumer agencies estimate annual consumer losses due to fraud are over $30 billion. Before resoving a complain, know your rights and laws. A general process is:
+1. Initial Communication - start at the sales location with a legitimate complaint. Be calm and rational.
+1. Communicate with the company - express dissatistfaction through n email
+1. Consumer Agency Assistance - contact a consumer agency for help. _mediation_ involves using a third party to settle greivances. _arbitration_ is a process in which both parties agree to have a third party hear their complaint and make a decision that is legally binding. 
+
+### LO8-4: Legal Options for Consumers
+
+
+
 ## [Chapter 7: Choosing a Source of Credit: The Costs of Credit Alternatives](https://canvas.its.virginia.edu/courses/74463/assignments/368375?module_item_id=843075)
 
 ### LO7-1: Sources of Consumer Credit
