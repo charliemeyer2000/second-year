@@ -6,9 +6,64 @@ location: Comm School 258
 
 # Lecture Notes
 
+# Day 9
+
+### Comparing Transportation Costs
+
+* Upfront costs to buy
+* Ongoing costs of ownership
+* Alternatives to purchase
+
+### Autos: Acquisition and Operating Costs 
+
+* Purchase:
+    * Upfront costs:
+        * Down payment
+        * Tax
+        * Registration
+    * Ongoing costs:
+        * gas, 
+        * parking
+        * insurance
+        * maintenance
+        * property taxes/registration fees
+        * Monthly payment
+        * Depreciation
+* Lease:
+    * Upfront costs;
+        * Security deposit
+        * Monthly lease payment
+        * Registration 
+    * Ongoing costs:
+        * Gas/parking
+        * Insurance
+        * Property taxes/registration fees
+    * Other Costs:
+        * end of lease payments
+
+### Carrying Costs + Operating Costs
+
+* Carrying costs are tied to the vehicle purchase
+    * Depreciation, interest, tax
+* Operating costs are associated with ongoing expenses
+    * Gas, insurance, maintenance, parking, etc.
+
+### How to Reduce Car Costs
+
+* Comparative shopping
+* Negotiation
+* Buying used
+* Bikes, public transportation, walking, carpooling
+
+#### Resources for Car Buying
+
+* Consumer Reports
+* Edmund's/Kelley Blue Book - true price/car value
+
+
 # Day 8
 
-## 5 C's of Credit Management
+### 5 C's of Credit Management
 
 1. Capacity - Financial ability to meet credit obligations
     * I.e. people will show their pay stub/income
@@ -18,7 +73,7 @@ location: Comm School 258
 1. Conditions - Economic conditions affecting the borrower
 1. Character - Borrower's attitude and reputation financial obligations/responsibilities
 
-## How do companies evaluate Character?
+### How do companies evaluate Character?
 
 1. 30% - Amounts owed
 1. 10% - new credit
@@ -33,7 +88,7 @@ location: Comm School 258
     * Do not apply for credit for the wrong reasons
     * Pay off credit on time
 
-## Credit Inquiries
+### Credit Inquiries
 
 * Soft Inquiry:
     * When a person/company checks your creidt report as a background check, like when you check your credit score/apply for a mortgage
@@ -125,7 +180,7 @@ Pitfalls:
 
 # Day 7
 
-## Are you a Tax Dependent
+### Are you a Tax Dependent
 
 * If parent is unsure whether "child" is provided more than 1/2 of own support, try IRS calculator.
 * IRS example provided in publication 501, dependents, standard, deduction, and filing information:
@@ -134,7 +189,7 @@ Pitfalls:
     * He provided more than half of his own support for the year
     * He isn't your qualifying child. 
 
-## Where to Stash the Cash
+### Where to Stash the Cash
 
 Landscape of Financial Services
 * Non-deposit institutions
