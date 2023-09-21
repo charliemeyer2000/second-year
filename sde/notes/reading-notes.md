@@ -6,6 +6,185 @@ date: Depends
 
 # Reading Notes
 
+## Reading 10 - Polymorphism ([readings](https://docs.google.com/document/d/17QR_K96ZTnKMctqIKXgDJMgx5PHvWavGm9fkvGRrXuE/edit))
+
+### Benefits of Polymorphism
+
+#### Interface
+
+- interface is a description of the **behaviors** of a class. An example of an interface is the `Comparator<E>` interface in Java which is one method that requires us to define a `int compare(E e1, E e2)` method.
+- The **concept of an interface** is different. The interface is both the syntax and the intended _abstract behavior_. (i.e. for `Comparator<E>`, how things should be sorted).
+
+#### Abstraction
+
+- Consider this abstract class:
+
+```java
+public abstract class StateSupplier {
+    public abstract List<State> getStates();
+}
+```
+
+This describes a behavior - get states. This doesn't describe the behavior of _how_ to get states, but just that we should get states. You can then `extend` this class and implement the `getStates()` method.
+
+Consider this **abstraction**:
+
+```java
+public abstract class ApportionmentMethod {
+    public abstract Apportionment getApportionment(List<State> stateList, int representatives);
+}
+```
+
+We can now implement the Hamilton/Vinton method:
+
+```java
+public class HamiltonApportionmentMethod extends ApportionmentMethod {
+    public Apportionment getApportionment(List<State> stateList, int representatives) {
+        Apportionment apportionment = new Apportionment();
+        int totalPopulation = getTotalPopulation(stateList);
+        ...//implementation continues
+    }
+    public void executeApportionment() {
+        StateSupplier stateSupplier = getStateSupplier();
+        List<State> = stateSupplier.getStates();
+        ApportionmentMethod method = getApportionmentMethod();
+        Apportionment apportionment = method.getApportionment();
+    }
+
+    private ApportionmentMethod getApportionmentMethod() {
+        return new HamiltonApportionmentMethod();
+        // if we wanted to change to the HuntingtonHill method, we can just change this to return a new HuntingtonHillApportionmentMethod()
+    }
+}
+```
+
+If we wanted to change this at runtime, perhaps during a GUI, we can do something like this:
+
+```java
+    private ApportionmentMethod getApportionmentMethod() {
+        if (isHamiltonApportionment()) {
+            return new HamiltonApportionmentMethod();
+        } else {
+            return new HuntingtonHillApportionmentMethod();
+        }
+    }
+```
+
+#### Dependency
+
+When we used polymorphism, we pass control to the function. This allows us to write a function instead of a `class` for each `subclass`. 
+
+#### Dependency Inversion
+
+Dependency inversion is the idea that we should depend on abstractions, not concretions. This means that we should depend on interfaces, not classes. Thus, a class never has to know about the implementation of another class, only the interface.
+
+- We pass control to the function: the calling function stops executing and waits until the called function stops executing.
+- We call a function indirectly - classes are not dependent on each other, but on interfaces.
+
+### Design
+
+- Software changes
+    - We want to make sure that our software is easy to change. If we remove a part of our software, we want to make sure that we don't have to change a lot of other parts of our software/break all of it. 
+    - Software is expected to evolve to meet new needs. 
+- Entropy: effort measured in developer-hours to maintain software
+- Over-design: working too hard on a system or over-designing it when not needed. 
+- Agile Design: design that is flexible and can be changed easily. This allows us to refactor design elements later as our needs change.
+
+### Class Relationships/Dependency
+
+#### Depends on (uses)
+
+A class depends on another class when it uses methods or functions from that class. 
+
+```java
+public class Course {
+    Professor professor;
+    List<Student> students;
+    
+    ...
+    
+    public EmailResponseCode emailAllStudents(String subject, String message) {
+        EmailBuilder emailBuilder = new EmailBuilder();
+        emailBuilder.setSender(professor.getEmailAddress())
+                .setSubject(subject)
+                .setMessage(message);
+        for (var student : students) {
+            var studentEmailAddress = student.getEmailAddress();
+            emailBuilder.addBccRecipient(studentEmailAddress);
+        }
+        Email email = emailBuilder.get();
+        return email.send();
+    }
+}
+```
+
+Notice how `Course` and `EmailResponse` are loosely coupled - `Course` doesn't know anything about `EmailResponse` except that it can send an email. 
+
+#### Aggregation, Composition
+
+Aggregation, "A aggregates B", refers to an instance of a class is a "has-a" relationship. For example, a `Course` has a `Professor` and a `List<Student>`.
+
+Composition, "A is composed of B," refers to a relationship where one or more instances of B are intrinsically part of another class. 
+
+Thik of this as "aggregating" clothes vs. being "composed of" body parts. 
+
+Entertain this example:
+
+```java
+public class MailingList {
+    private String name;
+    private String listServAddress;
+    private MailingListHistory history;
+    private Set<User> subscribers;
+    
+    public MailingList(String name, String listServAddress) {
+        this.name = name;
+        this.listServAddress = listServAddress;
+        this.history = new MailingListHistory();
+        this.subscribers = new HashSet<>();
+    }
+    
+    //getters here
+    
+    public boolean addSubscriber(User newSubscriber) {
+        return subscribers.add(newSubscriber);
+    }
+    
+    public boolean removeSubscriber(User subscriber) {
+        return subscribers.remove(subscriber);
+    }
+    
+    public void sendEmail(Email email) {
+        for(User user : subscribers) {
+            user.sendEmail(email);
+        }
+        history.add(email);
+    }
+}
+```
+
+This class `MailingList` aggregates `Users`, but the `MailingList` is composed of a `MailingListHistory`. 
+
+#### Association
+
+- General definition: any interacting b/w classes
+- Specific definition: two classes connected in a way that interaction may be needed both ways. 
+
+#### Abstract Class Coupling
+
+Abstract classes typically cause more coupling than interfaces since they:
+- have their own fields
+- own implemented methods (to use or override)
+- own constructors (which children must invoke)
+
+#### Generalization
+
+Generalization encapsulates an "is-a" relationship. For example, a `Student` is a `Person`. This is the tightest form of coupling. 
+
+### Flaws of Inheritance
+
+Abstraction is good if you find yourself repeating al ot of code (i.e. just make an abstract class.) When dealing with inheritance structures, because of tight coupling b/w classes, changes produce _substantial_ changes. Perhaps even an abstract class is too much, just do an intercace. But ultimately, it can be better to leave classes separate than force abstraction upon them, but when abstraction is desireable, using a minimal interface to describe the behavior is the best way to go.
+
 ## Reading O9 - Functional Programming, Streams ([readings](https://docs.google.com/document/d/1jVMEZecfmRBgytroPihewTan3589N2Vu2B6qxdn_DWY/edit?usp=drive_link))
 
 ### Functional Programming
