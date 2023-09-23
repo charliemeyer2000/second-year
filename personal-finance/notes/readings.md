@@ -4,6 +4,84 @@ title: Readings
 
 # Readings
 
+## Chapter 9: [The Housing Decision: Factors and Finances](https://canvas.its.virginia.edu/courses/74463/assignments/368362?module_item_id=843062)
+
+### LO9-1: Housing Alternatives
+
+![Housing Choices](images/housing-choices.png)
+
+Opportunity costs of Buying HOuses:
+- Lost interest earnings on down payment of house
+- time and cost commuting to work from a distant location
+- loss of home-buying tax advantages and equity growth
+- time/effort having a house built for you or picking out a house
+
+Renting vs. Buying:
+- Rending can be preferred for young people. Less costly in the short run  
+- buying preferred for people who plan to live in an area for several years. Long-term financial advantages
+
+![housing alternatives](images/housing-alternatives.png)
+
+
+### Renting your Residence
+
+35% of people in the US live in rental units. 
+
+**Selecting a rental unit**: Can be based upon location, financial aspects, exterior, interior, layout, size, and facilities.
+
+**advantages of renting**: 
+1. Mobility - can move easily, especially with jobs. 
+1. Fewer responsibilities - do not have to be concerned with maintenance and repairs
+1. lower initial costs - less expensive than buying a house in the short term. 
+
+**disadvantages of renting**:
+1. Few financial benefits - tenants cannot take tax deductions for mortgage interest and property taxes/benefit from the potential increased value of real estate. Subject to rent increases with they have little control over
+1. Restricted lifestyle - cannot make changes to the property without permission.
+1. Legal details - must sign a _lease_ - legal document defining conditions of a rental agreement. This may include things that you might not want to accept. Some leases allow you to _sublet_ the rental - rent it to someone else. Leases are generally used to protect both tenant and landlord.
+1. Costs of renting:
+    * Security deposit - required when you sign a lease. Held by the landlord to cover cost of damages. 
+
+
+### The Home-Buying Process
+
+1. Determine home ownership needs. 
+    * Pride of ownership - you can do what you want with the house.
+    * Financial benefits - deductibility of mortgage interest and real estate tax payments for federal income taxes. Increases in the value of the property. May be able to borrow against the equity in the home.
+    * Lifestyle flexibility - can make changes to the property.
+1. Consider drawbacks:
+    * Financial uncertainty - may not be able to sell the house for a profit.
+    * limited mobility - changing homes is not as easy as changing rentals.
+    * higher living costs - owning a home can be expensive, including maintenance, repairs, etc. 
+1. Assess types of housing:
+    * Single-family dwellings (detached homes) - previously owned homes, new houses, custom-built homes. 
+    * Multiunit dwellings - includes _duplexes_ (contains two housing units, each owned by a different homeowner) and _town homes_, buildings with two/four/six single-family living units. _Planned unit developments_ are designed communities with varied housing and have homeowners associations w/common areas.
+    * _Condominiums_ - owned housing units in a building with several units. Do not own shared areas like hallways or rec facilities.
+    * _Cooperative housing_ - buildings are owned by a nonprofit. Shareholders purchase stock to obtain housing. 
+1. Housing construction
+    * _Factory built housing_ - manufactured homes are built in a factory and then transported to the site.
+    * _prefabricated home_ - built in sections in a factory and then assembled on site.
+    * _mobile homes_ - built on a chassis and can be moved from place to place.
+1. Building a home - can be built by a contractor or by the owner. can include working with agencies and architects, but also can include DIY "home in a box" stuff.
+1. Price and down payment - amount you can afford for down payment. You can see how much you can afford to spend on a home by having a mortgage company _prequalify_ you. 
+1. Size and quality - Consider the features you'd be getting and the work you'd have to put in to get it to what you want to be like. 
+1. Select a location:
+    * Location, location, location - urban, suburban, rurual
+    * Be aware of _zoning laws_ (restrictions on how the property in the area can be used). 
+    * Consider public services/school systems
+1. Using a real estate agent - can help you find a house. Have knowledge about homes in the area, can give you good market analysis, etc. Expense in buying the house can go to their commission. 
+1. Conduct a home inspection - have a professional inspect the house.
+1. Price the property - Your offer for the home will be in the form of a _purchase agreement_ or contract that constitutes your legal offer to purchase the home. Negotiate the price, you can either receive a _counteroffer_ or a _firm offer_. In times of high demand for housing, negotiation is minimized, called a "seller's market" whereas the opposite is called a "buyer's market." Once a price is agreed upon, you can submit **earnest money** which is a portion of the purchase deposited in good faith to show the offer is serious. Some agreements can have a _contingency clause_ to state that the agreement is only binding if a certain condition (whatever it may be) is met. 
+
+
+
+
+
+
+
+
+
+
+
 ## Chapter 8: [Consumer Purchasing Strategies and Legal Protection](https://canvas.its.virginia.edu/courses/74463/assignments/368371?module_item_id=843071)
 
 ### LO8-1: Consumer Buying Activities
