@@ -23,7 +23,7 @@ Renting vs. Buying:
 ![housing alternatives](images/housing-alternatives.png)
 
 
-### Renting your Residence
+### LO9-2: Renting your Residence
 
 35% of people in the US live in rental units. 
 
@@ -42,7 +42,7 @@ Renting vs. Buying:
     * Security deposit - required when you sign a lease. Held by the landlord to cover cost of damages. 
 
 
-### The Home-Buying Process
+### LO9-3: The Home-Buying Process
 
 1. Determine home ownership needs. 
     * Pride of ownership - you can do what you want with the house.
@@ -73,6 +73,44 @@ Renting vs. Buying:
 1. Price the property - Your offer for the home will be in the form of a _purchase agreement_ or contract that constitutes your legal offer to purchase the home. Negotiate the price, you can either receive a _counteroffer_ or a _firm offer_. In times of high demand for housing, negotiation is minimized, called a "seller's market" whereas the opposite is called a "buyer's market." Once a price is agreed upon, you can submit **earnest money** which is a portion of the purchase deposited in good faith to show the offer is serious. Some agreements can have a _contingency clause_ to state that the agreement is only binding if a certain condition (whatever it may be) is met. 
 
 
+### LO9-4: The Finances of Home Buying
+
+...steps continued:
+
+1. Obtaining Financing:
+    * Determine down payment - Large down payments make it easier to get a loan and get a lower interest rate. Private mortgage insurance (PMI) is required if the down payment is less than 20%. 
+    * Applying for a mortgage: a _mortgage_ is a long-term loan on a specific piece of property such as a home or other real estate. _Mortgage brokers_ can help home buyers attain financing. To obtain a home loan, make sure you save for it and have good enough credit. 
+        * _Prequalification_ - completing mortgage application. Borrower provides evidence of employment/income/ownership. 
+        * Lender obtains credit report. Borrower receives a _loan estimate_ which summarizes key info to decide whether to proceed with the loan.
+        * Charge a fee 
+        * Ability-to-Repay and Qualified Mortgage rule requires lenders eto carefully consider a borrower's financial situation. 
+        * Calculate mortgage payment: For example, for a 30-year, 7%, 223,000 mortgage -> $223 * \text{mortgage payment factor}$
+        * Formula: $M = P[i(1+i)^n] / [(1+i)^n - 1]
+            * M = mortgage payment (monthly)
+            * P = principal (amount borrowed)
+            * I = monthly interest rate (annual interest rate / 12)
+            * n = number of months in the loan
+1. _Points_ are prepaid interest charged by the lender. Each _discount point_ is equal to 1% of the loan amount and is a premium paid for obtaining a lower mortgage rate. 
+1. Fixed-rate, fixed-payment mortgages: Most mortgage lenders allow you to apply online (being retail banks, correspondent lenders, and mortgage wholesalers/brokers). 
+    * Conventional Mortgages - equal payments over many years based on a fixed interest rate. Mortgage payments are set at a level that allows **amortization** of the loan (balance owed is reduced with each payment).
+    * Government financing programs - insured by the Federal Housing Authority (FHA) and loans guaranteed by the Veterans Administration (VA).
+    * Adjustable-rate mortgages, variable-payment mortgages, interest rate the at increase or decreases during the life of the loan. A _rate cap_ restricts the amount that the interest rate can increase or decrease during the ARM. A _payment cap_ keeps the payments on an adjustable-rate mortgage at a set level or limits the amount to which payments can rise. 
+    * Interest-only mortgage: allows a home buyer to have lower payments for the first few years of the loan. 
+    * Buy-downs: interest rate subsidy from a home builder/dev to lower the mortgage payments for the first few years of the loan.
+    * Second mortgage - (home equity loan) - borrow on the paid-up value (equity) of the property.
+    * Reverse mortgages - provide elderly homeowners with tax-free income on the form of a loan that is paid back (with interest) when the home is sold or the homeowner dies. 
+    * Refinancing - obtaining a new mortgage to replace an existing one.
+1. Closing the purchase - closing costs (_settlement costs_) are the fees and charges paid when a real estate transaction si completed. **title insurance** is the closest thing that covers the lender and the buyer against loss resulting from disputes over ownership of a property. An _escrow account_ is a special account that a lender uses to hold a homeowner's property tax and insurance payments.
+
+### LO9-5: Selling your Home
+
+Preparing your home for selling:
+- Clean your house
+- Determine selling price: _appraisal_ is an estimate of the current value of a property. Can cost $300-400. 
+
+Sale by owner - 10% of house sales are made by owners. This requires lots of effort, through listing, visuals, and other things.
+
+Sale by a real estate agent - real estate agents can help you sell your house. They can help you with the listing, showing, and other things. They can also help you with the closing. They charge a flat fee of 1-2%. You will pay the buyer's agent fee of 2.5-3%. 
 
 
 
