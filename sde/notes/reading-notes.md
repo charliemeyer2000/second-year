@@ -6,6 +6,8 @@ date: Depends
 
 # Reading Notes
 
+## Reading 11 - Exam, so skipped
+
 ## Reading 10 - Polymorphism ([readings](https://docs.google.com/document/d/17QR_K96ZTnKMctqIKXgDJMgx5PHvWavGm9fkvGRrXuE/edit))
 
 ### Benefits of Polymorphism
