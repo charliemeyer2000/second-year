@@ -6,7 +6,168 @@ date: Depends
 
 # Reading Notes
 
-## Reading 11 - Exam, so skipped
+## Reading 11 -[Exam Review](https://docs.google.com/document/d/1oaJvF_s2TRh2MD-yfbJQRZSF6h2DoU5cTfNdb8pFdbQ/edit?usp=sharing)
+
+### Software Engineering
+
+* Ad-hoc development - Ad hoc solutions are a **one time solution to a problem**. They are not meant to be maintained, and are not expected to be used by other people. They do not work for long-term software projects since they are non-scalable solutions to a problem.
+* Software Complexity -
+    - **Essential** difficulties are intrinsic to developing software.
+    - **Accidental** difficulties come from a particular implementation of software.
+    - The "hard part" about writing software is getting over the essential difficulties while minimizing the accidental difficulties.
+* Java - 
+    * Compiling - the process of converting source code into machine code.
+    * Interpreting - the process of executing machine code.
+    * Basic Java CLI args:
+        * `Java` - the command to run the Java Virtual Machine (JVM)
+        * `java -jar` - the command to run a Java program from a jar file
+        * `javac` - the command to compile a Java program
+    * How java works - JDK, JRE, JVM, JIT. 
+        * JDK - Java development kit, the thing that complies your code into a `.class` file. This is a file that contains instructions for the JVM.
+        * JRE - The Java Runtime Environment that contains the JVM. This is what runs your `.class` file.
+        * JVM - Each JRE contains a JVM. This is the thing that actually runs your code.This is an interpreter that interprets your `.class` files and talks directly with the CPU and memory
+        * JIT - Just In Time Compiler - Part of the JVM, part that can compile JVM Byte code into machine code
+    * Benefits of the approach to using the JDK, JRE, JVM, JIT -> platform independence. Write once, run anywhere (aka write once, debug everywhere :grin:)
+    * Packages
+        * These are external libraries that you can use in your code. You can import them using `import` statements. This includes built-in packages from the JDK, and external packages from the internet. Internal packages include `java.util`, `java.io`, `java.lang`, etc. external packages can be included through your `build.gradle` file and copied from the maven repository.
+    * Command Line Arguments
+        * You can pass in command line arguments into your Java programs to change the behavior of your program. These are passed in as an array of strings in the `main` method. (hence `public static void main(String[] args)`)
+* Software Construction:
+    * Git Version control:
+        * Distributed repositories:
+            * This means that every developer has a copy of the repository on their local machine. This allows developers to work on their own copy of the repository without affecting the main repository. This also allows developers to work on their code without an internet connection. 
+        * Commands to know:
+            * `add` - adds files to the staging area (select all files with the `.`)
+            * `commit` - commits the files in the staging area to the local repository. Add a message with the `-m` flag.
+            * `push` - pushes the files in the local repository to the remote repository.
+            * `pull` - pulls the files from the remote repository to the local repository.
+            * `branch` - creates a new branch. Use the `-b` flag to create a new branch and switch to it.
+                * You can also list branches by just doing `git branch`
+            * `switch` - switches to a different branch. Use the `-c` flag to create a new branch and switch to it. This switches to local branches. To check out to remote branches, use `git checkout -b [branch name] origin/[branch name]`
+            * `checkout` - checks out a branch. Use the `-b` flag to create a new branch and switch to it. This switches to local branches. To check out to remote branches, use `git checkout -b [branch name] origin/[branch name]`
+            * `merge` - merges a branch into the current branch.
+        * Conflict resolution - git doesn't allow you to merge shit if there's a conflict. You gotta fix that shit yourself. You could get something that looks like this:
+        ```java
+        <<<<<<<<HEAD (Current Change)
+            // code
+        ========
+            // code
+        >>>>>>>> Test (incoming change)
+        ```
+        * Branching:
+            * using branches is important, you generally have a flow where each person creates a branch per each feature. Merging effectively and safely includes merging main into the feature branch, then creating a PR against main and merging. Solve the conflicts in your FEATURE branch, not the `main` branch. 
+    * Gradle:
+        * Gradle is a build tool that allows you to build and test Java programs easily along with managing dependencies. It has a general layout that has an `src` folder with `src/main/java` and `src/main/test` for both running and testing, `gradle/wrapper` to contain gradle's wrapper, `build` that contains all generated files including `.class` and `.jar` files, and at the top level `build.gradle`, `settings.gradle`, and `gradlew`/`gradlew.bat`. `build.gradle` is especially important since it contains the build script that tells gradle how to build your project. You can specify testing with Junit, you can tell it to build a jar file with archiveBaseName, you can tell it to build a fat jar with shadowJar, etc.
+        * Gradle Wrapper - this is a script that allows you to run gradle without having to install gradle on your computer. This is useful if you don't have permissions to install gradle on your computer. You can run it with `./gradlew` or `./gradlew.bat` on Windows. Make sure to make it executable with `chmod +x gradlew` on mac/linux. 
+    * `./gradlew build` - this builds your project. It runs the `build` task in your `build.gradle` file. This compiles your code and runs your tests.
+    * `./gradlew test` - this runs your tests. It runs the `test` task in your `build.gradle` file. This compiles your code and runs your tests.
+    * Fat-jar - a fat jar is a jar file that contains all of the dependencies of your project. This is useful for running your project on a computer that doesn't have gradle installed. 
+* Testing:
+    * Purpose of testing - to find defects in your code.
+    * Test Scenarios:
+        - inputs: testing arguments and state
+        - output: expected vs actual output. Also testing changes to state and return values. 
+    * Writing Junit:
+        * `@Test` - this is an annotation that tells Junit that this is a test method. This is a method that tests a method in your code.
+        * `@BeforeEach` - this is an annotation that tells Junit to run this method before each test. This is useful for setting up your tests.
+        * Assertions:
+            - `assertEquals` - checks if two values are equal. For primatives, use the version that takes in two arguments. For doubles, use the version that takes in three arguments and a delta (delta is a third arg). For objects, use the version that takes in three arguments and a comparator.
+            - `assertTrue/assertFalse` - checks if a boolean value is true/false.
+            - `assertThrows` - checks if a method throws an exception. Takes in a class and a lambda function.
+        * Types of Testing Scenarios:
+            - Equivalence - testing normal inputs/outputs
+            - Boundary - testing a value at the boundary of a range (fencepost cases)
+            - Exception - testing if a method throws an exception
+            - Robustness - cases that are **syntactically valid** but **semantically meaningless**. 
+                * For example, if you have a method that takes in a number, you can test if it throws an exception when you pass in a string.
+        * Testing Plans:
+            - Black Box Testing: testing the functionality of a method without knowing the implementation. Basically, we write tests for the public interface of a class. You should have equivalence partitioning so that you can test inputs/outputs based on "groups."
+            - White Box Testing - Also known as "glass box testing," **white-box testing** selects tests while considering the existing implementation of the code being tested. THis is different from black-box testing because we are considering the implementation, not just the interface.
+                * Statement - we consider what % of statements (code) has been covered by our tests
+                * Branch - we consider what % of branches (control flow) has been covered by our tests. 
+                * Conditional - catch every true/false case and other conditional cases.
+        * Test-Driven Development - TDD is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.
+            - Red - write a test that fails
+            - Green - write code that passes the test
+            - Refactor - refactor your code to make it better
+* Defensive Programming
+    * Throwing Exceptions - throw when you want to communicate that something went wrong. This crashes the program INTENTIONALLY and should provide a meaningful error message.
+    * Handling Exceptions - you can catch exceptions and either decide to throw or continue based upon the exception.
+        * Handling "checked" exceptions - these are exceptions that are checked at compile time. You can either catch them or throw them. This includes things like `IOException` and `SQLException` for when you are using a BufferedReader or a database.
+    * Custom Exceptions: you can create your own exceptions by extending the `Exception` class. You can then throw these exceptions and catch them.
+    * Assertions - these are used to check for errors in your code. They are used to check for **programmer errors**. They are not used to check for user errors. They are used to check for things that should never happen. 
+        * `assert` - this is a statement that checks if a boolean value is true. If it is, it does nothing. If it is false, it throws an `AssertionError` with a message. 
+        * `assertThat` - this is a method that checks if a value meets a condition. If it does, it does nothing. If it doesn't, it throws an `AssertionError` with a message. 
+        * `assumeTrue` - this is a method that checks if a boolean value is true. If it is, it does nothing. If it isn't, it throws an `AssumptionViolatedException` with a message. 
+        * `assumeThat` - this is a method that checks if a value meets a condition. If it does, it does nothing. If it doesn't, it throws an `AssumptionViolatedException` with a message. 
+        * `fail` - this is a method that throws an `AssertionError` with a message.
+    * AssertionError:
+        - `-ea` java argument - this is a java argument that allows you to enable assertions. This is useful for testing.
+        * `assert` keyword - this is a keyword that allows you to check for errors in your code. This is useful for checking for programmer errors.
+* Code Quality:
+    - Analyzability:
+        - Readability - to what extend we can read and understand the code's syntax
+        - Understandability - To what extend we read and understand the code's semantics. You can't have understandability without readability.
+    - Code smells: A **code smell** refers to problems within the design and structure of the underlying code in software. Code smells aren't bugs/defects, but problems with _internal quality_ like manageability, readability, and maintainability, etc. This can be something like long functions, long parameters to a function, having boolean parameters in a function, etc.
+    - Refactoring techniques:
+        * rename identifiers to be more descriptive
+        * Introduce constants instead of "magic numbers"
+        * Abstract conditional logic - if you have a lot of conditionals, you can abstract them into a function.
+        * replace `null` with optional - if you have a function that returns null, you can replace it with an optional. This is useful for when you have a function that returns null and you have to check for null every time you call it.
+        * Extract method - if you have a long method, you can extract parts of it into a separate method.
+        * Extract class - if you have a class that does too much, you can extract parts of it into a separate class.
+        * Preserve Whole Object - if you have a lot of parameters, you can pass in an object that contains all of the parameters.
+    - DRY vs. WET
+        * Don't repeat yourself - this is a principle that says that you shouldn't repeat code. If you have a lot of repeated code, you should abstract it into a function.
+        * WET - code that doesn't adhere to DRY - "write everything twice." 
+        * Code comments:
+            - comments should only be used when the code is unclear. If the code is unclear, you should refactor it to make it more clear. If you can understand what the code does by simply reading it, you don't need a comment.
+            * Documentation tells about what things do, not how they do it.
+        * Technical debt - this is the idea that you should clean up your code after you write it. If you don't, you accrue technical debt. This is bad because it makes your code harder to maintain.
+* Functional Programming:
+    * Lambda functions - these are functions that are unnamed and are used on the fly. They are used in functional programming to pass functions as arguments to other functions. They are useful for when you want to pass a function as an argument to another function.
+    * Functional Interface:
+        - Comparator: used for sorted() and sort()
+        - Consumer: used for forEach()
+        - Predicate: used for filter()
+        - Function - used for map()
+        - Executable - used for assertThrows()
+    * Streams:
+        - Making streams from lists (`.stream()`) and files (`Files.lines()`) and sets (`.stream()`) and maps (`.entrySet().stream()`)
+        - `stream()` vs. `parallelStream()` - parallel streams run in parallel, which is useful for large data sets. However, this breaks the order of printing, so you have to use `forEachOrdered()` instead of `forEach()`.
+    * Intermediate Operations:
+        * Sorted - sorts the stream
+        * map - transforms elements
+        * filter - filters elements
+        * limit - limits the number of elements
+        * peek - allows you to look at the elements in the stream
+        * distinct - outputs only unique elements
+    * Terminal Operations:
+        * forEach - performs an action on each element
+        * count - returns the number of elements in the stream
+        * toList - collects the elements into a list. Equivalent to `Collectors.toList()`
+        * reduce - reduces the elements in the stream to a single value. (count stuff).
+    
+
+
+
+- **JDK**: When you compile a Java file, the JDK compiles your code producting a `.class` file. This is a _bytecode_ file, which is a file that contains instructions for the Java Virtual Machine (JVM).
+
+Here's a more accurate image of how it works:
+
+![Image](https://sde-coursepack.github.io/modules/java/images/3/compiler3.png)
+
+- **JRE**: This is because the `.class` files don't run on any hardware, they run in a virtual Java Runtime Environment (JRE). Note that this is different from the JDK, which is used for _compiling_, not running. When you download the JDK, it will include a compatible JRE, but you can download a JRE to run files without downloading the JDK.
+
+- **JVM**: Each JRE contains a Java Virtual Machine (JVM). This interacts directly with the CPU, memory, disk, and monitor. Technically, the JVM is an _interpreter_ that interprets `.class` byte code compiled by the JDK, passed to the JVM by the JRE. 
+    - Note that Kotlin and Groovy also use the JVM, so you can use them in Java projects.
+
+To help you understand how these all fit together, think of the JRE as a waiter, and the JVM as a chef, where a `.class` file is an order that talks to the JRE who then asks the JVM to execute the order.
+
+- **JIT**: The just-in-time compiler is a part of the JVM, specifically the part that can compile the JVM byte code instructions into machine code instructions for underlying hardware. 
+
+
+
 
 ## Reading 10 - Polymorphism ([readings](https://docs.google.com/document/d/17QR_K96ZTnKMctqIKXgDJMgx5PHvWavGm9fkvGRrXuE/edit))
 
