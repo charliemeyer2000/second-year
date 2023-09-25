@@ -179,7 +179,7 @@ Consumer agencies estimate annual consumer losses due to fraud are over $30 bill
 
 ### LO8-4: Legal Options for Consumers
 
-Small Claims Cort
+Small Claims Court
 * A _small claims court_ is where you can settle small disagreements ot a dollar limit, set by the state. 
 * This often takes place without a lawyer. The steps generally go as follows:
     1. notify the defendant to request a payment for damages with a deadline
@@ -299,7 +299,7 @@ Compound Interest: $F = P(1+r)^T$ where:
 
 **Credit Insurance** ensures the repayment of your loan in the event of death, disability, or loss on property. Can include credit life, credit accident/health, and credit property. 
 
-The Credit CARD AAct - 
+The Credit CARD Act - 
 * Limits card issuers' ability to raise APR on transferred balances
 * Restricts card iussuers from applying new (higher) interest rates on existing card balances
 * Requires companies to inform customers of rate increaes or other significant charges at least 45 days in advance
