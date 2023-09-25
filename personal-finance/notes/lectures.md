@@ -6,6 +6,89 @@ location: Comm School 258
 
 # Lecture Notes
 
+# Day 10 - Housing and Loans
+
+Comparing Costs:
+
+Auto:
+* Upfront costs to buy
+    * Down payment:
+    * Closing costs - taxes, fees
+    * Moving expenses
+* ongoing costs of ownership
+    * Monthly payments
+    * Insurance
+    * Property taxes
+    * HOA (Home Owners Association) fees
+    * Annual maintenance
+* Alternatives to purchase
+
+House:
+* Upfront costs to buy
+* Ongoing costs of ownership
+* Alternatives to purchase
+
+
+Advantages/Disadvantages of Home Ownership
+
+Advantages:
+* Stability, customization
+* Appreciating asset
+* Inflation hedge
+* Tax deductions available
+* tax-advantaged financing available (for mortgage values of up to 750k)
+
+Disadvantages:
+* Closing costs
+* reduced flexibility
+* Additional costs: property taxes, insurance, utilities, maintenance, etc.
+* Unexpected repairs
+* Opportunity cost of down payment
+
+Upfront vs. Operating Costs
+* Construction:
+    * Brick/stone versus cost of exterior painting
+* Energy efficiency/sustainability
+    * LEED (Leadership in Energy and Environmental Design)
+    * Insulation, windows, heating/cooling using renewable energy
+
+Closing costs:
+* Fee for credit report, loan origination fees, discount points to reduce interest rate, attorney's fees, home inspection fee, appraisal fee, survey fee, title search fees, title insurance, escrow desposit, recording fees, transfer taxes, etc.
+
+Points:
+* Lenders may charge points - a fee equal to 1% of the loan amount
+* Discount points:
+    * prepaid interest on the mortgage loan and reduce the interest rate (not the APR) on the loan. Discount points are considered mortgage interest and are tax-deductible.
+* origination points:
+    * Charged by the lender to cover the costs of making or originating the loan. Fee is tax-deductible only if it was used to obtain the mortgage and not to pay other closing costs.
+
+Home Purchasing and Financing
+* Fixed-rate mortgage - rate is constant throughout the term of the loan
+* ARM - rate is based on an index that fluctuates or varies on market conditions:
+    * 5/1 ARM - stable interest rate for 1-5 years, floats each year afterward
+    * 7/1 ARM - stable interest rate for 1-7 years, floats each year afterward
+    * **index** - the published benchmark on which the ARM is based. the index varies according to market conditions. Examples include LIBOR and the prime rate
+    * **margin** - is the value added to the index to calculate the interest rate of the loan. The margin remains constant throughout the term of the loan.
+
+Factors Affecting Price:
+* Location, location, location
+* school system
+* condition of the house 
+* Economic/market conditions
+
+Opportunity Cost:
+* note that with an average long-term return of 7% from the stock market + dividends generally beats the long-term investment of 4% in a home.
+
+Ways to Reduce the Cost:
+* Research alternatives
+* Comparison Shop online, use real estate agents, housing options
+* Negotiate - research comparable, understand the market, time your purchases (i.e. buy during a spring market)
+* Buy used/renovate
+
+Tax Changes
+
+
+
 # Day 9
 
 ### Comparing Transportation Costs
