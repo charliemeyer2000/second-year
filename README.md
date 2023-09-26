@@ -4,4 +4,4 @@ This contains all of the (relevant) work that I did for all my classes second ye
 
 Because each of these folders contains both notes, homeworks, quizzes, etc, I have redacted all stuff that is graded or otherwise should not be shared. Depending on the professor's policy, I may or may not open up the homeworks after the semester is over. 
 
-Also this data is fetched remotely from my website `charliemeyer.xyz` and compiled into Markdown with MDXRemote and Next.js.
+Maybe later i'll fetch this remotely with `MDXRemote` and compile it into mdx for my website.... depends how i'm feeling tho.

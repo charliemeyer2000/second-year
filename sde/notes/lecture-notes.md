@@ -3,6 +3,43 @@ title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+# Lecture 11 - OO Review ([slides](https://drive.google.com/file/d/19Y0BTlQbkFrFufTkLl52c7x9fAbH3Wh3/view?usp=drive_link))
+
+### Homework Review 
+
+- Dictionary is supposed to be such that words are stored in lower case. Must also have valid words.
+
+### Polymorphism
+
+### Object Instantiation
+
+A class is a template, not a thing. Objects are _things_. We create objects by calling constructors: `Class myThing = new Class()`
+
+#### Interfaces
+
+Using **standardized pliugs** allows you to reuse power by any electrical device. A device implementing a standard North American plug, for example, is "implementing" the interface of a North American plug.
+
+Java Interfaces:
+* When declaring our class we say it `implements` an interface. For example:
+    * `public class myClass impelements myInterface`
+* This means that a class State is promising to implement specific behaviors. 
+
+
+#### Syntax Refresher
+
+See the syntax refresher [here](https://drive.google.com/file/d/19Y0BTlQbkFrFufTkLl52c7x9fAbH3Wh3/view?usp=drive_link?slide=id.p18)
+
+#### Dependency Inversion
+
+The purpose is is to separate the interface (the way it's used) and the implementation (the way it works). This dependency inversion occurs where the `main` method uses the interface, and the implementation implements the interface.
+
+This is a way to do it with Dependency Inversion:
+
+- Create a `StateSupplier` interface, then provide `CSVStateSupplier` and `JSONStateSupplier` implementations.
+- Create an `ApportionmentMethod` interface, then provide `JeffersonMethod` and `HamiltonMethod` and `HuntingtonMethod`
+
+
+
 # Lecture 9 - Functional Programming, Comparators, Lambda Bodies, Streams ([slides](https://drive.google.com/file/d/12NfJ82dAi6KNxdVDFyDVlZRO4x3SBReS/view?usp=drive_link))
 
 
