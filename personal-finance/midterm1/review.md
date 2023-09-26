@@ -128,10 +128,42 @@
 * Credit Cards advantages/disadvantages:
     * Advantages - can gain points and build your credit using credit cards responsibly
     * Disadvantages - at least 40% miss their credit card payments. This can accrue debt and can be super dangerous. 
-* Signing a Loan:
-    * 
+* co-signing a loan:
+    * **co-signing a loan**: agreeing to be responsible for loan payments if the other person fails to make them. This is helpful if you are young as you could co sign with your parents, but this can also be dangerous as your financial situation and credit score can be affected by the other person's actions.
+* Managing your credit:
+    * Strategies to build your credit - pay your bills on time, keep your credit card balances low, don't open too many new accounts at once, check your credit report regularly.
+    * Safeguarding credit:
+        * _credit lock_: locks all access to your credit report, including your own.
+        * _credit freeze_: Federal law allows you to freeze your credit
 
 ## Housing and Transportation
+
+* Cost to purchase car/home and cost to own/operate:
+    * Houses - cost to purchase a house is the down payment + mortgage. Cost to own/operate is the mortgage, property taxes, insurance, maintenance, and utilities.
+    * Cars - cost to purchase a car is the down payment + loan. Cost to own/operate is the loan, insurance, maintenance, and gas.
+* **depreciation** - the decline in value of an asset over time
+* **appreciation** - the increase in value of an asset over time
+* Leasing a car: _leasing_ is a contractual agreement with monthly payments for the use of a car over a time period and then is returned
+    * Pros: lower monthly payments, no down payment, no trade-in hassles, lower repair costs, ability to drive a new car every few years. 
+    * Cons: no ownership interest, no trade-in value, no end to monthly payments, mileage restrictions, lease termination fees, more expensive in the long run.
+* Renting an apartment:
+    * Pros: lower initial costs, no maintenance costs, no real estate taxes, no down payment, no long-term commitment, lower insurance costs, lower opportunity costs.
+    * Cons: no ownership interest, no tax benefits, no investment value, no pride of ownership, no control over rent increases, no control over possible eviction, no control over possible sale of property.
+* Fixed-Rate vs. Adjustable rate mortgages:
+    * Fixed-rate: rate is constant throughout the term of the loan
+    * Adjustable Rate Mortgages: rate is based on an index that fluctuates or varies on market conditions:
+        * 5/1 ARM - stable interest rate for 1-5 years, floats each year afterward
+        * 7/1 ARM - stable interest rate for 1-7 years, floats each year afterward
+        * **index** - the published benchmark on which the ARM is based. the index varies according to market conditions. Examples include LIBOR and the prime rate
+        * **margin** - is the value added to the index to calculate the interest rate of the loan. The margin remains constant throughout the term of the loan.
+* Tax Advantages of owning a home:
+    * Deductibility of mortgage interest - mortgage interest is deductible on loans up to $750,000
+    * Deductibility of property taxes - property taxes are deductible up to $10,000
+* Real estate brokers: _real estate brokers_ are licensed to represent buyers and sellers in real estate transactions. They are paid a commission based on the selling price of the property.
+* Additional Costs of a house: closing costs (_settlement costs_) are the fees and charges paid when a real estate transaction si completed. **title insurance** is the closest thing that covers the lender and the buyer against loss resulting from disputes over ownership of a property. An _escrow account_ is a special account that a lender uses to hold a homeowner's property tax and insurance payments.
+* Home Equity Loan vs. Home Equity Lines of Credit:
+    * Home Equity Loan - loan with a lump sum and a higher interest rate
+    * Home Equity Line of Credit - cash-as-needed loan with fluctuating interest rates
 
 ## General
 
