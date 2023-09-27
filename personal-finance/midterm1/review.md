@@ -167,6 +167,36 @@
 
 ## General
 
+* Cost of living differences:
+    * Geographic - cost of living varies by location
+    * Income - cost of living varies by income
+* Adjusted balance held in a checking account (reconciling a checking account)
+    * **adjusted balance** - the balance after adding deposits and subtracting withdrawals made during the month
+* Expected future value or average return of an investment using the rule of 72:
+    * **rule of 72** - 72 / interest rate = number of years for money to double
+* Net after-tax take-home pay:
+    * **net after-tax take-home pay** - salary after taxes and other deductions
+* Tax equivalent value of a _nontaxable employee benefit_
+    - $\frac{\text{value of benefit}}{1 - \text{marginal tax rate}}$
+* remember that employers can match contributions to a 401k
+* Tax savings from contributing pre-tax contributions to a tax deferred retirement plan: 
+    - when you contribute to a tax-deferred retirement plan, you are not taxed on that income. You are allowed $20,500 atm.
+* Tax deductions vs. Tax credits:
+    - Tax deductions - reduce taxable income
+    - Tax credits - reduce taxes owed
+* Taxable income is based on:
+    * Gross income - earned income, investment income, passive income
+    * Filing status - single, married filing jointly, married filing separately, head of household
+    * Deductions - standard deduction, itemized deductions
+* Effective (average) tax rate, marginal tax rate:
+    * **effective (federal) tax rate** - total tax / taxable income
+    * **marginal tax rate** - the tax rate paid on the next dollar of income
+* Debt to equity ratio:
+    * $\frac{\text{total liabilities}}{\text{net worth}}$
+* Loan-to-value ratio:
+    * $\frac{\text{amount of loan}}{\text{value of property}}$
+
+
 ## Should be able to calculate/determine
 
 
