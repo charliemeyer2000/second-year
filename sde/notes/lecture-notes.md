@@ -3,6 +3,46 @@ title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+## Lecture 12 - Software Design Principles ([slides](https://drive.google.com/file/d/1-0W7SZqZhdxWCDpNLKei6xR_tS5p3ceb/view?usp=drive_link))
+
+### Internal Software Quality
+
+* Maintainability:
+    * This is the overarching theme/measure of internal quality which can be broken down into three components:
+        * Analyzability: can be understood, measured, etc
+        * Changeability: effort needed to make modifications
+        * Stability: effect that a change in one part has on other parts of the system
+        * Testability: ability to adequately test parts of code and detect defects. 
+
+### Design Difficulties
+
+Essential difficulties:
+* Complexity - too complex for one person to understand
+    * Software is not built on repeatable parts. Complexity is _inherent_ to software. 
+* Conformity - interfaces with different users, systems, etc.
+* Changeability - software is infinitely malleable
+    * software is malleable. Rapidly changing technology creates desire for change. 
+* Invisibility - difficult to diagram or visualize. 
+
+
+### Design Concepts
+
+* How should we organize our code? What code should be grouped, and what should be separated? 
+    * Modularity
+    * Functional independence
+* How should we expose between modules? 
+    * Abstraction
+    * Information hiding
+
+### Modularity
+
+* A module is a unit of code. This includes a function/class/script. 
+* Break programs into portion that solves a small problem. 
+    * Benefit - each module is easier to specify, understand, design
+    * Drawback - modules must communicate with each other.
+
+A module should have only one reason to change. 
+
 # Lecture 11 - OO Review ([slides](https://drive.google.com/file/d/19Y0BTlQbkFrFufTkLl52c7x9fAbH3Wh3/view?usp=drive_link))
 
 ### Homework Review 
