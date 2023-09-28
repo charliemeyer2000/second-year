@@ -6,6 +6,81 @@ date: Depends
 
 # Reading Notes
 
+## Reading 12 - [Design Principles](https://docs.google.com/document/d/11pQgeiM8cOTca0hev_KhGGUB3qDyUzRKajsStCyXYdY/edit?usp=sharing)
+
+### Design
+
+Good design - to allow maintenance so that **the product operates the same as it did before**. Software is expected to evolve to meet new needs. **good design** slows the growth of software entropy. 
+
+### Design Concepts
+
+1. Modularity - break up our problem into little problems. Each unit of code is called a _module_. We think of modules as classes in java. Even the ideas of using helper functions (the process of _decomposition_) within a class is a form of using modularity. We want each module to be functionally independent, i.e. each module can perform its purpose with minimal interactions with the rest of the system. The "gold standard" for functional independence is when two modules only interact through passing arguments/receiving return values via public functions. Interdependence between modules is called **coupling**, we want to minimize coupling.
+1. Abstraction - **abstraction** is the process of hiding alll unnecessary details and exposing only required details. This means we hide implementation details behind a minimal interface. We want to **encapsulate** some behavior or data. 
+1. Information hiding - mechanism by which we create a limitied interface to achieve abstraction. This is why we used `private` fields even if we have public getters/setters. 
+
+### Modularity
+
+1. **Functional Decomposition** - We decompose our highest-level module into lower-level modules and decompose sub-modules into modules that can't be decomposed further. The book talks about an example of using the Huntington method for apportionment to elaborate on this idea. However, most software doesn't run this way. Our application may be persistent or be asynchronous. Furthermore, this creates high-level functions that are incredibly dependent on each low-level function. If implementation details change, that could cascade upwards significantly. 
+1. **Class Decomposition**
+    * Cohesiveness refers to how well one class sticks to doing one thing well.
+        * WORST COHESION: Loose cohesion, avoided at all costs:
+            * Coincidental cohesion - Elements in a module are combined by coincidence (ex having one giant `Main` class).
+            * Logical cohesion - elements are grouped into a module because they have the same general activity/similar interfaces. 
+            * Temporal cohesion - items are grouped because they occur at around the same time but are otherwise unrelated. 
+        * DECENT: Functional cohesion, acceptable:
+            * Procedural cohesion - a module with only procedural coupling is supporting unrelated activities in which control passes from one activity to the next, ensuring they execute in a specific order.
+            * Communicational cohesion - Elements are grouped together in a module simply because they perform actions on the same data for either input or output. 
+        * BEST:
+            * Sequential cohesion - Elements are grouped because they describe a single procedure. However, it stipulates that one element's output are directly used by the next element's inputs. 
+            * Functional Cohesion - if a module describes a single, well-supported function, it is functionally cohesive.
+
+### Functional Independence
+
+Coupling - the degree to which two modules interact with another:
+    * **cohesion** - extent to which elements _in the same module_ are dependent on one another
+    * **coupling** - extent to which elements _in interacting modules_ are dependent on each other 
+
+Types of Coupling:
+1. Worst:
+    * Content coupling - when one class modifies the inner state of a class it depends on 
+    * Common Coupling - when two classes share the same global data (i.e. a global variable)
+    * Control Coupling - when one class passes a control flag to another class (generally a boolean). 
+1. Mid: 
+    * Stamp Coupling - when a module passes a data structure to another module, when the entire data structure is not needed.
+1. Good: 
+    * Data Coupling - all communication between modules is done via passing the minimum amount of data as arguments and returning exactly the data needed. 
+
+
+### Abstraction
+
+The idea is that "If module A has an instance of/uses Module B, and module B has an instance of/uses module C, module A should never directly interact with module C." This can be done with information hiding:
+
+* Private fields - we can use private fields to hide implementation details. This prevents illegal `set` calls.
+
+### Design Principles
+
+* KISS - Keep it simple, stupid - the idea that you should keep your code simple. This means that you should avoid over-engineering your code.
+* DRY Principle - Don't repeat yourself - the idea that you should avoid repeating code. If you find yourself repeating code, you should abstract it into a function/class or implement an interface. However, don't be too DRY - you should only abstract code if it makes sense to do so.
+* YAGNI - You ain't gonna need it - you only add features to your code when required. This is because you don't want to over-engineer your code.
+
+### SOLID
+
+Solid is an aconym for five OO-Principles: 
+
+1. S: **single responsibility principle**:
+    * Each software module should have one, and only one, reason to change. 
+1. O: **open-closed principle**:
+    * Software entities should be open for extension, but closed for modification.
+1. L: **Liskov substitution principle**:
+    * All subclasses should be substitutable for their base classes.
+1. I: **interface segregation principle**:
+    * Clients should not be forced to depend on methods they do not use.
+1. D: **dependency inversion principle**:
+    * Depend on abstractions, not concretions.
+
+
+
+
 ## Reading 11 -[Exam Review](https://docs.google.com/document/d/1oaJvF_s2TRh2MD-yfbJQRZSF6h2DoU5cTfNdb8pFdbQ/edit?usp=sharing)
 
 ### Software Engineering
