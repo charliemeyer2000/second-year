@@ -6,6 +6,95 @@ location: Comm School 258
 
 # Lecture Notes
 
+# Day 11 - Risk Mitigation
+
+Types of Risk:
+* Personal, income, liquidity, interest rate, inflation (risk). 
+
+Risk Mitigation:
+* Risk avoidance - don't do something risky
+* Risk reduction - doing safe things 
+* Risk assumption - assuming a risk for the benefit you then get
+* Risk shifting - insurance
+    * Protects your stuff and your assets
+
+Risk Mitigation:
+- Insurance protects your assets:
+    * Auto, renter's/homeowner's, personal liability/umbrella, term life insurance, disability, health. 
+
+Basics:
+- Premium - pay a premium that you pay monthly/annually
+- Deductible - you have to pay this amount before insurance then covers the rest. 
+- Coverage:
+    * Co-insurance - what insurance covers after the deductible
+    * Limits - We will cover these things up to this amount
+    * Exclusions - not everything is covered (acts of god, war, terrorism). 
+
+Car Insurance Coverage
+* Collision - insurance over your car's damage in an accident where the accident happened
+* Comprehensive physical damage - damage that happens to your car that wasn't an accident (i.e. a deer hits your car)
+* Medical payments coverage - if you cause an accident and _others_ get hurt
+* Bodily injury liability - protection from being sued against bodily injury over others
+* Property damage liability - protection for damage to property of others
+* Uninsured motorist's protection - protection against accidents against uninsured people
+* No-fault insurance/Personal injury protection
+
+Slash Notation
+
+100/300/50 (in thousands of dollars)
+- 100: Limit that will be paid to one person in an accident (Bodily Injury Liability)
+- 300: limit that will be paid to all persons in an accident (Bodily Injury Liability)
+- 50: limit for damage to property of others. (Property damage liability)
+
+Other Forms of Coverage/Riders
+
+* _Wage loss income_ - reimburses income loss due to injury in an accident
+* _towing and emergency road service_
+* _rental car substitute_ 
+* _First accident forgiveness_
+* _waiver of depreciation_
+* _rental car insurance_
+
+What affects insurance premiums? 
+* Vehicle, location, driving habits, coverage amount and policy type (deductibles, riders), credit score
+
+Renter's/Homeowner's Insurance
+
+* Covers your property - theft, fire/lightning, wind/hail/water damage
+* Offers liability protection - bodily injury/property damage
+* Medical payments
+* coverage
+    * Actual cash value
+    * Replacement value (better than ACV)
+
+Things that Affect Property Insurance costs:
+- credit score, location, type of structure (what's it made of), coverage (amount, type, deductible).
+
+Do you have enough coverage?
+* Consider:
+    * Increasing the liability coverage
+    * Purchasing an umbrella policy along with your renter's/homeowner's insurance
+
+Umbrella Insurance - covers extra things in addition to traditional coverage. 
+
+Life Insurance
+- Why?
+    * If you have people that are dependent on you for income/support. 
+    * If you have special circumstances (special needs siblings, your parents are dependent on you, if your business would have a large estate tax if you pass away)
+- Types (note that all types are tax advantaged)
+    * Term Life
+        - death benefit, low monthly cost
+    * Whole Life - death benefit, cash value guaranteed
+    * Universal Life - death benefit, cash value guaranteed, flexible payments. 
+    * Variable Universal Life - death benefit, invested in the market, flexible payments. 
+
+
+
+
+
+
+
+
 # Day 10 - Housing and Loans
 
 Comparing Costs:
