@@ -4,6 +4,116 @@ title: Readings
 
 # Readings
 
+## Chapter 10: [Property and Motor Vehicle Insurance](https://canvas.its.virginia.edu/courses/74463/assignments/368351?module_item_id=864412)
+
+### LO10-1: Insurance and Risk Management
+
+What is insurance
+- **insurance** is protection against possible financial loss. Life insurance replaces income that would be lost if the policyholder died. Health insurance meets medical expenses. Car insurance covers property/personal damage caused by the policyholder's car. Home insurance covers their place of residence. Insurance is based on _pooling risks_, where then policyholders can get from the central pool to meet expenses
+- **insurance companies** are a risk-sharing firm that agrees to assume financial responsibility for losses from a risk. 
+- To join a risk-sharing group, the person purchases a **policy** and pays a fee (**premium**) so the **insured policyholder** pays periodically.
+
+Types of Risk
+- **risk** is a lack of predictability
+- **peril** is the cause of a possible loss
+- **hazard** increases the likelihood of loss through some peril. 
+- _personal risks_ are uncertainties of income/life due to death, illness, old age, etc. 
+- _property risks_ are uncertainties of direct or indirect losses to property. 
+- _liability risks_ are possible losses due to negligence resulting in bodily injury or property damage to others. 
+- **pure risk** - personal risks, property risks, liability risks. 
+- **speculative risk** a risk that carries a change of either loss or gain. 
+
+Risk management methods:
+1. Risk avoidance
+1. Risk reduction
+1. Risk assumption
+    * Self-insurance is the process of establishing a monetary fund to cover the cost of loss. 
+1. Risk shifting - transfer risk to insurance
+    * _deductible_ - set amount that the policyholder must pay per loss on an insurance policy. 
+
+Planning an Insurance Program
+1. Set Insurance Goals
+1. Develop a plan to reach your goals 
+1. Put your plan into action
+1. Review Results
+
+### LO10-2: Property/Liability Insurance
+
+Potential property loss - houses, cars, furniture, clothing and other personal things face two types of risk: _physical damage_ (fire, water, wind, smoke) and _loss of use_ (arson, robbery). 
+
+Liability protection - **liability** is the legal responsibility fot the financial cost of another person's loss or injuries. Your legal responsibility is commonly caused by **Negligence**, failure to take responsible/necessary care. **strict liability** is present when a person is responsible for intentional/unintentional actions. **vicarious liability** is when a person is held responsible for actions of another. 
+
+### LO10-3: Home and Property Insurance
+
+**homeowners insurance** is coverage for your place of residence and its associated financial risks, such as damage to personal property and injuries to others. 
+
+Homeowner's Insurance Covers:
+1. House and other strucurres
+1. Additional living expenses (damage from a fire)
+1. Personal Property - furniture, appliances, clothing. Items can be protected w/a **personal property floater** which covers damages for specific items. a **household inventory** is a list of belongings that can allow you to then itemize ownership and value in the event of damage or loss of property. 
+1. Personal liability and related coverages - something from your home hurts someone else or someone gets hurt in your house. Most policies have an _umbrella policy_ to supplement your basic personal liability coverage. 
+1. Medical payments coverage pats the costs of minor injuries on your property. 
+1. Specialized coverages - people in areas that are prone to natural disasters can get specialized coverages. Make sure to check your policy for anti-concurrent causation clauses, and ask if you can opt out of that cause or pay an increased premium to have full coverage. 
+
+Renter's Insurance
+
+While 9/10 americans rent, only 4/10 have renter's insurance. Housing units have insurance with conventional policies. Certain homes have special arrangements. 
+
+
+### LO10-4: Home Insurance Cost Factors
+
+How much coverage do you need?
+- Under a **coinsurance clause** the homeowner pays for part of the losses if the property was not insured for the specified percentage of replacement value. Most companies now require full coverage. 
+- INsurance companies base claim settlements on **actual cash value (ACV)**, so the payment you get is based on the current replacement cost of damaged/lost item less depreciation. 
+- Under the **replacement value** method for settling claims, you receive the full cost of repairing or replacing the damaged/lost item, depreciation is not considered. 
+
+Factors that Affect Home Insurance Costs
+1. Location of home
+1. Type of Structure (what the home is made of)
+1. Coverage amount and policy type
+    * The policy you select and financial limits of coverage affect the premium you pay. 
+
+Reducing Home Insurance Costs
+1. Home Insurance Discounts - Insurers lower premiums if you have smoke detectors/burglary deterrents, etc. 
+1. Company differences 
+
+### LO10-5: Automobile Insurance Coverages
+
+**financial responsibility law** is a state legislation that requires drivers to have proof of their ability to cover the cost of damage/injury caused by a car accident. they generally fall into the category of bodily injury coverages and property damages coverages. 
+
+Coverage
+1. **bodily injury liability** covers the risk of financial loss due to legal expenses, medical expenses, lost wages, and other expenses with injuries, etc. They are generally written as a split, such as 50/100/25, in thousands of dollars - first number is limit fot he claims that can be paid to one person, second number is the limit for each accident, third number is discussed in section on property damage coverages. 
+1. **Medical payments coverage** - covers costs of health care for people injured by a car accident including yourself
+1. **uninsured motorist protection** - covers costs of accidents with people without insurance and costs of a hit-and-run. 
+1. **no-fault system** - drivers involved in accidents collect medical expanse, lost wages, and related injury costs from insurance companies. 
+1. **property damage liability** - protects you against when you damage others' property. Applies to cars, but also things ont he street as well. This is the third number in the split.
+1. **collision insurance** - pays for the damage to the car regardless of fault. The insurance company's right to recover the amount it pays for the loss from the person responsible for the loss is called _subrogation_. 
+1. **Comprehensive physical damage** - covers you from risk like fire, theft, glass breakage, vandalism, acts of god. 
+1. Others:
+    * _wage loss insurance_ - reimbursed for salary lost due to injury
+    * _towing/emergency road service_ - covers costs of assistance
+
+### LO10-6: Automobile Insurance Costs
+
+Amount of Coverage:
+1. Legal concerns - Legal advisors now recommend a 100/300 split to avoid expensive court settlements. 
+1. Property Values - cars are now more expensive!
+
+Car Insurance Premium Factors
+1. Car Type - make, model, type affect insurance costs. 
+1. **rating territory** - place of residence determines premium
+1. **driver classification** - classifying based on age, sex, marital status, etc. 
+    * each state has an _assigned risk pool_ for those who can't get car insurance. 
+
+
+Reducing Premiums
+1. Comparing companies
+1. Premium discounts - includes adding a safe driving record, alarm systems, fuel shutoff switch, etc. 
+
+
+
+
+
 ## Chapter 9: [The Housing Decision: Factors and Finances](https://canvas.its.virginia.edu/courses/74463/assignments/368362?module_item_id=843062)
 
 ### LO9-1: Housing Alternatives
