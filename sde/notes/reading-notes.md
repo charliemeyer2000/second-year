@@ -6,6 +6,46 @@ date: Depends
 
 # Reading Notes
 
+## Reading 13 - [Decomposition](https://docs.google.com/document/d/1s4NEoJlDCtIZwzbZJRy99cfvqmT4DA7QQmmHH0c2KDA/edit?usp=sharing)
+
+### UML Class Diagrams
+
+Class diagrams communicate design plan and structure. They are not **commandments** but general guidelines to aid in communication. 
+
+![uml diagram](images/uml-diagram.png)
+
+Here's a way we can describe a class:
+
+![class description](images/class-description.png)
+
+- Class Name at the top. Can be indicated as `<<abstract>>` or `<<interface>>` when they are those. 
+- Fields: listed `[name]:[type]`
+    * Doesn't include aggregation (i.e. a list of a class, for example).
+- Methods: listed as `[name]:[return type]`
+    * Common Practice:
+        - `+`: `public` items (methods/constructors)
+        - `-`: `private` items (generally fields)
+        - `#`: `protected` items
+
+
+Relationship diagrams:
+
+![relationship diagrams](images/relationship-diagrams.png)
+
+1. Dependency - weakest form of coupling, where one class uses another but does not "contain" another. Arrow points towards class being used.
+1. Aggregation/composition - when one class "possesses" another, specifically as a field. This contains a diamond on the side of the **owner**, stating that this is the class that has the field containing the other class.
+1. Bidirectional Association - both classes meaningfully are aware of one another through mutual aggregation. 
+1. Multiplicity: See [reading](https://sde-coursepack.github.io/modules/design/UML-Class-Diagrams/) for more intricate diagram explanations and drawings.
+    * **one to one**: ex: every student has one transcript, every transcript is associated w/one student.
+    * **one to many or many to one**: Each student has multiple assignments, but each individual assignment is only associated w/one student
+    * **many to many**: every student is on several class rosters, each class roster has multiple students. 
+1. Realization/Generalization: refers to inheritance through implementing `interfaces` or extended other `class`es. Arrow head points to the class being implemented/extended. 
+
+
+
+
+
+
 ## Reading 12 - [Design Principles](https://docs.google.com/document/d/11pQgeiM8cOTca0hev_KhGGUB3qDyUzRKajsStCyXYdY/edit?usp=sharing)
 
 ### Design
