@@ -3,6 +3,46 @@ title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+## Lecture 13 - Software Design Principles (again)
+
+### Modularity & Cohesion
+
+**Worst (ranked from worst-worst to worst-best)**
+- Content - when one class modifies the inner state of a class it depends on directly. Occurs frequently with global variables. Example:
+
+```java
+public class Student {
+    String name, email;
+    int id;
+    int notificationsReceived;
+}
+
+public class StudentNotifier() {
+    public notifyStudent(String message, Student s) {
+        Email notificationEmail = new Email(message, s.email);
+        s.notificationsReceived++; // BAD BAD BAD BAD
+
+    }
+}
+```
+- Coincidental Cohesion - elements are combined by coincidence. This is like a `utils.java` file. 
+- Logical Cohesion - elements are grouped into a module because they are described with the same general activity, have similar interfaces, or are otherwise categorized the same. There is no _intradependency_ .
+- Temporal Cohesion - items are grouped together because they occur at the same time but are otherwise unrelated. 
+
+**Ok**
+- Procedural Cohesion - supporting unrelated activities in which control passes from one activity to the next. 
+- Communicational - grouping because things perform actions on the same data/info
+- Sequential - group modules into procedures, but it's like transitive in each "step." Each step fees the next step. Similar, but different to procedural cohesion
+- Stamp Coupling - when a module passes a data structure to another module, when the entire data structure is not needed.
+
+**Fine**
+- Functional cohesion - a thing describes a single, well-supported function, i.e. something does one thing.
+
+**Best**
+- Data coupling - communication strictly between functions that hide implementation details with no side effects. 
+
+
+
 ## Lecture 12 - Software Design Principles ([slides](https://drive.google.com/file/d/1-0W7SZqZhdxWCDpNLKei6xR_tS5p3ceb/view?usp=drive_link))
 
 ### Internal Software Quality
