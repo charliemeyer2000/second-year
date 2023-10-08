@@ -4,6 +4,148 @@ title: Readings
 
 # Readings
 
+## Chapter 11: [Health, Disability, and Long-term care insurance](https://canvas.its.virginia.edu/courses/74463/assignments/368430?module_item_id=843286)
+
+### LO11-1: Health Care Costs
+
+Employers often offer _group health insurance_. Health care is incredibly important. Obama signed the Affordable Care Act in 2010 that attempted to:
+- reduce long-term health care costs for business/government
+- Protect families from bankruptcy/debt from healthcare costs
+- invest in prevention/wellness
+- improve patient safety and quality care
+- end barriers to coverage for people with preexisting medical conditions
+
+High Medical Costs
+
+Aging and overweight populations and the rising cost of prescription drugs cause rising health costs. Health care costs were estimated to be $4.2 trillion in 2021. 
+
+Administrative costs are also large for health care, resulting in 11% of health care dollars spent.
+
+Why does it cost so much? 
+- using expensive and difficult technology
+- testing requires lots of thoroughness. 
+- limited competition resulting in monopolies
+- aging populations result in higher costs
+
+How to reduce personal costs:
+- flexible spending account if your employer offers it
+- consider a high-deductible plan that provides medical insurance coverage and a tax-free opportunity to save for future medical needs
+- low-cost insurance for kids under 19 by the government
+- review billing statements for medical providers, ask for itemized lists of costs. 
+- Stay well! Treat your body well. 
+
+### LO11-2: Health Insurance and Financial Planning
+
+Health Insurance is a form of protection against the financial burdens of illness/injury. This divides risk among many, similar to other forms of insurance. 
+
+Group health insurance are almost 90% of all health insurance plans. The Tax Cuts and Jobs Act of 2017 requires large employers ro provide health insurance coverage to all employees. _HIPAA_ legislates standards for health insurance portability, nondiscrimination in health insurance, and guaranteed renewability. 
+
+Individual health insurance either covers a person or a family. This requires careful planning since coverage and cost varies from company to company. 
+
+Supplementing group insurance, you can use a _coordination of benefits (COB)_ provision which is a method to implement the benefits payable under more than one health insurance plan so that the benefits received from all sources are limited to 100% of allowable medical expenses. 
+
+the _COBRA_ act requires employers to offer employees and dependents that would lose group health insurance in case of a divorce, losing a job, death, loss of "dependent child" status, etc. an option to continue group coverage for a set period of time. 
+
+
+### LO11-3: Types of Health Insurance Coverage
+
+A good health insurance plan should offer basic coverage for hospital/doctor bills, 120 days' hospital room and board, $1 million lifetime maximum for each family member, pay at least 80% of out-of-hospital expenses, and no unreasonable exclusions. 
+
+Types of medical coverage:
+* **hospital expense insurance** covers in part or full hospital bills for room/board/other charges
+* **surgical expense insurance** covers in part or full surgeon's fees for an operation
+* **physician expense insurance** helps pay for care that does not involve surgery. 
+* **major medical expense insurance** protects against large expenses of a serious injury or long illness. These have a _deductible provision_ that requires the policyholder to pay a basic amount before the policy benefits begin. The other thing is a _coinsurance provision_ that requires the policyholder to share expenses beyond the deductible amount. 
+* **comprehensive major medical insurance** is a type of major medical insurance that has a very low deducible amount. 
+* **Hospital indemnity policy** pays benefits only when you are hospitalized. 
+* **dental expense insurance** provides reimbursement for expenses of dental care. 
+* **vision care insurance** 
+
+Long-term care insurance provides assistance to those that might need long term care in the event of a illness or disability that lasts a long time and leaves you unable to care for yourself. This can be very expensive. It is not recommended for those under 60. 
+
+
+Major Provisions in a health insurance policy:
+1. Eligibility - defines who is entitled to benefits under a policy
+1. assigned benefits - sign a paper allowing insurance company to make payments to your hospital/doctor
+1. copayment - type of cost sharing, amount that the patient must pay for medical services after the deductible has been met
+1. service benefits - entitled to a specific hospital/medical care rather than a specific dollar amount. 
+1. Benefit limits - provision defines maximum benefits possible
+1. Exclusions/limitations - where a policy does not provide benefits. 
+1. Coordination of benefits - prevents you from collecting benefits from two or more group policies that would total the exceeded actual charges. 
+1. Guaranteed renewable - cannot cancel policy unless you fail to pay premiums when due
+1. Cancellation - outlines when you can cancel/be terminated. 
+
+
+Trade-offs:
+1. Reimbursement vs. indemnity - provides benefits based on the actual expenses you incur
+1. Internal limits vs. aggregate limits - internal limits stipulates maximum benefits for specific expenses, such as maximum reimbursement for daily hospital room/board. 
+1. Deductible/coinsurnace 
+1. Out of pocket limit - some policies have an amount you must pay for the deductible and coinsurance. They lower financial risk. 
+
+### LO11-4: Private Sources of Health Insurance
+
+Most private insurance companies sell health insurance policies to employers who in turn offer them as fringe benefits to employees. 
+
+Hospital and medical service plans
+- **Blue cross** provides hospital care benefits on a service type basis
+- **blue shield** provide benefits for surgical and medical services. 
+
+**Managed care** refers to prepaid health plans that provide comprehensive health care to members. A **health maintenance organization** is a health insurance plan that directly employs or contracts with specific physicians for a monthly premium. 
+
+**preferred provider organizations** are groups of doctors and hospitals that provide health care at rates approved by the insurer. The **exclusive provider organization** is the extreme form of a PPO as services rendered by nonaffiliated providers are not reimbursed. 
+
+A **point of service plan** is a hybrid of the HMO and the PPO. 
+
+New Health Care Accounts:
+- Health Savings Account - HSA. Tied to high-deductible policies and funded solely by your employer and give you a pot of money to spend on health care. 
+
+
+### LO11-5: Government Health Care Programs
+
+**medicare** is a federal health insurance program for people 65 and older, or people with certain disabilities. 
+- Part A (hospital insurance) - pays for inpatient hospital care
+- Part B (medical insurance) - pays for doctors' services
+- Part C (medicare advantage) - added in 2003, run by private health care providers
+- Part D (prescription drug discounts) - added in 2006
+
+
+**medigap** or **medsup insurance** covers medical costs not covered by medicare. 
+
+**medicaid** provides for a program of medical assistance to low-income families. Administered by the state. Many members of medicaid are also covered by medicare. 
+
+The ACA financed reform with over $600 billion over 10 years to help make healthcare more affordable making many changes to make it more accessible (too many to list, read the textbook). The ACA created the Health Insurance Marketplace which makes buying health insurance easier and more affordable. 
+
+What do college students need to know? 
+* Marketplace health plan - chose to buy through the Health Insurance Marketplace
+* coverage on parent's plan - can get added/stay on their plan until you are 26
+* High-deductible plans - you can buy one while yuo're under 30 to protect yourself from high costs of a accident/serious injury
+* Medicaid and the CHIP coverage - CHIP provides low cost health coverage up to age 19.
+
+
+### LO11-6: Disability Income Insurance
+
+**disability income insurance** provides regular cash income lost by employees as the result of an accident or illness. 
+
+Trade offs:
+1. Benefits can have a waiting period to activate.
+1. Can last varying periods of time
+1. Should aim for benefits that will equal 60-70% of your pay.
+1. Consider both accident/sickness coverage
+1. Guaranteed renewability - ask for noncancellable and guaranteed renewable coverage.  
+
+
+Sources of disability income:
+1. employer - most employers provide disability income protection
+1. Social security - most salaried workers in the US participate in the social security program. Benefits determined by # of years you have been covered and also your salary. 
+1. Worker's compensation - you are entitled to worker's compensastion benefits in the event of an accident/illness at work.  
+
+
+
+
+
+
+
+
 ## Chapter 10: [Property and Motor Vehicle Insurance](https://canvas.its.virginia.edu/courses/74463/assignments/368351?module_item_id=864412)
 
 ### LO10-1: Insurance and Risk Management
