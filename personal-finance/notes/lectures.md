@@ -6,6 +6,59 @@ location: Comm School 258
 
 # Lecture Notes
 
+# Day 12 - Risk mitigation: Protecting Assets, Life, Disability, and Health Insurance
+
+Disability insurance - replaces some portion of your income if you are unable to work because you are temporarily disabled.
+* Short Term: waiting period as low as 5-14 days. Coverage for 1-24 months. Generally covers about 2/3 of salary.
+* Long-term: waiting period of >= 6 months, coverage lasting 1-10 months or years. Covers about 2/3 of salary. 
+
+Who paid the premiums? 
+* If employer paid premiums, payments are taxable
+* If you paid the premiums after-tax, payments are not taxable. 
+
+Comparing Health Insurance Plans:
+* HMO
+* PPO - networks of physicians/hospitals/caregivers that negotiate rates with insurers. 
+* EPO
+* POS
+* HDHP + HSA
+
+Best Plan for you? 
+* Research indicates that many employees choose low-deductible plans over high deductible plans at a cost of more than $1,000 annually. Best plan != most expensive plan
+* Gathering information:
+    * Monthly premium
+    * What is the annual deductible
+    * What are the co-payments - 
+    * What is the co-insurance - cost after deductible that you pay not covered by insurance
+    * What is the annual maximum out of pocket (MOOP) - 
+* Identify Alternatives:
+    * employer's plan(s) 
+    * parent's plan until yuo are 26
+    * healthcare marketplace
+    * spouse's plan
+    * high-premium/low-deductible insurance
+    * low-premium/high-deductible insurance (HDHP) + HSA
+* HSA:
+    * Employees with a HDHP may open an HSA, both employee and employer may contribute tax-free funds
+    * Can be created with a qualified HSA trustee
+    * Fund contributions through payroll deduction or direct payments
+    * Tax-exempt trust or custodial act
+    * pay or reimburse certain medical expenses tax free
+    * If you drop out of the HDHP, the HSA funds remain yours. 
+    * This is a tax-advantaged vehicle for saving, accumulating, and even investing funds for current/future medical expenses. Many employers give up to $1,000. 
+    * Contributions are tax deductible. Employer contributions are excluded from gross income. Contributions are 100% vested and remain in your account. Interest/earnings are tax-free. Your HSA is _portable_, you can keep it with you if you change jobs. 
+    * Have to be covered by an HDHP, can't be enrolled in medicare, can't be claimed as a dependent on someone else's tax return. 
+
+Qualified Medical Expenses:
+* Long-term care insurance
+* 
+
+Get a head start:
+* Adults carried on parents' health insurance plans who are not tax dependents can open their own HSA
+* 2023 contribution limit covered by family plan is $7750. 
+* New grads can negotiate w/an employer to receive money for every year covered by parents' insurance
+* Investment funds for long-term growth/future medical expenses/retirement/etc. 
+
 # Day 11 - Risk Mitigation
 
 Types of Risk:
