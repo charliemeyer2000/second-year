@@ -6,6 +6,39 @@ date: Depends
 
 # Reading Notes
 
+## Reading 14 - [Architecture](https://docs.google.com/document/d/1J1mWwgpGpzc9m8bDhD7-d_JsXe_x6NeAqvrn8FHH-No/edit)
+
+### Architecture
+
+With architecture, we want to think of **components**. Components describe the major sub-systems in our software system. We can think of components as:
+- groups of modules that handle the same major feature or feature-set
+- independent programs 
+- data sources
+- external internet connections 
+
+Architectural Concerns:
+1. **boundaries** - interacting with systems that you have no control over. This can include structure of a JSON object, the life of an api key, rate limiting, etc. Avoiding this can be doing things like hiding interactions behind abstraction
+1. **separation of concerns** - Making each component to handle one major concern. This is like making a database for storing persistent data, we want a GUI to exist separate from that database, etc. 
+1. **long-term maintainability** - architecture's organization should be clear to understand. Architectural designs are the hardest to change and if we don't make smart design decisions in architecture, entropy can build up quickly.
+
+### Architectural Patterns
+
+A pattern is an established idea of how to solve design problems. Note the difference between a pattern and a framework. A framework is existing code/structure you use to build a program. 
+
+Common architectural patterns:
+1. A big ball of mud - no connection whatsoever
+1. Layered architecture - each component interacts with the components in the layer above/below it. 
+1. Networked architectures:
+    * Client-server architecture - two separate components communicating with one another
+    * Peer-to-peer - no centralized resource. Clients communicate with each other over the network, with no one user being considered the "main" user. 
+1. Monolithic architecture - we deploy an application as a single application. 
+1. Microservice architecture - Building applications as microservices - each microservice typically creates an API that exposes a set of features/operations that meet needs. They can be deployed on a different server and can interact with things. 
+
+### Three-Layer Architecture
+
+Notable example of layered architecture. In the example of handling a website that does course registration, we'd consider thee things: **presentation**, **business logic**, and **data layer**. 
+
+
 ## Reading 13 - [Decomposition](https://docs.google.com/document/d/1s4NEoJlDCtIZwzbZJRy99cfvqmT4DA7QQmmHH0c2KDA/edit?usp=sharing)
 
 ### UML Class Diagrams

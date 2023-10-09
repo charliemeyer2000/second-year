@@ -4,6 +4,130 @@ title: Readings
 
 # Readings
 
+## Chapter 13: [Investing Fundamentals](https://canvas.its.virginia.edu/courses/74463/assignments/368433?module_item_id=843289)
+
+### LO13-1: Preparing for an Investment Program
+
+Establishing investment goals:
+- You must create goals that are _written, specific, and measureable_. They also need to be particular to your financial needs. 
+- Satisfy your basic needs: emergencies, short term, intermediate, and long-term goals, and retirement. 
+
+Financial Checkup:
+1. Ethical concerns - paying your bills on time - you have an obligation for your credit purchases. 
+1. Work to balance your budget - Do not start investing until you do not have debt. 
+1. Manage your credit card debt - it is very easy to get in trouble with your credit card. Consider your card's APR and be intelligent with your card.
+
+Start and Emergency fund
+- an **emergency fund** is an amount of money you obtain quickly in case of immediate need. 
+- also establish a **line of credit** which is a short term loan that is approved before you actually need the money. This is just in case. 
+
+Economic Factors:
+- **economics** is the study of how wealth is created and distributed. 
+- the government can use _fiscal policy_ to alter tax structure and levels of government spending
+- the Fed can use _monetary policy_ to determine the level of interest rates for consumers and businesses. 
+- Economists define a _business cycle_ as an increase/decrease in a nation's economic activity. To manage your money in a downturn:
+    * establish a larger emergency fund
+    * know what you owe
+    * Reduce spending
+    * Notify credit card companies and lenders if you cannot make payments
+    * Monitor the value of your investment/retirement accounts. 
+
+Getting the Money you need to start investing
+
+INvestment is easy to start especially with an employer-sponsored retirement account, but you also need to consider your willingness and ability to create a long-term investment plan and what you are willing to sacrifice to make it happen. 
+
+TVM and investments - You must save/invest money each year. That way it can grow over a long period of time. Rate of return makes a large difference, too. Note higher returns generally involve larger risk. 
+
+### LO13-2: Factors Affecting the Choice of Investments
+
+Safety and Risk:
+- _Safety_ means minimal risk of loss. _risk_ is an investment means a measure of uncertainty about the outcome. 
+- a **speculative investment** is a high risk investment made in the hope of earning a large profit on all/most of your initial investment. 
+- Tolerance for risk is important when investing. _the potential return on any investment should be directly related to the risk the investor assumes_. 
+- To calculate return on an investment, you need to calculate your **rate of return** which is the total income you get on an investment over the period of time divided by the original amount invested. 
+    * Ex: $\text{rate of return} = \frac{increase/decrease in value + annual income}{original investment}$
+- Types of risk:
+    * Inflation risk - risk that the financial return on an investment loses value due to inflation rising faster
+    * interest rate risk - when government/corporate bonds change. If you buy $1,000 of Amazon stock that pays 3.15% interest and bond interest rates for new bonds of comparable quality increase to 4.5% , the market value of your bond will decrease. 
+    * Business failure risk - Face the possibility that the business fails or performs poorly. 
+    * Market Risk - 
+        * Systematic risk - overall risks in the market/economy
+        * Unsystematic risk - risk that affects a specific company/market/country
+    * Global investment risk 
+
+Investment income: 
+* investors purchase certain investments because they have a predictable source of income, like CD's, savings accounts, securities by the US government. 
+
+**Investment Liquidity** - ability to buy/sell investment quickly without losing much value. 
+
+### LO13-3: Asset Allocation and Investment Alternatives
+
+**asset allocation** is the process of spreading assets among several type sof investments to lessen risk. This is the diversification of assets. This can include stocks by different sizes of companies, foreign stocks, bonds, and cash. The suggestion for a person who's 28 years old should do 81% stocks, 7% bonds, and 12% cash. It will shift towards more cash as you get older. 
+
+Investment alternatives:
+* **equity capital** money that a business obtains from its owners
+* **dividend** is a distribution of money or stock that pays to stockholders. 
+* types of stocks:
+    * Common stocks - provides a source of income if the company pays dividends and growth if the value of the company increases
+    * Preferred stocks gets cash dividends before common stock investors. 
+* **Bonds**: You lend money with a promise to get it back with interest. 
+    * **corporate bonds** are a corporation's written pledge to repay a specific amount along with interest
+    * **government bonds** are also written pledges to repay a sum with interest.
+    * **maturity date** is the date on which the govt/corporation/municipality will repay you. 
+* **mutual funds** are ppols of money from many investors to invest in various securities. The goal is diversification. You need to consider when you select a mutual fund the **expense ratio**, that is, the costs of management fees associated with this fund. 
+* **real estate** - selling real estate that sells at a profit, but there are no guarantees. 
+* others:
+    * options
+    * commodities
+    * derivatives
+    * bitcoin
+    * precious metals
+    * antiques/collectibles
+
+
+### LO13-4: Factors that Reduce Investment Risk
+
+Your role in the investment process:
+1. Evaluate potential investments - consider how much you have to put away to earn some amount. 
+1. Monitor you investments - Need to track them once you've purchased them
+1. Keep accurate/current records - allows you to make decisions on whether to sell or put in additional funds. 
+1. Other factors that improve investment decisions:
+    * Seek professional help 
+    * Financial planners who have training in securities, taxes, real estate, and estate planning
+    * Consider tax expenses of selling your investments. 
+
+### LO13-5: Sources of Investment Information
+
+
+Sources:
+1. Internet - 
+    * bloomberg
+    * cnn business
+    * financial industry regulatory authority
+    * INvestor.gov
+    * Kiplinger
+    * Motley fool
+    * QUicken
+    * Securities and Exchange Commission
+    * Yahoo! Finance
+1. Newspapers and Programs
+    * WSJ, NYT, Financial Times, USA Today
+    * CNBC, MSNBC, Bloomberg
+1. Business Periodicals, Government Publications
+    * Barron's, Bloomberg Businessweek, Fortune, Forbes
+    * Money, Piplinger's Personal Finance, Worth
+    * SEC, Fed, Bureau of Economic Analysis. 
+1. Corporate Reports - corporations selling new issues or securities have to disclose information about their corporate earnings, assets/liabilities, products/services, etc. 
+1. Investor Services, newsletters:
+    * Value Line
+    * Standard's and Poor
+    * Morningstar Investment Reports
+
+
+
+
+
+
 ## Chapter 11: [Health, Disability, and Long-term care insurance](https://canvas.its.virginia.edu/courses/74463/assignments/368430?module_item_id=843286)
 
 ### LO11-1: Health Care Costs
