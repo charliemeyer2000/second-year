@@ -3,6 +3,71 @@ title: Lecture Notes
 author: Charlie Meyer
 date: August 22, 2023
 ---
+
+## Lecture 14 - [Architecture](https://drive.google.com/file/d/1WqcEMFLQf4EsPybUUsSDfYY38pez2JGE/view?usp=drive_link)
+
+### Dependencies
+
+* as software grows, it will be harder to make changes to existing systems
+
+
+Levels of design:
+- High-level design: (software architecture)
+    * where does data come from
+    * How is our system interacted with and monitored
+    * What does our system need to communicate with externally?
+- Low-level design
+    * modularity
+    * internal interfaces (module connections)
+    * Detailed algorithms and data structures
+
+### Software Architecture and High-Level Design
+
+* Define a system in terms osf its components and interactions
+* Examples of components:
+    * independent programs - such as command line programs, pop-up applications, etc
+    * Groups of modules/classes
+    * Clients, servers
+    * files, databases
+* Examples of interactions
+    * Procedure calls
+    * Communication between components. 
+
+### Bad Patterns
+
+* _put it all in main_
+    * bad!!
+    * Complely unmanagable for larger systems
+* _god object_ - one class that communicates with every object
+* _big ball of mud_ - Many software projects that start with design end up a big ball of mud. This can be lack of restructuring, efficiency, and structural consistency. 
+* _monolithic architecture_  - one main component that does everything
+    * fine for small, simple programs. Not good for large, complex projects. This is because modules within the component are tightly coupled, and maintainability suffers because of that. 
+
+
+### Architecture Patterns
+
+* Patterns are a strategy for how to solve a common problem:
+    * A pattern is not fully coded or implemented
+    * A pattern is a generalized example that omits most implementation details
+
+* Client-server:
+    * Multiple client components interact with a shared service/server
+    * Clients do not communicate directly - communication done with server
+    * Clients can be thin/thick
+
+### Layered Architecture
+
+* System organized into hirearchially layers:
+    * Each layer contains one or more components
+    * Each laer provides a service to the layer above it
+    * Each layer acts as a client to the layer below
+* Common pattern, three-layer is very common.
+
+### UI + Business Logic + Data
+
+
+
+
 ## Lecture 13 - Software Design Principles (again)
 
 ### Modularity & Cohesion
