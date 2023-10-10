@@ -14,6 +14,7 @@ cso/homework
 cso/labs
 # ignore summer
 cso/summer-learning
+cso/portal
 
 # ignore summer internships
 summer_internship
@@ -24,7 +25,7 @@ summer_internship
 # ignore entp hw
 entp/homeworks
 
-# ignore all files except images, md, pdf, R, java, class
+# ignore all files except images, md, pdf, R, java, class, .s, .out. .txt, .o, .c
 *.*
 !*.png
 !*.jpg
@@ -40,3 +41,8 @@ entp/homeworks
 !*.R
 !*.java
 !*.class
+!*.o
+!*.s
+!*.out
+!*.c
+!*.txt

@@ -6,6 +6,119 @@ date: Depends
 
 # Reading Notes
 
+## Reading 15 - [Integration and Mockito](https://docs.google.com/document/d/1Xbd1nR88Dear5Nu2chgDw-mqHo0GpJVDOLslMNs18Ak/edit?usp=sharing)
+
+### Software Integration
+
+Combining modules together is called **integration**. 
+
+Integration Testing ensures that modules are communicating correctly. These can be automated with junit testing. An integration test in junit relies on multiple modules working together correctly. 
+
+Integration Strategies:
+1. Integration hell - when changing Class A affects Class B and causes changes in Class B which then causes changes again in class A. This can be avoided by using `interface`s and `abstract class`es. 
+1. Big-Bang Integration - Haphazard integration in whatever means necessary
+1. Integration around dependencies -  this allows us to do **bottom-up integration** wherein we first test the interaction between two modules, then the interaction between those two modules and another module, and so on. Bottom up integration is defined as integration starting with the _class that depends on nothing_, integrating each class after all its dependencies have been integrated.  
+    * advantages - we can unit test our integration as we build up 
+    * disadvantages - we test the most critical aspects of our program (high-level logic) last. 
+1. Top-down - integrate starting with the class _on which nothing depends_ . Integrate classes that are depended upon by your integrated classes. 
+1. Top-down mocking - We can use `mockito` to create an "on the fly" (at runtime) stub for a class. Mocking allows us to test, _even when we have unintegrated, or unimplemented dependencies, so long as we know their interface_.
+    * Advantages - we can integrate our system in the same way we want to design our system - from high level to low-level
+    * disadvantages - difficult to test interfaces directly. Furthermore, it can be hard to mock databases, web-services, etc. 
+1. Sandwich integration - combines bottom-up and top-down. This starts with a **target layer** and then both integrate up and down afterwards. 
+    * Advantages - allows scalability as new modules/subprojects are integrated
+    * Disadvantages - can be difficult to isolate a "target layer" when there are many interdependencies between modules. 
+
+
+### Testing With Mock Objects
+
+Consider this test: 
+
+```java
+    @Test
+    public void getsThirtyTeams() {
+        NBATeamReader reader = new NBATeamReader();
+        List<NBATeam> teams = reader.getNBATeams();
+        assertEquals(30, teams.size());
+    }
+```
+
+Note that this test actually relies upon `getNBATeams()`'s usage of a BallDontLieReader, which means that this test could fail even though it doesn't have anything wrong with it, such as being disconnected from the internet, the API could change, etc. Thus, this is not a unit test. 
+
+When unit testing, we want to test the class we are testing, and not have it fail for any other reason. By that metric, even testing the BallDontLieReader isn't a pure unit test since we have an external dependency of a web service API. 
+
+**Test Doubles** allow us to test an API reader without an API. This replaces _external dependency_ objects with replacement objects that imitate the behavior of the external dependency they are replacing.
+
+**stubs** are an object that replaces an object with another object of the same interface. They generally return hard-coded values. We can then test with the Stub class. The problem with manual stub limitations is that we only designed it to test one method, thus comes in Mockito. 
+
+### Mockito
+
+here is a GoodAbbreviationsTest:
+
+```java
+package edu.virginia.cs.nbateams;
+
+import org.junit.jupiter.api.*;
+import java.util.*;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+public class GoodAbbreviationsTest {
+    private NBATeamReader reader;
+
+    private static NBATeam LAKERS, CELTICS;
+
+    @BeforeAll
+    public static void init() {
+        LAKERS = new NBATeam(1,"Lakers","Los Angelos","LAL",
+                Conference.WESTERN, Division.PACIFIC);
+        CELTICS = new NBATeam(2, "Celtics", "Boston", "BOS",
+                Conference.EASTERN, Division.ATLANTIC);
+    }
+
+    @BeforeEach
+    public void setup() {
+        reader = mock(NBATeamReader.class);
+    }
+
+    @Test
+    public void testGoodAbbreviations() {
+        when(reader.getNBATeams()).thenReturn(List.of(LAKERS, CELTICS));
+
+        GoodAbbreviations abbreviations = new GoodAbbreviations();
+
+        List<NBATeam> expected = List.of(CELTICS);
+
+        List<NBATeam> goodAbbreviationsTeams = abbreviations.extractGoodAbbreviationTeams(reader);
+        assertEquals(expected, goodAbbreviationsTeams);
+    }
+}
+
+```
+
+note `reader = mock(NBATeamReader.class);` - we want to create a _test double object_ that has the same interface as NBATeamReader. 
+
+To add mockito, add: `testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.7.0'` to your deps and import it with `import static org.mockito.Mockito.*;`
+
+**mocks** are similar to stubs. We want to monitor and verify that the class interacts w/external dependencies as expected.
+
+Mockito `verify` - function that gets called on a mocked object. We use verify to check the post-conditions for **mocked objects**. This is because mocked objects do not have any real behavior - mocking is used to **separate the method-under-test from the external dependency**. 
+
+You can also use `times(int num)` to run a function multiple times within a `verify` or `verifyNoMoreInteractions` when that means no methods other than the ones we have called `verify` with have been called. 
+
+Verify vs. Assert
+
+When we are testing return values of the _method under test_, we use assertions. But we use verify to ensure the intended _destructive_ functions (functions that could produce side effects on the external dependency) are called.
+
+
+
+
+
+
+
+
+
+
 ## Reading 14 - [Architecture](https://docs.google.com/document/d/1J1mWwgpGpzc9m8bDhD7-d_JsXe_x6NeAqvrn8FHH-No/edit)
 
 ### Architecture
