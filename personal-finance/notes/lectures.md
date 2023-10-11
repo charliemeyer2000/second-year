@@ -6,7 +6,41 @@ location: Comm School 258
 
 # Lecture Notes
 
-# Day 12 - Risk mitigation: Protecting Assets, Life, Disability, and Health Insurance
+## Day 13 - Health Savings, starting Investment
+
+Designating a beneficiary
+
+* HSA will be treated as spouse's HSA after owner's death
+* Non-spouse beneficiary - account stops being an HSA, the fair market value of the HSA becomes taxable to the beneficiary in which the owner dies. 
+
+Health Reimbursement Arrangement:
+* Employer-funded and owned group health plans
+* Employees are reimbursed tax-ree for qualified medical expenses up to a fixed-dollar amount per year
+* January 2020: Individual coverage HRA introduced
+* 2020 - 2022: ICHRAs grow to 350%. 
+
+Investment Portfolio
+the collection of financial assets held by a person or entity
+
+Total financial wealth - all of your financial/tangible 
+
+Investment Risk/Return
+* Investment risk and return are generally correlated
+* Potential return of an investment to the risk the investor assumes
+* Low risk investments generally yield low returns
+* High risk reflects _potential_ for loss & should be compensated with _potential_ for high returns. 
+
+Investment Risk
+* Business failure risk - weak or poor management or products affect stocks, municipal, and corporate bonds
+* Interest rate risk - changes in interest rates affect value of investments (particularly bonds)
+
+How to measure investment risk:
+* uncertainty about the outcome
+* Volatility
+
+
+
+## Day 12 - Risk mitigation: Protecting Assets, Life, Disability, and Health Insurance
 
 Disability insurance - replaces some portion of your income if you are unable to work because you are temporarily disabled.
 * Short Term: waiting period as low as 5-14 days. Coverage for 1-24 months. Generally covers about 2/3 of salary.
