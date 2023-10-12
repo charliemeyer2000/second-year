@@ -4,6 +4,119 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 15 - [Integration and Mockito](https://drive.google.com/file/d/10piRWCB-udehDSi9ija2gWRbZNX-KgCy/view?usp=drive_link)
+
+* Integration example: Consider `main` with a `CSVStateReader`, `HamiltonStrategy`, and `Representation`. If you want to test the code after performing unit testing, you "stick them all together, test, and run." this is called **big bang integration** - combine however or all at once. 
+* Alternatives:
+    * **bottom up** 
+        - start with modules on that _depend on nothing_
+        - Once that's integrated, move _up_ and ensure integration works. 
+        - Benefits:
+            * Easier to race fault responsibility
+            * "integrate as you build" - implement low-level features first
+            * Each module is integration tested with working code
+            * If low-level code is difficult, more likely defect-prone, test it first and often
+        - Disadvantages:
+            * More complex/data intensive
+            * Thinking about abstract naturally is more top-down
+            * High-level classes have bigger impact on design usability
+            * virtually impossible to build prototypes efficiently. 
+    * **top down**
+        - start with modules on which _everything depends_
+        - we use "mocking" so that we can "fake" behaviors of dependencies, allowing us to test top down. 
+
+### Test Stubs
+
+* drivers act like a main methods
+* Stubs are typically hard-coded implementations that mimic (mock) the behaviors of dependency
+* If you consider the example of a `CityTeamFinder` that finds the NBA teams associated with a city that depends on `NBATeamReader` that depends on `BallDontLieReader` that depends on the internet that depends on the Ball Dont Lie API, performing unit tests on `CityTeamFinder` could fail because some other dependency fails. 
+
+### Mockito
+
+**mockito** is a framework for mocking during testing. 
+* we use it with junit during testing
+* We can use it to implement stubs during development
+* We would never want to ship mocked code
+
+Dependency:
+* `testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.7.0'`
+
+Import: 
+* `import static org.mockito.Mockito.*;`
+
+Much like Junit, it is in many other languages.
+
+
+example of mockito:
+
+```java
+public class TeamCityFinderUnitTest {
+    private CityTeamFinder testTeamFinder;
+    private NBATeamReader mockTeamReader;
+
+    private static NBATeam LAKERS = new NBATeam(1,"Lakers","Los Angelos","LAL", Conference.WESTERN, Division.PACIFIC);
+    private static NBATeam CELTICS = new NBATeam(2, "Celtics", "Boston", "BOS", Conference.EASTERN, Division.ATLANTIC);
+
+    @BeforeEach
+    public void setup() {
+        mockTeamReader = mock(NBATeamReader.class);
+        testTeamFinder = new CityTeamFinder(mockTeamReader);
+    }
+
+    @Test
+    public void testSingleCity() {
+        when(mockTeamReader.getNBATeams()).thenReturn(List.of(LAKERS, CELTICS));
+        Set<NBATeam> teamsInBoston = testTeamFinder.getTeamsFromLocations(List.of("Boston"));
+
+        assertEquals(new HashSet<NBATeam>(Set.of(CELTICS)), teamsInBoston);
+    }
+}
+```
+
+When-Then:
+* Example: `when(mockList.contains(mistborn)).thenReturn(false)`
+* generally, this should be the first line of your test unless you have a very good reason
+* In this example, mockLIst is mocking `List.class`. 
+* This says, "when, during this test, someone calls "contains(mistborn)" on this mockList instance, return false. 
+
+
+Mock Syntax - we can use `@Mock` in a mockito test to specify that something is a mock (unless specified) like this:
+
+```java
+@ExtendWith(MockitoExtension.class) {
+class TranscriptTest {
+    @Mock
+    Map<Section, Grade> history;
+    @Mock
+    Course sde, algorithms;
+    @Mock
+    Section sectionAlgorithmsFail, sectionAlgorithmsPass, sectionSde;
+
+    @Test
+    void getGrade() {
+        history = new HashMap<>(Map.of(sectionSde, Grade.A_PLUS));
+        testTranscript = new Transcript(history);
+        assertEquals(Grade.A_PLUS, testTranscript.getGrade(sectionSde));
+    }
+
+    @Test
+    void add() {
+        testTranscript = new Transcript(history); // by default, a mocked transcript
+        testTranscript.add(sectionSde, Grade.A);
+
+        verify(history).put(sectionSde, Grade.A);
+    }
+
+}
+
+
+}
+
+```
+
+
+
+
 ## Lecture 14 - [Architecture](https://drive.google.com/file/d/1WqcEMFLQf4EsPybUUsSDfYY38pez2JGE/view?usp=drive_link)
 
 ### Dependencies
