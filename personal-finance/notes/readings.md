@@ -4,6 +4,125 @@ title: Readings
 
 # Readings
 
+## Chapter 14: [Investing in Stocks](https://canvas.its.virginia.edu/courses/74463/assignments/368436?module_item_id=843292)
+
+### LO14-1: Common and Preferred Stocks
+
+**Common stocks** are the most basic form of ownership for a corporation. They cover business start-up costs and pay for expansion, used as a financing tool. stock is **equity financing** - money received from sale of shares of ownership in a business. The price of a stock changes when information about the firm's sales and future prospects changes - based upon sales, revenue, earnings, market conditions, etc. 
+
+A **dividend** is a distribution of money, stock, or other property that a corporation uses to pay stockholders. They are paid out of profits, and must be approved by the board of directors. Some companies typically do 30-70% of their profits in dividends, whereas others retain large profits for R&D. 
+
+Management must make concessions to stockholders by selling common stock. A **proxy** is a legal form that lists the issues to be decided at a stockholders' meeting and requests that stockholders transfer voting rights to individuals. 
+
+Why Common Stock?
+- can lead to returns greater than inflation or returns from interest in a bank
+- Investors want returns despite risk
+- lower taxation for investments held longer than a year. 
+- income from dividends - profitable companies will give stockholders dividends.
+    * **record date** iss the date on which a stockholder must be registered on the corporation's books to get a dividend payment
+    * **ex-dividend** is when a stock trades without dividend, and the seller is entitled to a declared dividend payment. 
+
+Most cases stock is held onto for a period fo time in which price increases, and you decide whether to holds or sell. 
+
+A **stock split** is a procedure in which shares of the stock owned by existing shareholders are split into a large number of shares. This is used when there is an "ideal range" for the firm's stock. There are no guarantees that a stock's price will go up after a split. the _capitalization_ is the total market value (current value of stock and other securities) doesn't change due to a split.
+
+**preferred stock** is a type of stock that gives teh owner the advantage of receiving cash dividends before common stockholders are paid any dividends. They are referred to as "Middle" investments because they represent an investment midway between common stock. The dividend is higher on preferred than corporate bonds 
+
+### LO14-2: Evaluating a Stock Issue
+
+Common Classifications of Stocks:
+
+|Type of Stock| Characteristics | 
+|-|-|
+|Blue chip | safe investment that generally attracts conservative investors | 
+| Cyclical | a stock that follows the business cycle/the economy as a whole | 
+|Defensive | a stock that gives constant dividends and stable earnings | 
+| growth | A stock issued by a corporation that has the potential to earn more profits than the average profits of all firms in the economy | 
+| Income | investment that pays higher-than-average dividends | 
+| Large cap | stock issued by a corporation w/capitalization over $10 billion | 
+| midcap | ... between $2 - 10 billion | 
+| smallcap | ... between 300 million and 2 bil | 
+| microcap | between 50 and 300 million | 
+| penny stock | stocks that sell for less than 5 per share | 
+| value stock | stock that is attractive to investors because it is undervalued | 
+
+Sources to use:
+- internet:
+    * Marketwatch, reuters, value line, morningstar/
+- services:
+    * Valueline, morningstar, zacks.
+- newspapers:
+    * WSJ, Investor.gov
+
+
+### LO14-3: Numerical Measures that Influence Investment Decisions. 
+
+A **stock market bubble** is used to describe a situation when stocks are trading at prices above their actual wealth. Many investors consider **earnings per share**  - a corporation's after-tax income divided by the number of outstanding shares of a firm's common stock. 
+
+The **price to earnings ratio** is the price of a share of stock divided by the corporation's earnings per share of stock. This gives investors an idea of how much they are paying for a company's earning power. a high P/E ratio indicates investor optimism because of the expectations of higher earnings in the future. 
+
+**dividend payout** is the percentage of a firm's earnings paid to stockholders in cash. This is calculated by dividing the annual dividend amount by the earnings per share. The **dividend yield** is the annual dividend amount divided by the investment's current price per share. 
+
+**total return** is a calculation that includes not only the yearly dollar amount of dividends but also any increase/decrease in the original purchase price of the investment. This is calculated by $\text{total return} = \text{dividends} + \text{capital gain}$
+
+The **annualized holding period yield** calaculation takes into account the total return, the original investment, and the time investment is held. The formula is used:
+
+$\text{annualized holding period yield} = \frac{\text{original return}}{\text{original investment}} \times \frac{1}{N}$
+
+where N = number of years investment is held. 
+
+The **Beta** is a measure reported in publications that measures volatility associated w/a specific stock with the volatility of the overall market/S&P 
+
+Volatility = Beta for a specific stock * increase in overall market.
+
+the **book value** of a stock is determined by deducting all liabilities from the corporation's assets and divided the remainder by the number of outstanding shares of common stock. 
+
+The **market price-to-book ratio** is the market price of one share of stock divided by the book value for one share of stock.
+
+Investment Theories:
+- **fundamental analysis**: based on assumption that a stock's intrinsic or real value s determined by the company's future earnings
+- **technical analysis** based on the assumption that a stock's market value is determined by supply/demand, not expected earnings. 
+- **efficient market hypothesis**: investment theory based on the assumption that the stock price movements are purely random. 
+
+### LO14-4: Buying and Selling Stocks
+
+To purchase a stock, you have to generally do it through a firm. The the **primary market** you purchase financial securities with an **investment bank** is a financial firm that assists in raising funds, usually by helping to sell new security issues. 
+
+An **initial public offering** (IPO) occurs when a corporation sells stock to the general public for the first time. 
+
+After a stock has been sold through the primary market, it is traded through the **Secondary market** for existing financial securities that are currently traded among investors. 
+
+Secondary markets for stocks:
+- a **Securities exchange** is a marketplace where member brokers who represent investors to buy and sell securities. This is such corporations like NYSE. A **designated market maker (DMM)** buys or sells a particular stock in an effort to maintain an orderly market. 
+- **Over-the-counter market** - is a network of dealers who buy and sell stocks of corporations that are not listed on the securities exchange. This includes the **NASDAQ**. 
+- An **account executive** or stockbroker is a licensed individual who sells/buys securities for clients. 
+
+A **market order**is a request to buy/sell stocks at the current market price. Since the market is an auction, the representative will try to get the best price available to be completed asap. Stocks payment must bet done within two days. A **limit order** is a request to buy/sell a stock at a specific price or better. A **stop loss order** is an order to sell a particular stock at the next available opportunity after its market price reaches a specified amount. 
+
+### LO14-5: Long-term and Short-Term Investment Strategies
+
+Holding a stock is called being an _investor_. Long-term investors hold investments for a long time. People who quickly buy/sell are called _speculators_ or _traders_. 
+
+Long-term techniques:
+- Buy-and-hold: hold onto stock for a long time, making money through dividends and reinvesting them. 
+- Dollar-cost averaging: long-term technique used by investors who purchase an equal dollar amount of the same stock at equal intervals. 
+- Direct investment and dividend reinvestment plans:
+    * A **direct investment plan** allows you to purchase stock directly from a corporation without having to use an account executive or brokerage firm. 
+    * A **dividend reinvestment plan** - allows you to reinvest cash dividends to purchase stock of the corporation. 
+
+Short-term techniques:
+* Day-trading - buying and selling in a short period of time. 
+* buying stock on margin - when you buy on **margin** you borrow part of the money needed to buy a particular stock. 
+* Selling short - **selling short** is selling a stock that has been borrowed from a brokerage firm and must be replaced at a later date:
+    1. Arrange to borrow a certian amount of shares of a particular stock from a brokerage firm
+    1. Sell the borrowed stock, assuming it will drop in value in a short period of time.
+    1. Buy the stock at a lower price than the price it sold for in step 2
+    1. Use the stock purchased in step 3 replace the stock borrowed from the brokerage firm in step 1. 
+* **options** gives you the right (but not obligation) to buy/sell a stock at a predetermined price during a specified period of time. A **put option** is the right to sell shares of a stock at a guaranteed price before specified expiration date. a **call option** gives the purchases the right to buy shares at a price before expiration date. 
+
+
+
+
 ## Chapter 13: [Investing Fundamentals](https://canvas.its.virginia.edu/courses/74463/assignments/368433?module_item_id=843289)
 
 ### LO13-1: Preparing for an Investment Program
