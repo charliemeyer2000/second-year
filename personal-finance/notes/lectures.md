@@ -6,6 +6,99 @@ location: Comm School 258
 
 # Lecture Notes
 
+## Day 14 - Investment Plans
+
+Creating an Investment Plan
+* Investment objective
+    * Establish realistic goals
+    * UNderstand potential risks/rewards
+    * determine how much you need to meet your goals
+    * Consider tax consequences
+    * Research potential investments
+    * Keep accurate records
+    * monitor your investments!
+* Risk tolerance
+* Time horizon
+* Liquidity needs
+* tax situation
+* legal/regulatory needs
+
+Investment Vehicles
+* Taxable:
+    * Savings and money-market accounts
+    * Brokerage and/or mutual funds
+* Tax-Advantaged:
+    * Retirement accounts
+    * 529 Accounts
+    * Health Savings Account
+
+Assets-liabilities = Owners' Equity
+
+Why do Corporations Issue Stock? 
+* Rather than taking out a loan, you can issue stock to raise money. To finance the business, start-up costs, new factory, expand via growth. 
+* To provide an exit strategy for early-stage investors. 
+* Monetize stock options and restricted investments and provide liquidity for investors/employees.
+
+Equities:
+* Common stock
+    - Ownership
+    - Rights:
+        * to vote for board members, approve auditors, important decisions
+    - Share of profits
+    - dividends (if approved by board)
+* Preferred stock
+    - Ownership
+    - no voting rights
+    - rights:
+        * fixed dividends
+    - callable
+    - less growth potential
+
+Classification of Stocks
+- Size/capitalization: **market capitalization** is the market value of the company's outstanding shares.
+    * **large cap** - > 10 billion
+    * **mid cap** - between 2 to 10 billion
+    * **small cap**:
+        * **micro cap**: Less than 300 million
+        * **nano cap**: Less than 50 million
+    * **penny stocks**: stocks less than $5. 
+- Investment characteristics:
+    * Growth - companies that grow greater than the market.
+    * Value - companies that sell for less than their _intrinsic value_ or their _book value_.
+    * Income - good long term stock. 
+    * Cyclical - moves with the market (business cycle)
+    * Defensive Stocks - do not change with the economy/business cycle
+    * Blue-Chip - "high quality stocks," 
+- Where company is located/registered
+
+Buying and Selling Stocks
+* Primary Market (IPO)
+    * Market in which an issuer of securities offers securities to investors usually through an investment bank or other representative
+    * an **investment bank** is a financial firm that assists corporations in raising funds through issuance, marketing, distribution of securities
+    * First time selling to general public is the initial public offering (IPO)
+* Secondary market
+    * Market for existing financial securities. 
+    * **over the counter** (ex NASDAQ)
+    * Most stocks are sold through stock exchanges like NYSE, Regional exchanges, Foreign Security Exchanges
+
+
+Buying/Selling stocks on the secondary market:
+* **market orders** - request to buy/sell stock at the current market value
+* **limit order** - request to buy/sell at a specified price
+* **stop-loss order** - request ot sell at the next available opportunity after its market price reaches a specified amount. 
+* Full service, discount, online brokerage firms:
+    * Determines how much advice, help, fees, commissions, resources you get (higher help/advice = higher commissions).
+    * **fiduciary** - Brokers _must_ be a fiduciary!! This means that they should be selling for his/her clients, and are involved in your investments not just their personal gain. 
+    
+
+
+
+
+
+
+
+
+
 ## Day 13 - Health Savings, starting Investment
 
 Designating a beneficiary
