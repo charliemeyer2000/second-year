@@ -4,6 +4,91 @@ title: Readings
 
 # Readings
 
+## Chapter 15: [Investing in Bonds](https://canvas.its.virginia.edu/courses/74463/assignments/368437?module_item_id=843293)
+
+### LO15-1: Characteristics of Corporate Bonds
+
+A **corporate bond** is a corporation's written pledge to pay a specified amount of money with interest. The **maturity date** is the date on which the corporation should repay you. They are either short term (under 3 years), intermediate term (3 to 10 years) or long term (over 10 years). **face value** is the dollar amount the bondholder will get at the bond's maturity. 
+
+A **bond indenture** is a legally binding contract that details all of the conditions relating to a bond issue. The **trustee** is a financially independent firm that acts as the bondholder's representative. This can be a bank. 
+
+### LO15-2: Why Corporations Sell Corporate Bonds
+
+Corporations sell bonds when they:
+* Need money for major purchases
+* need to finance ongoing activities
+* Can't sell stock
+* Use interest paid to bond owners as a tax-deductible expense that reduces the taxes the corporation pays.
+
+Types of Bonds:
+* **debenture** is an unsecured bond or debt instrument that is backed only by the reputation of the issuing corporation. 
+* A **mortgage bond** otherwise known as a _secured bond_ is a corporate bond secured by various assets of the issuing firm.
+* A **subordinated debenture** is an unsecured bond that gives bondholders a claim secondary to that of a mortgage or debenture bondholders wrt interest payments. 
+* **convertible bond** can be exchanged at the owner's option for shares in common stock
+* **convertible corporate note** is a legal debt convertible to shares of common stock at the investor's option. 
+* **high yield bond** - corporate bonds that pay higher interest but also have a higher risk of default. Can also be called "Junk bonds." 
+
+Provisions for Repayment:
+* A **call feature** allows the corporation to call in or buy outstanding bonds from current bondholders before the maturity date.
+* A **sinking fund** is a fund to which annual/semiannual deposits are made for the purpose of redeeming a bond issue at maturity or a percentage of the bonds in an issue before maturity. 
+* **Serial bonds** are bonds of a single issue that mature on different dates. 
+
+
+### LO15-3: Why Investors buy Corporate Bonds
+
+_asset allocation_ is the practice of spreading your money among several different types of investments to lessen risk. Some see government bonds as safer than corporate bonds. Corporate bonds may provide more growth and income potential than other conservative options.
+
+A **registered bond** is registered in the owner' same by the issuing company. Another typ eof bond is called a **bearer bond** which is not registered in the investor's name. 
+
+Three Things can affect a bond's value:
+* Actions by the Fed to stimulate economy/control inflation increase/decrease interest rates that corporations and governments pay when they issue new bonds
+* Interest rate increase/decrease causes the market value of older bonds with fixed interest rates you already own to increase/decrease until they reach maturity.
+* Financial condition of the company issuing the bond
+
+There is an _inverse relationship_ b/w a bond's price and overall interest rates in the economy. 
+
+Bond Repayment at maturity:
+* a **bond ladder** is a strategy where investors divide their investment dollars among bond that mature at regular intervals in order to balance risk/return. 
+
+### LO15-4: Government Bonds and Debt Securities
+
+A **government bond** is a written pledge from the go'vt to repay a sum of money with interest. US treasury offers 5 types of bonds: Treasury bonds, treasury inflation-protected securities, treasury bills, treasury notes, and US go'vt savings bonds. Go to [treasury direct](https://www.treasurydirect.gov) to buy or do it thru brokers with a commission. 
+
+**Treasury Bill** - sold at minimum of $100 w/100 increments. Can be as short as a few weeks to a year. 
+
+**Treasury Note** - Issued in $100 units with a maturity of more than 1 year but not more than 10. 
+
+**TReasury Bonds** - sold at min $100 and has 20/30 year maturity. Interest paid every 6 mo until maturity. 
+
+**Treasury inflation protected securities (TIPS)** - Sold at min $100 w/$100 increments. 5, 10, 30 year maturities. Principal of TIPS increases/decrease with inflation per the CPI. 
+
+**Federal agency debt issues** - debt securities are issued by federal agencies and government-sponsored enterprises (GSE's), like the Federal National Mortgage Association (Fannie Mae) and the Government National Mortgage Association (Ginnie Mae). 
+
+**State/Local Go'vt Securities**:
+* A _municipal bond_ is a debt security issued by a state/local government. Finance ongoing activities. They are either a **general obligation bond** backed by faith and **revenue bonds** backed by income from a project it's funding. Can be insured by the MBIA. 
+
+### LO15-5: The Decision to Buy/Sell Bonds
+
+
+Use internet, WSJ, Barron's. 
+
+Bond price quotations are base don the _clean price_, which represents the price of a bond with no accrued/earned interest. _dirty price_ is bond plus accrued/earned interest. _bid price_ is the price a buyer is willing to pay for a government security. Difference between bid/ask prices is the _spread_.
+
+You can use annual reports to understand financial information from a firm. 
+
+Bond ratings can be given ranging from AAA to D. 
+
+Bond yield calculations: **Current yield** on a corporate bond = (annual income amount) / (current market value).
+
+**yield to maturity** is: (dollar amount of annual interest + (face value - market value) / number of periods) / ((market value + face value) / 2)
+
+
+
+
+
+
+
+
 ## Chapter 14: [Investing in Stocks](https://canvas.its.virginia.edu/courses/74463/assignments/368436?module_item_id=843292)
 
 ### LO14-1: Common and Preferred Stocks
