@@ -6,6 +6,115 @@ date: Depends
 
 # Reading Notes
 
+## Reading 16 (Day 17) - [Data Persistence and JSON](https://docs.google.com/document/d/1alDto6f7CVdCUuJu_CKyTLykvUs2ewegejeV4nOlPc4/edit?usp=sharing)
+
+### Data Persistence
+
+**Persistence** is the idea that we want data to be saved or _persisted_. We can store information in files and in databases. Files are incredibly common for persisting information:
+* Source Code (.java, .py, .c)
+* Document files (pdf, doc)
+* Executable programs/compiled code (exe, msi, jar)
+* Media files (image, audio, video)
+
+Databases are a common method to store data but also have abstractions to tell you how the data is stored. These can either be local (SQLite) or remote (Postgres).
+
+### JSON 
+
+JSON (JS Object Notation) is a data format that is:
+* _structured but flexible_ 
+* _nestable_ - JSON supports nesting for things like lists and maps. 
+* _human readability_ - it is very readable so it keeps the semantics of the data front and center when parsing the data
+* _Plays nicely with objects_ - you can easily transfer fields for Objects into JSON
+
+Let's use this working example:
+
+
+```json
+{
+  "conferences": [
+    {
+      "abbreviation":  "ACC", 
+      "id": 1,
+      "name":  "Atlantic Coast Conference",
+      "founded": 1953,
+      "size": 14,
+      "hasDivisions": true,
+      "teams": [
+        {
+          "id": 1,
+          "name": "University of Virginia",
+          "abbreviation": "UVA",
+          "mascot": "Cavaliers",
+          "division": "ACC Coastal",
+          "record": {
+            "totalWins": 3,
+            "totalLosses": 7,
+            "confWins": 1,
+            "confLosses": 6,
+            "winPercent": 0.3
+          }
+        },
+        {
+          "id": 2,
+          "name": "Virgina Tech",
+          "abbreviation": "VT",
+          "mascot": "Hokies",
+          "division": "ACC Coastal",
+          "record": {
+            "totalWins": 3,
+            "totalLosses": 8,
+            "confWins": 1,
+            "confLosses": 6,
+            "winPercent": 0.272727272
+          }
+        }
+      ]
+    },
+    {
+      "abbreviation":  "Big XII",
+      "id": 2,
+      "name":  "Big 12 Conference",
+      "founded": 1994,
+      "size": 14,
+      "hasDivisions": false,
+      "teams": [
+        {
+          "id": 3,
+          "name": "West Virginia University",
+          "abbreviation": "WVU",
+          "mascot": "Mountaineers",
+          "record": {
+            "totalWins": 5,
+            "totalLosses": 7,
+            "confWins": 3,
+            "confLosses": 6,
+            "winPercent": 0.416666667
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+JSON supports integers, floats, strings, booleans, lists, and maps. The structure of JSON begins with a `map` with one key, "conferences." Each conference is a map with keys "abbreviation," "id," "name," "founded," "size," "hasDivisions," and "teams." 
+
+Parsing json works from outside in. For example, if I wanted to get wins/losses for UVA:
+`jsonObj["conferences"][0]["teams"][0]["record"]` and then get `totalWins` and `totalLosses`. 
+
+### Org.JSON (Not Complete)
+
+### Web Services (Not Complete)
+
+### XML (Not Complete)
+
+
+
+
+
+
+
 ## Reading 15 - [Integration and Mockito](https://docs.google.com/document/d/1Xbd1nR88Dear5Nu2chgDw-mqHo0GpJVDOLslMNs18Ak/edit?usp=sharing)
 
 ### Software Integration

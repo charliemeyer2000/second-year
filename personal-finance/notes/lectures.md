@@ -6,6 +6,62 @@ location: Comm School 258
 
 # Lecture Notes
 
+## Day 15 - Investment
+
+Stock Supply/Demand
+* Supply:
+    * Shares outstanding
+    * Float - number of shares available for trading (excludes restricted shares), reflects liquidity. 
+* Demand:
+    * Investors
+    * Stock buyback programs
+
+What Affects Investors Demand? 
+* General Investor Confidence - economic outlook, consumer sentiment/expectations
+* Industry News - Competitive landscape, tobacco litigation, fracking
+* Company-specific news - CEO quits, new product launched, closing stores.
+* Quarterly earnings announcements - profits are up because of increased sales; margins are down because of rising costs.
+
+Evaluating Stocks
+* How do we measure our own financial strength? 
+* What do we look for? 
+    * Positive cash flow
+    * Increasing cash flow
+
+Numerical Measures that Influence Investment Decisions
+* Corporate earnings
+* Earnings per share (EPS).
+* Price-to-earnings ratio = price per share / earnings per share. 
+* Beta - measure of volatility compared to the overall market. 
+* Book Value per share = (assets - liabilities) / shares outstanding
+* Market to book value = (market value per share) / (book value per share)
+* Dividend yield = (annual dividend amount) / (price per share)
+* Dividend payout = (annual dividend amount) / (EPS)
+* Market-to-book ratio: 
+    * A low market to book may indicate an _undervalued stock_ 
+    * A high one may indicate as _overvalued stock_
+
+Investment Decision-Making:
+* Fundamental Analysis: based on the assumption that the stock's value is determined by future earnings
+* Technical analysis: based on the assumption that a stock's value is based on supply and demand. Not based on expected earnings. Plot past price movements and other market average to observe trends to observe future value.
+* Efficient Market Hypothesis: a stock's current market price reflects its true value
+
+Long-term and Short-Term investments
+* Long-term Techniques:
+    * buy and hold
+    * Dollar-cost averaging
+    * Direct investment and dividend reinvestment plans
+* Short-term techniques
+    * Day trading
+    * Selling short
+    * Trading in options
+
+Advice from Famous Investors:
+* "Be fearful when others are greedy and greedy when other are fearful." - Warren Buffet
+* "Buy what you know." - Peter Lynch
+* "Just by the damn index fund." - John Bogle
+
+
 ## Day 14 - Investment Plans
 
 Creating an Investment Plan
