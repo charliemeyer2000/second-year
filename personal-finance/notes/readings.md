@@ -148,7 +148,7 @@ The **price to earnings ratio** is the price of a share of stock divided by the 
 
 **dividend payout** is the percentage of a firm's earnings paid to stockholders in cash. This is calculated by dividing the annual dividend amount by the earnings per share. The **dividend yield** is the annual dividend amount divided by the investment's current price per share. 
 
-**total return** is a calculation that includes not only the yearly dollar amount of dividends but also any increase/decrease in the original purchase price of the investment. This is calculated by $\text{total return} = \text{dividends} + \text{capital gain}$
+**total return** is a calculation that includes not only the yearly dollar amount of dividends but also any increase/decrease in the original w of the investment. This is calculated by $\text{total return} = \text{dividends} + \text{capital gain}$
 
 The **annualized holding period yield** calaculation takes into account the total return, the original investment, and the time investment is held. The formula is used:
 

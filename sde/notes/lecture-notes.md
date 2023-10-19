@@ -4,6 +4,53 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 16 - [Data Persistence, XML, JSON](https://drive.google.com/file/d/1WUi6-g2QfM__LF9cTLGml63iB3a_r-Hr/view?usp=sharing)
+
+What we want in a data format:
+1. Flexibility - allow for optional fields and not even include a field
+1. Communicability
+    * state what fields a data element has
+    * Clearly indicate how this element could be translated to an object
+1. Ease of use
+    * Make data consistent to parse
+    * Make the data easy to read/write. 
+
+Shit solution 1: XML
+* It's like html but it's verbose and annoying. (LOL JAVA). 
+
+Better Solution: JSON
+* yummy yummy json! I love json. 
+* JSONObject == HashMap, with **key of a string**, and the value can either be a `String`, `Integer`, `Boolean`, `Float`, JSONObject, or JSONArray.
+* JSONArray == List
+
+Working w/JSON example:
+
+```java
+public class Temp {
+    public static void main(String[] args) {
+        String jsonString = """
+            {
+                "fruit": "Apple",
+                "size": "Large",
+                "color": {
+                    "red": 255,
+                    "blue": 0
+                    "green": 0
+                }
+            }
+            """;
+        JSONObject = new JSONObject(jsonString);
+        // do parsing accordingly.
+        System.out.println(jsonObject.getJSONObject("color").getInt("red"));
+
+    }
+}
+```
+
+
+
+
+
 ## Lecture 15 - [Integration and Mockito](https://drive.google.com/file/d/10piRWCB-udehDSi9ija2gWRbZNX-KgCy/view?usp=drive_link)
 
 * Integration example: Consider `main` with a `CSVStateReader`, `HamiltonStrategy`, and `Representation`. If you want to test the code after performing unit testing, you "stick them all together, test, and run." this is called **big bang integration** - combine however or all at once. 
