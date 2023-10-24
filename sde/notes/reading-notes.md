@@ -6,6 +6,8 @@ date: Depends
 
 # Reading Notes
 
+## Reading 17 - Sqlite - not complete
+
 ## Reading 16 (Day 17) - [Data Persistence and JSON](https://docs.google.com/document/d/1alDto6f7CVdCUuJu_CKyTLykvUs2ewegejeV4nOlPc4/edit?usp=sharing)
 
 ### Data Persistence
@@ -108,10 +110,6 @@ Parsing json works from outside in. For example, if I wanted to get wins/losses 
 ### Web Services (Not Complete)
 
 ### XML (Not Complete)
-
-
-
-
 
 
 

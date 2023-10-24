@@ -4,6 +4,88 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 17 - [SQLite](https://drive.google.com/file/d/1KElJQMXI-3I4gl--zpp9eiWAuJBP6dEt/view?usp=drive_link)
+
+### Database Keywords
+
+* Tables:
+    * Tables list information (such as a spreadsheet)
+    * Each row is a record
+    * Each column is called an attribute
+* PRIMARY_KEY:
+    * Every table should have one or more primary key
+    * A primary key has the following constraints:
+        * Must be unique
+        * Must be non-null
+* SQLite datatypes:
+    * Integer - integer, optionally `INT(5)` means "display at most 5 digits."
+    * Real - floating point number. 
+    * Text - A string of size "size" "String"
+    * Blob - sequence of bytes (images, files, etc)
+
+Example of creating a table:
+
+```bash
+create table if not exists Courses (
+    crn INTEGER PRIMARY KEY,
+    Subject Text,
+    Number Integer, 
+    Section Integer,
+    MeetingTime Text,
+);
+```
+
+adding data to table:
+ 
+```bash
+insert into Courses (CRN, Subject, Number, Section, MeetingTime) values
+(12345, "CS", 3140, 2, "TT 2:00 - 3:15pm");
+```
+
+### SQLite
+
+`sqlite3` is a command to interface with databases.
+
+Making a database - `sqlite3 mydb.sqlite`
+* Then you will be in sqlite, and you can do `create table People (Id INTEGER PRIMARY KEY, Name Text);`
+* Open existing database - `sqlite3 existingFile.sqlite`
+* Create new database - `sqlite3 nonExistingFile.sqlite`
+
+SQLite Constraints:
+* Tables and columns have constraints
+* NOT NULL - Column cannot have a null value
+* DEFAULT - Provides a default vlaue when user INSERT such that if no data is specified for the column, it adopts the default value
+* UNIQUE - All non-null values must be unique. (but you can have repeated null values)
+* CHECK - defines a boolean condition that must be true for a row to be added
+* INTEGER PRIMARY KEY - only one primary key per table, is both UNIQUE and NOT NULL.
+
+Additional commands:
+* `.quit` – quit the sqlite command line (period required)
+* `.open` - to open a database file
+* `.tables` – list all tables in the database
+* `.dump` – Create a sql script that recreates the databases state from scratch as a SQL script
+* `.read` – Read in and run a sql script (such as a dump file)
+
+Selecting, Reading, Updating
+
+* `select * from Courses where Subject="CS" order by Number;`
+* `select CRN from Courses where Subject="CS";`
+* `update Courses set MeetingTime="TR 2:00 - 3:15 PM" where crn=12345;`
+
+Not fucking up:
+* `begin;` - sets a begin point (**transaction**)
+    * `delete from Courses;`
+    * `select * from Courses;` - nothing happens
+    * `rollback;` - rolls back your deletion!
+
+Database Normal Forms
+* How can we create a table that shows which classes a student has credit for? 
+* We should use **CRN** as the primary key, but this breaks a rule - _first normal form_ 
+* _Second normal form_ - be in first normal form, and single column primary keys.
+
+
+
+
 ## Lecture 16 - [Data Persistence, XML, JSON](https://drive.google.com/file/d/1WUi6-g2QfM__LF9cTLGml63iB3a_r-Hr/view?usp=sharing)
 
 What we want in a data format:
