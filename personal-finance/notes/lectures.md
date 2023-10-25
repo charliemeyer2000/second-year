@@ -6,6 +6,10 @@ location: Comm School 258
 
 # Lecture Notes
 
+## Day 17 - Bonds & Review of "The Big Short"
+
+
+
 ## Day 16 - Bonds
 
 Government Bonds:
