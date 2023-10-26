@@ -4,6 +4,45 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 18 - [Databases](https://drive.google.com/file/d/17DZMGbb2vtCheXsoUCseEcbG94EXZ-_C/view?usp=drive_link)
+
+### Database Normal Forms
+
+#### 1NF
+
+#### 2NF
+
+Divided the current students table into 2 tables. Single column, primary key. 
+
+#### On Delete Cascade
+
+Ensures that if the foreign key reference record is deleted, it also deletes any affiliated rows. 
+
+#### SQLite Examples
+
+* `select * from Courses where Subject="CS" and Number="3140"`
+* `select * from Courses join Lecturers on Courses.Lecturer = Lecturers.Id`
+    * Joins rows where Courses.Lecturer = Lecturers.Id. 
+    * Necessary to include the `on` statement since if you didn't, you'd get every course joined with _every_ lecturer. Which isn't helpful!
+* `drop table Courses;` - deletes the table "Courses"
+
+#### Java JDBC with SQLite
+
+* JDBC - org.xerial.sqlite-jdbc
+* `implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.39.40'`
+
+#### Using JDBC in Java
+
+* URL Example = `String url = "JDBC:sqlite:database_filename.sqlite3";`
+* Where to store database:
+    * We store the database in the root directory of the project, **Not in the resources folder**.
+    * this is because stuff in the `/resources` folder should be **read only** but the database isn't!!
+    * This is because we don't want to have that in the `.jar` file. 
+* Two ways to set up a connection for SQLite:
+    * Set up the database driver - `Class.forName("org.sqlite.JDBC");`
+    * Create the connection object - `Connection con = DriverManager.getConnection("jdbc:sqlite:database_filename.sqlite3");`
+
+
 ## Lecture 17 - [SQLite](https://drive.google.com/file/d/1KElJQMXI-3I4gl--zpp9eiWAuJBP6dEt/view?usp=drive_link)
 
 ### Database Keywords
@@ -17,7 +56,7 @@ date: August 22, 2023
     * A primary key has the following constraints:
         * Must be unique
         * Must be non-null
-* SQLite datatypes:
+* SQLite data types:
     * Integer - integer, optionally `INT(5)` means "display at most 5 digits."
     * Real - floating point number. 
     * Text - A string of size "size" "String"
