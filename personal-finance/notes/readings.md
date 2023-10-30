@@ -4,6 +4,69 @@ title: Readings
 
 # Readings
 
+## Chapter 17: [Investing In Real Estate or Other Alternatives](https://canvas.its.virginia.edu/courses/74463/assignments/368459?module_item_id=843357)
+
+### LO17-1: INvesting In Real Estate
+
+In a **direct investment**, the investor holds legal title to the property. These include homes, duplexes, apartments, land, etc. An **indirect investment** appoints a trustee to hold legal title on behalf of all the investors in a group. This includes trusts, mortgage, mortgage pools.
+
+Direct Investment:
+* Home that you can pay for depends on income, credit, monthly expenses, down payment, and others. 
+* Home is a place you live, a tax shelter, and a hedge against inflation.
+
+**Commercial Property** refers to land/buildings that produce lease or rental income. Deductions such as mortgage interest, depreciation, property taxes, and other expenses are limited to the amount of rental income you receive. A **passive activity** is a business/trade in which you do not materially participate, such as rental activity. **Passive loss** is the total amount of losses from a passive activity - total income from the passive activity. 
+
+Undeveloped land - people can subdivide. 
+
+Investing in foreclosures can allow you to bet on economic downturn to then clear the property and sell it.
+
+Real estate Syndicates or Limited Partnerships:
+- a **syndicate** is a temporary association of individuals or firms organized to perform a specific tasks that requires a large amount of capital. 
+
+Real estate investment trusts pool investor funds to make construction/mortgage loans. 
+* Equity REIT - operate income-producing real estate
+* Mortgage REIT - loan money to real estate owners or invest in existing mortgages
+* Hybrid REIT - combination of both.
+
+A **participation certificate** is an equity investment in a pool of mortgages or student loans purchased by government agencies. 
+
+### LO17-2: Advantages of Real Estate Investments
+
+1. POssible hedge against inflation
+1. Easy entry
+1. Limited financial liability (as a limited partner)
+1. No management concerns (in limited partnerships, REITs, mortgages, participation certificates)
+1. Financial Leverage - the use of borrowed funds for investment purpose. 
+
+### LO17-3: Disadvantages of Real Estate Investments
+
+1. Illiquid
+1. Declining Property Values 
+1. Lack of Diversification
+1. Lack of a tax shelter (From tax reform act of 1986, reduces taxpayers' ability to use losses generated form real estate investments to offset income gained)
+1. Long Depreciation Period 
+1. Management Problems - managing properties results in lots of management issues
+
+### LO17-4: Investing in Precious Metals, Gems, and collectibles
+
+Gold: Gold's value gets heightened by war and political instability. You can get it directly or through investments. 
+* Gold bullion - gold bars and wafers. 
+* Gold Bullion Coins:
+    * _Proof bullion coins_ - minted for collectors 
+    * _Uncirculated bullion coins_ - minted for investment purposes
+* Gold Stocks - can purchase common stocks of gold mining companies. 
+* Gold Certificates - Used as a gold standard and can be exchanged for an equal value of gold. They have now become collectibles.
+
+Silver, Platinum, Palladium, and Rhodium
+* hedge against inflation and are a safe haven during political upheaval. precious metals sit in vaults earning nothing. Your profit or loss is entirely dependent on the market. 
+
+Precious Stones
+* Diamonds, sapphires, rubies, and emeralds - hedge against inflation. They are generally illiquid. They are also highly controlled by one company, who can entirely control the market and the value of diamonds. 
+
+**collectibles** are rare coins, art, antiques, stamps, etc. Lots of people use internet to buy and sell.
+
+Caveat Emptor - collecting has become dangerous due to forgery, nostalgia, limited availability. 
+
 ## Chapter 15: [Investing in Bonds](https://canvas.its.virginia.edu/courses/74463/assignments/368437?module_item_id=843293)
 
 ### LO15-1: Characteristics of Corporate Bonds
