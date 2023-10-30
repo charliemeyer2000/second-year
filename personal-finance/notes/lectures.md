@@ -6,8 +6,58 @@ location: Comm School 258
 
 # Lecture Notes
 
-## Day 17 - Bonds & Review of "The Big Short"
+## Day 18 - Alternative Assets (Real Estate, others)
 
+Examples of alternative assets are anything that are **not** stocks, bonds, or other cash equivalents. These include:
+* Gold
+* Real estate
+* Private equity
+* Venture Capital
+* Hedge Fund
+
+Commonly Marketed Examples
+* Real estate (excluding personal residence)
+* Commodities
+* Venture Capital
+* Private equity
+* Hedge funds
+* Collectibles (art, antiques)
+* Cryptocurrencies
+* Managed futures contracts
+
+Common Risks
+* No public market for trading/pricing
+    * illiquid
+    * Lack of transparency
+    * Not scalable
+* Costs
+    * acquisition costs
+    * Holding costs
+    * Transaction costs
+
+Accredited Investors
+* SEC Regulation D: investors who are financially sophisticated have a reduced need for the protection provided by regulatory disclosure filings
+* Allowed to deal in securities not registered with financial securities
+* High net worth individuals, banks, insurance companies, and trusts
+* Requirements:
+    * Income > 200,000 for 2 years & expectation of the same or higher
+    * Net worth > $1 million excluding your primary residence
+    * Governance status
+    * Professional experience. 
+
+CalPERS
+* California Public Employees Retirement System
+* Absolute Return Strategies (ARS) Program valued at $4 billion
+    * 24 hedge funds
+    * six hedge fund-of-funds
+    * Reason: part of an ongoing effort to reduce complexity/costs.
+
+What about other asset classes?
+* 
+
+
+
+## Day 17 - Bonds & Review of "The Big Short"
 
 
 ## Day 16 - Bonds
