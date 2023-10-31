@@ -4,6 +4,125 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 19 - [Design Patterns](https://drive.google.com/file/d/1kDmVjqOUlI5cBmYZvvvsT6UIX4KqpCOl/view?usp=drive_link)
+
+- [Readings](https://docs.google.com/document/d/1jKhBFyaQ6P58hgx3yssDkDdFhy95hcZkrQZg-OYrBD0/edit)
+
+### Design Patterns
+
+* Experience shows that many design patterns improve internal software quality
+* Often best practices
+* Not every pattern is suitable for every situation
+
+### Iterators
+
+* Iterators allow you to visit all elements of collections one at a time
+* Java has a built in iterator pattern
+* If you implement a collection, you have implemented an iterator
+
+### Why use Iterators?
+
+* key advantage is **functional independence** and **information hiding**. 
+    * Don't have to know:
+        * How a collection is structured
+        * How the iterator works
+    * All i know is that i can create an iterator to visit every element!
+* If you implement an iterator, other programmers can use your code without having to understand it.
+
+### Iterator Design Pattern
+
+* Promotes information hiding and functional independence
+* In a collection, iteratee through each element one by one without knowing it's internal structure:    
+
+```java
+Iterator.boolean hasNext() // returns true if there's a next element, otherwise false
+
+Iterator.E getNext() // returns the next element, throws exception if there is no next. 
+
+```
+
+### Do i have to use design patterns? 
+
+* Short answer is _no_:
+    * Don't have to use them
+    * Never force them!
+* Can be beneficial to use **if they solve a design problem you are trying to solve**
+    * People familiar with the pattern will better understand your code
+    * Patterns we teach have been proven effective overtime at improving the internal quality of the software. 
+
+### Groups of Design Patterns
+
+1. Creational Patterns - handle object creation and instantiation
+1. Structural Patterns - Bring existing objects together
+1. Behavioral Patterns - give a way to manifest flexible behavior. 
+
+
+### Creational Patterns
+
+* Patterns that typically "hide" or **limit constructor usage**. 
+* Objects may require a special process to create them correctly
+    * Explaining a a complicated process can violate _information hiding_
+    * This can lead to programmer's calling constructors in ways that they shouldn't. 
+
+Example:
+
+```java
+public class Singleton {
+    public static Singleton instance;
+
+    private String attribute;
+
+    private Singleton(String in) {
+        instance = this;
+        attribute = in;
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton("You haven't set a string yet");
+        }
+        return instance;
+    }
+}
+```
+
+### Singleton Pattern
+
+* Only once instance can exist at a time - instance can be shared by multiple modules without those 
+modules being aware of each other
+* Common uses:
+    * Logging
+    * Client side UI settings
+    * Service locations
+* Never use a singleton if you need multiple instances
+
+
+### Factory Method Pattern
+
+* Create a concrete factory class with a factory method
+* Chooses which concrete implementation of some abstract class to produce. 
+
+### Abstract Factory Pattern
+
+* there's a factory interface various factories implement to then return various objects. 
+
+### Builder Pattern
+
+If you have an object that has a complex creation process (many objects, lots of configuration, etc). 
+If you want to make the process to build the object correctly and easily, make a class whose 
+job is to build a specific class. This allows you to define things _piecewise_, handling _default cases_
+if not specified. Helps that the order of the arguments does not matter, meaning all that is required is the 
+`buildObject()` method at the end. 
+
+### Adapter/Facade Pattern
+
+* **Adapter** - adapt an existing class/object to a new interface without changing the underlying class. 
+    * useful to update interfaces while minimizing side effects/propagation of changes
+* **Facade** - hide a complicated interface or a set of interfaces with a single interface 
+
+
+
+
 ## Lecture 18 - [Databases](https://drive.google.com/file/d/17DZMGbb2vtCheXsoUCseEcbG94EXZ-_C/view?usp=drive_link)
 
 ### Database Normal Forms
