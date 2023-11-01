@@ -6,6 +6,43 @@ date: Depends
 
 # Reading Notes
 
+## Reading 20 - [Design Patterns](https://docs.google.com/document/d/1jKhBFyaQ6P58hgx3yssDkDdFhy95hcZkrQZg-OYrBD0/edit)
+
+### Creational 
+
+1. [Singleton](https://refactoring.guru/design-patterns/singleton)
+    * A creational pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance. This is useful when you have something that might write to a file -  you should ensure that only _one instance_ can write to that file. Using a singleton allows you to access an object from anywhere in the program but also protects that instance from being overwritten by other code. This comes down to a single implementation:
+    ```java
+    public Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+    ```
+1. [Factory Method](https://refactoring.guru/design-patterns/factory-method)
+    * A **factory method** is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. This means yuo replace _direct objects construction calls_ with calls to a factory method. This allows you to override the factory method in a subclass and change the class of products being created by the method.
+    * 
+1. [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
+    * An **abstract factory** is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+    * This abstract factory returns abstract product types represented by extracted interfaces
+
+### [Builder](https://refactoring.guru/design-patterns/builder/java/example)
+
+Builder in Java allows you to create complicated objects over multiple individual steps. This means that you don't have to create a giant object with a giant constructor. 
+
+
+## Structural
+
+1. [Adapter](https://refactoring.guru/design-patterns/adapter)
+    * Allow a legacy class to interface without changing the legacy class
+1. [Facade](https://refactoring.guru/design-patterns/facade)
+    * Hide multiple complex interactions behind an interface
+1. [Design Pattern Overuse](https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition)
+    * FizzBuzzEnterpriseEdition
+
+
+
 ## Reading 17 - Sqlite - not complete
 
 ## Reading 16 (Day 17) - [Data Persistence and JSON](https://docs.google.com/document/d/1alDto6f7CVdCUuJu_CKyTLykvUs2ewegejeV4nOlPc4/edit?usp=sharing)
