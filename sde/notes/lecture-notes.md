@@ -4,6 +4,41 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 20 - [Design Patterns 2](https://drive.google.com/file/d/1i1Dl2s2ZSq7AYdEpWCnvAP4rbpVh2kHJ/view?usp=sharing)
+
+### Observer
+
+* Problem: objects need to modify a varying list of objects that some even has occurred:
+    * Variable change
+    * Method called
+    * Whatever
+* Possible that you'll want to link the objects to notify each other at runtime
+    * Possibly multiple dependencies
+
+### Bridge
+
+* Problem - allow for combinator of concepts (abstractions) and things that use them (implementors) dynamically, minimizing coupling
+* Decorator:``
+    * problem: how to dynamically add functionality to an object
+    * avoiding having tons of separator classes, use combinator
+* Think of a bridge as a collection of various implementations of the strategy pattern.
+
+### Strategy Pattern
+
+* this is a pattern that uses a class that represents the _strategy_and passes in an instance to the 
+method that implements the rest of the algorithm (i.e., homework3, `getRepresentation()` - client
+doesn't have to worry about concrete implementations).
+
+### Decorator
+
+* When you do something like `coffeeWithMilk = new Espresso(new Milk(new Coffee))`, you are adding features. The idea is that you can then add "features" (in this case, ingredients), to build on top of a base component.
+
+### Entity Component System (ECS)
+
+* A component provides an aspect of state to an entity
+    * Each component has various qualities which tells you what data it has, what you can do with it!
+
+
 ## Lecture 19 - [Design Patterns](https://drive.google.com/file/d/1kDmVjqOUlI5cBmYZvvvsT6UIX4KqpCOl/view?usp=drive_link)
 
 - [Readings](https://docs.google.com/document/d/1jKhBFyaQ6P58hgx3yssDkDdFhy95hcZkrQZg-OYrBD0/edit)
