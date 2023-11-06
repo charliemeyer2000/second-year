@@ -6,6 +6,44 @@ location: Comm School 258
 
 # Lecture Notes
 
+## Day 20 - Behavioral Finance
+
+Common Biases:
+* Race, religion, gender, sexuality
+
+Less Common Biases:
+* Age, weight, economic status, names
+
+Confirmation Bias:
+* Seeking confirmationr evidence
+    * Test things that support your hypothesis
+    * Useful for persuasion
+    * Big Short Example: "The housing market is rock solid! Greenspan just said 'Bubbles are regional, default are rare'"
+* Can cause investors to:
+    * Focus on evidence that supports their investment theories
+    * Ignore other evidence
+* For decision making, look at contrary evidence
+    * Is there a bubble?
+
+Cognitive Errors & Emotional Biases
+* Cognitive Errors:
+    * Information processing errors
+    * Faulty reasoning
+    * Lack of understanding
+    * Memory errors
+* Emotional Bias
+    * Distortion in cognition and decision making due to emotions/feelings rather than conscious thought
+    * May stem from individual/group influence
+    * Will influence a person to:
+        * Believe something that has a positive emotional effect, or gives a pleasant feeling.
+    
+Common Biases:
+* Anchoring Bias - reyling too much on the first piece of information you hear
+* Blind-sport bias - Recognizing bias in others but failing to revognize it in yourself
+* Confirmation bias - Listening to and trusting your information that confirms your beliefs
+* Negativity bias - Focusing on negative events at the expense of positive or neutral events
+* 
+
 ## Day 18 - Alternative Assets (Real Estate, others)
 
 Examples of alternative assets are anything that are **not** stocks, bonds, or other cash equivalents. These include:
