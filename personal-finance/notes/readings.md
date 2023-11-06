@@ -4,6 +4,106 @@ title: Readings
 
 # Readings
 
+## Chapter 16: [Investing In Mutual Funds](https://canvas.its.virginia.edu/courses/74463/assignments/368438?module_item_id=843294)
+
+### LO16-1: Why Buy Mutual Funds? 
+
+A **mutual fund** pools money of many investors to invest in a variety of securities. This allows for diversification of funds. 
+
+They can be used for retirement accounts, Roths, Employer-sponsored 401k. 
+
+The major reasons people buy mutual funds are for _professional management_ and _diversification_. Diversification allows safety because an occasional loss with one investment is offset by gains fromm others in the fund. Furthermore, they are generally managed by professional managers who have experience and devote time to picking the right securities for a portfolio.
+
+Characteristics of Mutual Funds:
+1. **closed-end fund** - a fund whose shares are issued by an investment company only when the fund is organized. You can only buy shares from an investor willing to sell. Shares of these funds can also be traded. They are generally actively managed, but have higher fees
+1. **exchange-traded fund (ETF)** - fund that invests in stocks/securities in a _specific stock or securities index_. This can include S&P 500, small-cap, mid-cap, fixed-income, etc. Not actively managed, lower fees. No minimum investment amount. Can use limit orders. 
+1. **open-end funds** - mutual fund whose shares are issued/redeemed by the investment company at request of the investors. INvestors can buy/sell shares at the net asset value (NAV), calculated close to the end of each trading day. 
+
+A **load fund** is a mutual fund in which investors pay a commission every time they purchase shares (**sales load charge**). A **No-load fund** is a mutual fund for which the investor pays no sales charge. a **contingent deferred sales load** can be charged on withdraws, too. 
+
+Many mutual funds charge _management fees_ which can be found in the prospectus. THey may also charge a **12b-1** fee (distribution fee) to defray the costs of marketing and selling fund shares. 
+
+All of the fees combined create an **expense ratio** that can be calculated. You should pick funds with an expense ratio of 1% or less. 
+
+### LO16-2: Classifications of Mutual Funds
+
+Stock Funds:
+* _Aggressive growth funds_ - seek rapid growth. Have wide price swings
+* _Equity income funds_ - stocks issued by companies with a long history of dividends. 
+* _Global stock funds_ - companies around the world.
+* _Index funds_ - like S&P 500, NASDAQ 100.
+* _International funds_ - foreign stocks/securities around the world. 
+* _Large-cap/mid-cap/small-cap_ - funds from each cap
+* _regional funds_ - funds from a region of the world
+* _Sector funds_ - within the same industry
+* _Socially responsible funds_ - invest in politically good companies
+
+Bond Funds:
+* _high yield bond funds_
+* _intermediate corporate bond funds_
+* _intermediate US government bond funds_ 
+* _Long-term corporate bond funds_
+* _long-term US government bond funds_
+* _Municipal bond funds_
+* _short-term corporate bond funds_
+* _Short-term us government bond funds_
+* _World bond funds_
+
+Other:
+* _Asset allocation funds_ - diversification funds
+* _balanced funds_ - various stocks, bonds, securities
+* _Money market funds_ - invest in CD's, securities, other safe liquid investments
+* _Target-date funds_ - popular for retirement
+
+**Family of funds** - one investment company manages a group of mutual funds. Each fund within the family has a different financial objective. 
+
+**Portfolio construction** is the process of choosing different types of stocks, bonds, funds, and other investment alternatives to obtain larger returns while reducing risk. 
+
+### LO16-3: How to Decide to buy/sell Mutual Funds
+
+Managed vs. Indexed Funds
+* Most mutual funds are managed funds. You can also do an index, as most managed funds fail to outperform the S&P 500 (efficient market hypothesis). Furthermore, mutual funds can have a high _expense ratio_. Consider this - if a fund has an expense of 1.2%, then it has to gain that much just to _break even_. 
+* Internet - lots of info there. 
+* Advisory Services - Such as Morningstar, Refinitiv Lipper, and ValueLine. 
+* Read prospectus and annual report. 
+* Newspapers - Read WSJ and other stuff. 
+
+### LO16-4: Mechanisms of a Mutual Fund Transaction
+
+Return on Investment:
+* **income dividends** are the earnings a fund pays to shareholders from its dividend and interest income
+* **Capital gain distribution** - payments made to a fund's shareholders that result from the sale of securities int he fund's portfolio (generally paid once a year). 
+
+Taxes and Mutual Funds
+* If your funds are a part of a 401k, taxation is postponed until you begin making withdrawals. If your shares are in a taxable account you need to pay each year. 
+* General guidelines: 
+    * Income dividends are reported on your federal state return and are taxed as income
+    * Capital gain distributions result from the fund _selling_ securities it's held for more than a year. 
+    * Capital gains/losses result from you selling your shares in a mutual fund. 
+
+Problems:
+1. All investment companies allow you to reinvest dividend into more shares.
+1. Funds sell annually, whereas you can decide when you sell, so you may not be able to leverage the tax year to your advantage when selling. 
+
+For a mutual fund, the **turnover ratio** measures the percentage of a fund's holdings.
+
+Purchase Options:
+* Can buy from another investor and brokerage firms. 
+* To purchase in an open-ended fund, you can use four options:
+    1. Regular account transactions - decide how much money you want to invest, and buy as many shares as possible
+    1. Voluntary savings plans - make smaller purchases than the minimum purchases required by regular account transactions.
+    1. Contractual savings plans - require you to make regular purchases over a period of time
+    1. Reinvestment plans - service provided by an investment company in which income dividends and capital gain distributions are automatically reinvested to purchase additional shares of the fund. 
+
+Withdrawal Options:
+* Sell shares to another investors. 
+* withdrawal a specific fixed dollar amount each investment period. 
+* Sell of a certain number of shares
+* Withdraw a fixed percentage of asset growth
+* 
+
+
+
 ## Chapter 17: [Investing In Real Estate or Other Alternatives](https://canvas.its.virginia.edu/courses/74463/assignments/368459?module_item_id=843357)
 
 ### LO17-1: INvesting In Real Estate
