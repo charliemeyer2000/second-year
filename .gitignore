@@ -16,7 +16,7 @@ cso/labs
 cso/summer-learning
 cso/portal
 # ignore stuff from cso1 portal
-cso/homework/cso1-code
+cso/cso1-code
 
 # ignore summer internships
 summer_internship
