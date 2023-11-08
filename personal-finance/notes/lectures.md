@@ -6,6 +6,44 @@ location: Comm School 258
 
 # Lecture Notes
 
+## Day 21 - Mutual Funds
+
+$\text{net asset value} = \frac{\text{assets - liabilities}}{\text{number of shares outstanding}}$
+
+Funds (Drawbacks):
+* Commissions (load)
+* Tax liability (can drag down performance)
+* Fees drag down performance
+* Inability to trade intra-day.
+
+Open-Ended Mutual Funds:
+* Benefits:
+    * Diversification, convenience, professional management
+* Drawbacks:
+    * Best case: average returns
+    * If market is overpriced, investing high
+    * Portfolio value will decline when the index declines
+    * Inablity to trade intra-day
+    * Securities-Lending Risk
+    * Market-weighted funds overweight mega-cap stocks
+
+ETFs:
+ 
+* Benefits:
+    * diversificaiton
+    * Can trade intra-day
+* Drawbacks
+
+Leveraged ETFs
+* seek a return equivalent to positive or negative %x of the underlying index on a _daily_ basis. 
+
+
+Who owns the tax liability? 
+* You do!
+* Regardless of whether you received the distribution in cash or reinvested the distribution, you have realized capitalized gains, which are taxable income
+* If held in a taxable account, capital gains taxes are due by April 15th
+* IF held in a tax-advantaged account like an IRA or 401(k), no capital gains taxes are due. You will pay income taxes when you withdraw the money. 
+
 ## Day 20 - Behavioral Finance
 
 Common Biases:
