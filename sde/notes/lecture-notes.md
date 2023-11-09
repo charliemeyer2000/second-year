@@ -4,6 +4,152 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 21 - [Databases (ORM, JPA, Hibernate)](https://drive.google.com/file/d/1SPh86IguyBFgc3JEeXpUV2ZiypmYfgvp/view?usp=drive_link)
+
+**code examples from class cloned in `class-examples/HibernateExample`**
+
+Motivation:
+* Most of the code taht talks with the database is redundant. 
+    * "add some objects to the database": 
+        * `INSERT INTO ___ (attribute1, attribute2, attribute3) values (obj.field1, obj.field2, obj.field3);`
+    * "get some stuff from database"
+        * `SELECT * FROM ___`
+* These queries end up creating a lot of "boilerplate" JDBC code
+
+ORM:
+* Automatically go from Object ot Record in a database and back.
+
+Here is the object
+
+```java
+@Entity
+@Table(name = "STATES")
+public class State {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO) // same as AUTO_INCREMENT
+    @Column (name = "ID")
+    private int id;
+
+    @Column (name = "STATE_NAME", unique = true, nullable = false)
+    private String name;
+    
+    @Column (name = "POPULATION", nullable = false)
+    private int population
+
+    @Column (name = "CAPITOL_CITY", nullable = false)
+
+    private String capitolCity;
+
+    public State(String name, int population, String capitolCity) {
+        this.name = name;
+        this.population = population;
+        this.capitolCity = capitolCity;
+    }
+
+    // necessary zero argument constructor, 
+    // hibernate uses zero argument constructor.
+    public State(
+
+    )
+
+    /**
+     * getters, settings, toString()
+     * All fields must have public getters and setters
+     * the names must be get[VariableName] and set[VariableName]
+     **/
+
+}
+```
+
+```java
+// example - getting from Database
+State maryland = session.get(State.class, id:1);
+System.out.println(maryland);
+
+```
+
+
+```java
+String hql = "SELECT s FROM State s";
+// HQL = hibernate query language, related to the OBJECT in the class, not related to the database. 
+// Note the hql String is selecting from State (the object) not States (the table in the database)
+TypedQuery<State> stateQuery = session.createQuery(hql, State.class);
+List<State> stateList = stateQuery.getResultList();
+```
+
+
+```java
+// getting with queries
+private static State getStatebyCapitolCity(String capitolCity) {
+    String hql = "SELECT s FROM State s WHERE s.capitolCity = :name";
+    TypedQuery<State> capitolQuery = StateDemo.session.createQuery(hql, State.class);
+    capitolQuery.setParameter("name", capitolCity);
+    return capitolCity.getSingleResult();
+}
+```
+
+Using Hibernate:
+* Dependencies:
+    * `implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.43.2.1'`
+    * `implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.3.1.Final'`
+    * `implementation group: 'org.hibernate.orm', name: 'hibernate-community-dialects', version: '6.3.1.Final'`
+    * `implementation group: 'jakarta.persistence', name: 'jakarta.persistence-api', version: '3.1.0'`
+* All classes must:
+    * have a zero argument constructor
+    * have public getters and setters for all fields with the correct casing
+* Hibernate Util
+    * use it. Configuration of hibernate for your database environment using a resources name _"hibernate.cfg.xml"_.
+* `hibernate.cfg.xml`: a file that explains how your database works with hibernate. This is found in the `/resources` folder.
+    ```xml
+    <hibernate-configuration>
+        <session-factory>
+            <property name="show_sql">false</property>
+            <property name="format_sql">false</property>
+
+            <!--Set the SQL dialect used (such as SQLite, PostgreSQL, MySQL, etc.)
+            The below is a dialect for SQLite which you would use in ths class-->
+            <property name="dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+
+            <!-- The driver class used for the database -->
+            <property name="connection.driver_class">org.sqlite.JDBC</property>
+
+            <!-- 
+            The database connection URL
+            accessed from root directory
+            -->
+            <property name="connection.url">jdbc:sqlite:my_db.sqlite3</property>
+
+            <!-- The two commented out lines below would be used when connecting to a user-account restricted database -->
+            <!--
+            <property name="connection.username"></property>
+            <property name="connection.password"></property>
+            -->
+
+            <!--
+            For the next line, this address how to handle if an existing database already exists at the connection URL
+            In general in this class, I recommend using update.
+
+            In practice, this line should never be used in production (that is, the working hosted version of the applicaton),
+            since it has potential to delete existing data. Only in a development environment that is not connected to the "real"
+            database (where current production data is actually stored).
+            -->
+            <property name="hibernate.hbm2ddl.auto" >update</property>
+
+            <!-- The list of classes that are Entity objects which we want to connect to the database -->
+            <mapping class="edu.virginia.sde.hibernate.State" />
+            <mapping class="edu.virginia.sde.hibernate.Client" />
+            <mapping class="edu.virginia.sde.hibernate.Account" />
+            <mapping class="edu.virginia.sde.hibernate.Transaction" />
+        </session-factory>
+    </hibernate-configuration>
+    ```
+* Hibernate turns off committing by default
+* 
+
+
+
+
+
 ## Lecture 20 - [Design Patterns 2](https://drive.google.com/file/d/1i1Dl2s2ZSq7AYdEpWCnvAP4rbpVh2kHJ/view?usp=sharing)
 
 ### Observer

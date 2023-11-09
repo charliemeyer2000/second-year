@@ -6,6 +6,33 @@ date: Depends
 
 # Reading Notes
 
+## Reading 21 - [Databases (Hibernate)](https://docs.google.com/document/d/1-Z615FlOGnOFhwC7L_WyMyIyXQU4vBgPbpNZoJ9p_ko/edit?usp=drive_link)
+
+
+**entity classes** - classes whose data we want to store in our database. An entity could look like:
+
+```java
+@Entity
+@Table(name = "STATES")
+public class State {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO) // same as AUTO_INCREMENT
+    @Column (name = "ID")
+    private int id;
+
+    @Column (name = "STATE_NAME", unique = true, nullable = false)
+    private String name;
+    
+    @Column (name = "POPULATION", nullable = false)
+    private int population
+
+    // etc
+}
+```
+
+
+
+
 ## Reading 20 - [Design Patterns](https://docs.google.com/document/d/1jKhBFyaQ6P58hgx3yssDkDdFhy95hcZkrQZg-OYrBD0/edit)
 
 ### Creational 
