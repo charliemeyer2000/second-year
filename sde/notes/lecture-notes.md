@@ -9,7 +9,7 @@ date: August 22, 2023
 **code examples from class cloned in `class-examples/HibernateExample`**
 
 Motivation:
-* Most of the code taht talks with the database is redundant. 
+* Most of the code that talks with the database is redundant. 
     * "add some objects to the database": 
         * `INSERT INTO ___ (attribute1, attribute2, attribute3) values (obj.field1, obj.field2, obj.field3);`
     * "get some stuff from database"

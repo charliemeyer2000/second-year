@@ -6,6 +6,39 @@ location: Comm School 258
 
 # Lecture Notes
 
+## Day 22 - Funds, Life Planning
+
+ETFs vs. ETNs
+
+* Exchange traded notes are notes designed to mimic the S&P 500. It is a promise by the bank to give you the return of the S&P. 
+
+Tax-Efficient Investing
+* Dividends are paid at long-term capital gains. So building off of dividends enjoys a low tax bracket. 
+* Long-term capital gains occurs when something is held for more than 1 year
+
+Income & Capital Gains
+* Ordinary income affects long-term capital gains tax brackets, but not the other way around!
+
+Options:
+* Taxable accounts:
+    * Savings account
+    * Checking account
+    * Money-market account
+    * Brokerage/investment/mutual fund account
+* Tax-advantaged account:
+    * Traditional tax-deferred employer-sponsored retirement accounts
+    * Roth employer-sponsored retirement accounts
+    * Traditional tax-deferred IRA
+    * Roth IRA
+    * 529
+    * HSA
+
+Best Investment Accounts for:
+* Municipal Bonds - you already are using a tax-efficient investing method, you are accepting lower interest if you put it in a tax-advantaged account
+* Large-Cap Growth Stocks - probably tax-advantaged
+* Small Cap - probably taxable
+* ETF - doesn't matter
+
 ## Day 21 - Mutual Funds
 
 $\text{net asset value} = \frac{\text{assets - liabilities}}{\text{number of shares outstanding}}$
