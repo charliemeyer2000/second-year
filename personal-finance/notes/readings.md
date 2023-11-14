@@ -4,6 +4,129 @@ title: Readings
 
 # Readings
 
+## Chapter 18: [Retirement Planning](https://canvas.its.virginia.edu/courses/74463/assignments/368456?module_item_id=843354)
+
+### LO18-1: Why Retirement Planning?
+
+Some findings from IRI report:
+1. 55% of millennials are confident that social security will provide them with meaningful retirement income
+1. 70% of millennials think they'll retire when they want to
+1. 80% of millennials have money for retirement but half have less than 10k. 
+
+Tackling the Trade Offs:
+* Only by saving now and curtailing current spending can you ensure a comfortable retirement.
+* People in best position to save are middle aged.
+
+Starting Early
+* If you invest $300/mo from 25 to 65 you'll have 1.4 million by 65. Waiting just 10 years to start will yield almost a third of that. 
+* Retirement planning is crucial for many reasons:
+    * YOu can expect to be retire for 16 - 30 years. 
+    * SS is insufficient
+    * Inflation can diminish purchasing power. 
+
+Power of Compounding
+* Earning interest on the money you already put in grows your savings. 
+
+Basics of Retirement Planning:
+* Websites - choosetosave, northwesternmutual, rothira, kiplinger, time.com/money, choosetosave.org, 
+* Start now
+* Save everything you can in a tax-sheltered retirement plan and personal savings. Put away 20% of income
+* Retire later
+* Delay taking social security
+* Make use of your home
+* Sell assets not producing growth.
+
+### LO18-2: Conducting a Financial Analysis
+
+* Net worth = assets (what you own) - liabilities (what you owe)
+* Housing: houses are your biggest asset. You want to consider buying less expensive houses that only serve the purpose you need. If your mortgage is almost/fully paid off, consider getting an annuity to provide you with extra income during retirement. This way you can leverage using your house as collateral, called **reverse annuity mortgage** or **equity conversion**. 
+    * Before doing a RAM, consider origination fees, closing costs, servicing fees, interest rates, your assets, and your spouse. 
+* Other assets:
+    * Evaluate life insurance and other assets you may have.
+* Divorce - think about asset management in the context of your relationships and marriage. 
+
+### LO18-3: Retirement Living Expenses
+
+Following expenses can be lowered or eliminated during retirement:
+* Work expenses - no longer making payments to retirement fund, no longer paying for transportation
+* Clothing - need fewer clothes
+* Housing - cost of housing may decrease if you've paid off your mortgage
+* Federal income taxes - Income taxes will be lower since you won't have income. 
+
+Expenses may increase:
+* Insurance - loss of your employer's contribution to health insurance will cause cost increase, but may be cancelled out by medicare.
+* Medical expenses - tend to increase with age
+* Expenses for leisure activities - more free time, spending money on leisure
+* Gifts/contributions - give contributions to meaningful institutions increases spending
+
+Adjust your expenses for inflation
+* Adjust your spending with an estimated 4.2% inflation rate. 
+
+### LO18-4: Planning Retirement Housing
+
+Type of Housing - housing needs change based on various factors including location and proximity to various services. Housing alternatives include family dwellings, condos, apartments, or a retirement home. 
+
+Avoid housing traps:
+* Write/call local chamber of commerce to get an idea of property taxes
+* Contact state dept to find out state income, sales, and inheritance taxes and special exceptions for retirees
+* Rent instead of buying immediately. 
+
+### LO18-5: Planning your Retirement Income
+
+**Social security** - Covers almost 97% of all US workers. Shouldn't be the only source of income for retirement for you. Most people quality for reduced benefits at age 62. Apply 4 months before then. have proof of age, social security card, W-2, marriage license, birth certificates of children, proof of US citizenship, and other important information. Social security benefits will be reduced if you retire early. 
+* When to receive retirement benefits - can get benefits early with smaller amounts over years or larger monthly payments over a short time period. 
+* Estimating benefits - go to ssa.gov
+* Eligibility - have required number of quarters of coverage. 
+* Taxability of benefits - up to 85% of SS are subject to federal income taxes. 
+* Spouse's benefits - full benefit for spouse is 1/2 retired worker's full benefit. 
+* Social Security in the future - notably unstable long-term. 
+
+Other Public Pension Plans
+* Veterans Administration
+* Pension Help America
+* Employer pension programs
+* Defined contribution plan - individual amount for each employer, describes amount employer will contribute. These include:
+    * Money purchase pension plans
+    * Stock bonus plans
+    * Profit-sharing plans
+    * Salary reduction/401k plans
+    * TSA - tax-deferred investment earnings. Savings compound. 
+* **Defined benefit plan** - specified benefits promised to employee at normal retirement age. 
+* **IRA** - can make nondeductible IRA contributions and will compound tax-deferred until you withdraw from IRA.
+
+**IRA** - up to $6,000 in contributions
+
+**ROTH** - contributions are taxed, but earnings accumulate and can be withdraw tax-free after 5 years. Exclusively for you. Limited by your AGI. 
+* **myRA** - Roth that invests in US treasury retirement savings bonds. 
+* **Spousal RA** -  accepts rollovers or portion of taxable distribution from oa retirement plan or from another IRA.
+* **Education IRA** - give to children up to 2k and can grow tax-free and invested how one chooses. 
+* **SEP-IRA** - IRa funded by employer. Each employee sets up an IRA at a bank and employer contributes up to 58k. 
+
+Withdrawals from IRA's
+* When you retire, you withdraw from your IRA in a lump sum. The entire amount will be taxable as ordinary income, and the only tax break you'll get is standard 5-year income averaging. 
+* IRA's must be withdrawn from eventually, at 72.
+* **Keogh plans** are self-employed retirement plans 
+* **Annuities**: provide guaranteed income for life. Can buy with proceeds of an IRA or company pension. 
+    * _immediate annuities_ - provide income payments at once. 
+    * _deferred annuities_ - income starts at future date
+    * _single-premium deferred annuity_ - annuity purchased with a lump-sum. 
+
+### LO18-6L Living on your Retirement Income
+
+Use tax advantages.
+
+You can work part-time. Consider how this may affect your taxes and social security income, though. 
+
+Guaranteed-income of your retirement fund can be paid into low-yield, safe investments.
+
+
+
+
+
+
+
+
+
 ## Chapter 16: [Investing In Mutual Funds](https://canvas.its.virginia.edu/courses/74463/assignments/368438?module_item_id=843294)
 
 ### LO16-1: Why Buy Mutual Funds? 
