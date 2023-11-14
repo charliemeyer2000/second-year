@@ -4,6 +4,16 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 22 - [JavaFX](https://drive.google.com/file/d/1HaBA5dB6eWUcHx48EF-hf-oDYc1vCsnW/view?usp=drive_link)
+
+
+JavaFX Setup:
+* Ensure you have the JDK 17.0.9 *and* JavaFX 17.0.9
+* add these VM arguments to run your code: `--module-path "[insert your local machines path to the JavaFX 17.0.9 lib folder here]" --add-modules javafx.controls,javafx.fxml`
+* 
+
+
+
 ## Lecture 21 - [Databases (ORM, JPA, Hibernate)](https://drive.google.com/file/d/1SPh86IguyBFgc3JEeXpUV2ZiypmYfgvp/view?usp=drive_link)
 
 **code examples from class cloned in `class-examples/HibernateExample`**
