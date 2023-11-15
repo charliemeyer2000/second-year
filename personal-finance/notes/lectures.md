@@ -6,6 +6,10 @@ location: Comm School 258
 
 # Lecture Notes
 
+## Day 23 - Retirement Planning
+
+
+
 ## Day 22 - Funds, Life Planning
 
 ETFs vs. ETNs
