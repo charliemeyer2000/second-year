@@ -8,7 +8,7 @@ location: Comm School 258
 
 ## Day 23 - Retirement Planning
 
-
+Notes failed because of some git thing, i also lost most to all of my gitignored files. Oh well!
 
 ## Day 22 - Funds, Life Planning
 
