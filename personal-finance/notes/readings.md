@@ -4,6 +4,98 @@ title: Readings
 
 # Readings
 
+## Chapter 19: [Estate/Legacy Planning Cont'd](https://canvas.its.virginia.edu/courses/74463/assignments/368439?module_item_id=843295)
+
+### LO19-1: Why Estate Planning?
+
+Your **estate** consists of everything you own, including accounts, stocks, bonds, real estate, property, etc. As you grow older your shift will go from accumulating money to distributing it wisely. This can include planning for family's financial security in case of emergency.
+
+**Estate planning** is a definite plan for the administration and disposition of one's property during one's lifetimes and at one's death. Two components:
+1. BUilding estate thru savings, etc.
+1. Transferring your estate at your death
+
+Estate planning for married couples involves interests of two people, and also children. Death means a new lifestyle for your spouse. Ensure that your children are safe and secure. 
+
+If you aren't married, you still need to ensure that the people that love you still are emotionally supported and also are financially benefitted. 
+
+### LO19-2: Legal Aspects of Estate Planning
+
+Important papers regarding legal concerns over estate planning:
+1. Birth certificates
+1. Marriage certificates
+1. Legal name changes
+1. Military service records
+1. Others - social security, veteran documents, insurance policies, registrations, titles of stocks and bonds
+
+A **will** is the legal declaration of a person's mind as to the disposition of their property. If you die without a will **intestate**, the state's law of descent and distribution becomes your copy of the will. 
+
+Marriage/Divorce on a will - Renew your will according to marriage/divorce. 
+
+**Probate** is the legal procedure of providing a valid or invalid will. This manages and distributes your property after you die according to your provisions. 
+
+### LO19-3: Types and Formats of Wills
+
+Wills:
+1. **Simple Will** - leaves everything to spouse
+1. **traditional marital share will** leaves 1/2 of the **adjusted gross estate** to the spouse outright as a marital share and other half goes to children/heirs. Half of estate is taxed at death and half at spouse's death. 
+1. **Exemption trust will** - everything passes to spouse which passes into a trust. 
+1. **Stated Dollar amount will** - pass amount that satisfies family objectives. This can include/exclude tax considerations.
+
+Formats of Wills
+* **holographic will** - handwritten.
+* **formal will** - prepared with attorney's assistance. Must sign with a person who is NOT a beneficiary. 
+* **statutory will** - preprinted and obtained from online stores. 
+
+Writing your Will:
+* Select a person to follow your instructions (**executor**) - anyone over 18 who is not convicted of a felony. 
+* Select a **guardian** who assumes responsibilities of providing children with personal care and managing estate for them
+* **trustee** - person who manages property for the benefit of someone else under a trust agreement.
+
+Rewriting Will:
+* Should be done periodically. 
+* **codicil** - document that explains, adds/deletes to existing will.
+* Consider a **prenuptial agreement** between spouses before marriage. 
+* a **living will** provides you for wishes to be followed if you become physically/mentally disabled that you can't act on your own behalf. 
+* **ethical will** is a way to pass on values. 
+* **social media will** - handle your online brand after you die.
+
+**durable power of attorney** is a legal document authorizing someone to act on your behalf. 
+
+### LO19-4: Types of Trusts and Estates
+
+The creator of a trust is called the **trustor** or **grantor**. A **trust** is a legal arrangement through which a trustee holds your assets for your benefit or that of your beneficiaries. 
+
+A **revocable trust** can end/change terms during your lifetime. **irrevocable trusts** cannot change/end terms. Trusts are good to reduce payment of estate taxes, free yourself from managing assets, provide income to spouse/beneficiaries. 
+
+Types of Trusts:
+* **credit shelter trust** - bypass or "residuary" trust to allow married couples to leave everything to each other tax free up to $11.7 mil.
+* **disclaimer trust** - coupled to not have enough assets to need a credit-shelter trust but may need one in the future. Surviving spouse left everything but right to disclaim some portion of the estate
+* **living trust** - property management arrangement you establish while you're alive. 
+* **testamentary trust** - established by your will and becomes effective upon your death. 
+* **life insurance trust** - established while living and trust receives your life insurance benefits upon death. 
+
+
+Estates - cash, stocks, bonds, insurance, home, real estate, antiques, interests, farm, partnership/corporation ownership. 
+
+Joint ownership - exists within property and company ownership. 
+
+### LO19-5: Federal and State Estate Taxes
+
+Reduce your taxable estate by giving away assets to anyone during your lifetime. No gift tax is due on gifts up to 15k. 
+
+**Estate tax** is a federal tax levied on the value of the inheritance of a dead person to transmit their property and life insurance at death. 
+
+**inheritance taxes** - levied on an heir to receive all or part of the estate/life insurance proceeds of dead person. 
+
+**gift tax** - value of gift to others. Now rates are called _unified transfer tax rates_. 
+
+Tax Avoidance:
+* Charitable gifts 
+
+Calculating Tax - _net taxable estate_ is the testamentary net worth after subtracting your debts, liabilities, etc. 
+
+
+
 ## Chapter 18: [Retirement Planning](https://canvas.its.virginia.edu/courses/74463/assignments/368456?module_item_id=843354)
 
 ### LO18-1: Why Retirement Planning?

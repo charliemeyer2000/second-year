@@ -6,6 +6,8 @@ location: Comm School 258
 
 # Lecture Notes
 
+## 
+
 ## Day 23 - Retirement Planning
 
 Notes failed because of some git thing, i also lost most to all of my gitignored files. Oh well!
