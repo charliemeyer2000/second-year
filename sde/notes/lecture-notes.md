@@ -4,6 +4,10 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 24 (Thanksgiving Lecture)
+
+This lecture basically explained how REST works for 75 minutes, jesus christ. 
+
 ## Lecture 23 - [JavaFX](https://drive.google.com/file/d/1HaBA5dB6eWUcHx48EF-hf-oDYc1vCsnW/view?usp=drive_link)
 
 MVC:

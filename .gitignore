@@ -48,3 +48,4 @@ entp/homeworks
 !*.out
 !*.c
 !*.txt
+.Rproj.user
