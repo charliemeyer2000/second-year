@@ -6,7 +6,77 @@ location: Comm School 258
 
 # Lecture Notes
 
-## w
+## Day 25 (after thanksgiving) - Legacy Planning
+
+Do you need life insurance? 
+* Dependents - those who depend on your income
+* Liquidity needs - to settle estate
+
+How much life insurance? 
+* How many
+* Ages, 
+* educational needs
+* other needs
+
+Liquidity Needs:
+
+Estate vs. Inheritance Tax
+* What's the difference?
+    * **Estate** - taxed on person who died
+        * paid to the government from your assets after you die. How it works:
+            * Figure out value of estate (stocks, bonds, houses, cars, everything!). If worth more than certain amount, estate tax to government, rest of assets to beneficiaries. 
+            * No tax if your estate goes to your spouse
+    * **Inheritance** - taxed on person who receives inheritance.
+
+Federal Estate Taxes:
+* 2023 exclusion $12.92 million. The increases in the estate and gift tax exclusion amount and the GST exception amount will remain in place until Dec 31, 2025, and will revert to prior law ($5 million adjusted for inflation) in 2026. The estate tax exemption amounts also changes by state 
+* Unlimited marital deduction (citizen spouses)
+* _Step-up basis adjusts cost basis of assets to market value at death_. All you have to do is find out the current value of the assets, you do not have to worry about capital gains. 
+
+After 2017 TCJA Even Fewer Estates Owe/Pay Any Federal Estate Tax
+* TJCA doubled the exclusion until 2026
+* In 2020, approx 2.8 million people expected to die
+* 4,100 estate tax returns expected to be filed
+* About 1,900 estates expected to be taxable
+
+What everyone needs!
+* Durable power of the attorney
+* Advanced medical directive
+* Will
+    * If you die without a will, descendants go to state court to settle estate. With that being said, much easier to do a will!
+
+Considerations
+* Dependents/children
+    * Life insurance: provides liquidity/financial support _if_ the assets are insufficient
+    * Guardians: provide care and support to minors
+    * Trusts: provide financial support, fund education, control assets, influence/support choices, protection, etc.
+* Elderly relatives
+* Children/siblings with disabilities/impairments
+    * ABLE accounts 
+* Blended families
+
+Trusts:
+* Revocable (undoable) or irrevocable
+    * Irrevocable trusts - relinquish your assets for your children forever!!
+* Subject to Net Investment Income Tax (3.8%). 
+
+Gifts and Gift Taxes:
+* Tax exempt gifts <= 17l per recipient per year
+* Payment/gifts exempt from gift taxes:
+    * from one spouse to another
+    * to a qualified charitable organization
+    * made directly to a health care provider for medical reasons
+    * made to an educational institution for a student's tuition
+* Gifts > 17k count toward lifetime gift tax/estate tax exemption.
+
+What if you are in the 1%? 
+* Plan ahead!!
+    * Gifts
+    * Set up trusts
+    * Buy insurance
+    * LLCs
+
+
 
 ## Day 23 - Retirement Planning
 
