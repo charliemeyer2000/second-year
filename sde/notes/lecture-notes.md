@@ -4,6 +4,17 @@ author: Charlie Meyer
 date: August 22, 2023
 ---
 
+## Lecture 25 - Code Optimizations
+
+* Efficiency:
+    * "Programmers waste enormous amounts of time thinking about, or worrying about, the speed of non-critical parts of their programs."
+    * "We _should_ forget about small efficiencies, 97% of the time."
+
+* Cache Misses
+    * If you step through an array and the data is continuous, you won't miss cache. If not, you have to go look into memory and reload your cache. this can lead to cache thrashing!!
+
+* 
+
 ## Lecture 24 (Thanksgiving Lecture)
 
 This lecture basically explained how REST works for 75 minutes, jesus christ. 

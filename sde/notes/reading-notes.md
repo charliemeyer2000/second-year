@@ -6,6 +6,123 @@ date: Depends
 
 # Reading Notes
 
+## Reading 25 - [Code Optimizations](https://docs.google.com/document/d/1rt8iR4GLbS-ZOPGGt9E3EA0GdVBVi9VfyNCI3LZ2Xik/edit?usp=sharing)
+
+Irrelevant Optimization
+* Whenever you iterate over something, you should always use a for loop (use an enhanced loop like `for (String word : dictionary)`).
+* While loops should only be used when you cannot easily calculate the # of loops you will need at runtime.
+
+
+Code Trade-Offs:
+* Using a hashmap, but need sorting? Use a treemap!
+* Abstractions decrease performance. However, it includes garbage collection, unlike rust, C, and C++. This means that they're faster. 
+* **efficiency** matters - you should only take steps when needed, not by default.
+
+Critical vs. Noncritical
+* Noncritical - sections of code that cannot affect performance. 
+* **critical section** - section of code that costs the most time overall.
+    * Consider code that searches for a string in the "adventures of Sherlock Holmes." 
+    * One optimization is changing the calling of `toLowerCase()` within each loop, you can just do `String target = scanner.nextLine().toLowerCase()`. 
+    * For string concatenation, if you concatenate within a loop every single time, concatenating two strings of length `n` is `O(n)`. This gets worse for the more strings you concat. To optimize this, we can use a `StringBuffer` instead - 
+        ```
+                StringBuffer resultsBuffer = new StringBuffer();
+        for(String line = bufferedReader.readLine(); line != null; line = bufferedReader.readLine()) {
+            if (line.toLowerCase().contains(target)) {
+                resultsBuffer.append(currentLineNumber)
+                        .append(", ");
+                count++;
+            }
+            currentLineNumber++;
+        }
+        ```
+
+Noncritical Improvements
+* Note that if you improve the entire program using a `StringBuffer`, consider that this is not necessary when you are only concatenating at worst 8 Strings, and that initializing a `StringBuffer` will allocate memory, which is an overhead cost. And also note that Java will optimize sequential String concatenations. 
+
+Finding the "Critical Section"
+* The more a piece of code is executed, the more critical it is. 
+
+Example of Optimization - Point Class.
+* This gives an example of a `Point` class and a `PointList` that uses an `ArrayList` to hold a list of points. Note that optimizing this isn't really a problem, but you have to consider that if your `PointList` has an `ArrayList<Point>`, that means that to access a point's `x` value, you have to:
+    * Go to the memory address path references and access the reference value of points
+    * Go to the memory address points references to and access the refernce value of contents
+    * Go to that memory address and access the double value of x. 
+* Note that arrays are fantastic for performance. 
+* To use arrays to optimize, you can store the x and y in the same array:
+    ```java
+    public class CoordinateArrayPath implements Path {
+        private final double[] pointArray;
+        private final int length;
+        private int currentSize;
+
+        public CoordinateArrayPath(int capacity) {
+            pointArray = new double[capacity * 2];
+            this.length = capacity;
+            this.currentSize = 0;
+        }
+        // other methods below
+    }
+    ```
+* This makes the logic very difficult, but significantly faster. 
+* Consider also that when benchmarking, the use of the `new` constructor tells java to allocate memory, which also takes time. This is much slower compared to just doing math. 
+
+When should i care? 
+* Only care when it affects customers such that it was **meaningfully** affecting their satisfaction.
+* prioritize code understandability and flexibility over performance _until performance becomes a problem._
+
+Optimization Heuristics
+* **Heuristics** is "common rules that have worked well."
+    1. Implement both approaches
+    1. Separate out the part you are benchmarking from the rest of code
+    1. Test with increasing values of _magnitude_. 
+    1. Also consider the _real_ usage of the system
+    1. Run mutliple tests - run on different computers with different processes happening in the background
+    1. Vary the order - vary order of tests.
+    1. Ensure your computer has proper cooling.
+
+ArrayList vs. LinkedList
+* Consider that iteration through a `LinkedList` using `.get()` is a linear operation - making getting all items in an array using a for loop `O(n^2)`. 
+* Ultimately, this is because, even if you optimize using an `iterator`, **references are slower than data**. This is because each node of the LinkedList is not a point, it's a Node object that has separate references to the `Point` and the next `Node`. 
+* the only time that LinkedLists are useful, then you can add to the front of a list with constant time, whereas an ArrayList is linear time (since you have to shift all the values to the right to make room). 
+
+Built-In optimizations
+* You can use `List.sort()` or the `Collections.sort()` method with your own `Comparator`. Java uses mergesort. Note that when you sort a LinkedList java dumps the contents into an array then sorts the array, then rebuilds the list. 
+
+Optimization Patterns:
+1. Am i using the right data structures? 
+1. Run a profiler and look for outliers, but don't waste your time on code that only executes at startup unless startup is the problem.
+1. Check your algorithms
+1. Start working on a new branch, and you can always throw it away. 
+
+DRY - Don't Recalculate YourSelf
+* avoid recalculation
+
+Nested Arrays
+* don't worry about this - Java optimizes a `T[][]` to just a single `T[]` for you under the hood
+
+Lazy Evaluation
+* Only evaluate things when you **need** to (i.e. memoization).
+
+Lazy Initialization 
+* Avoid invoking costly functions until you need to, to avoid creating new objects. 
+
+Memoization:
+* Storing responses to make future requests faster. This works **so long as the inputs do not need to change**.This means that if you need to recalculate, you need to know when to **invalidate** the stored value. 
+
+Thread Safety
+* Check null stuff first before then calculating stuff
+
+Conditional Order
+* Do the faster operation **first** in conditionals, like `a() && b()`. So, if `a()` returns false, we **never run `b()`**. 
+
+Likelihood Conditional Order
+* if we have something like `if (d() || e())`, and you know that `d()` is more likely to be true, put `d()` first. 
+
+
+
+
+
+
 ## Reading 21 - [Databases (Hibernate)](https://docs.google.com/document/d/1-Z615FlOGnOFhwC7L_WyMyIyXQU4vBgPbpNZoJ9p_ko/edit?usp=drive_link)
 
 
