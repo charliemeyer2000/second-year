@@ -28,8 +28,6 @@ MVC:
     * Handles all data storage, manipulation, retrieval
 * View - defines what is displayed to the user. 
 
-
-
 ## Lecture 22 - [JavaFX](https://drive.google.com/file/d/1HaBA5dB6eWUcHx48EF-hf-oDYc1vCsnW/view?usp=drive_link)
 
 
@@ -37,8 +35,6 @@ JavaFX Setup:
 * Ensure you have the JDK 17.0.9 *and* JavaFX 17.0.9
 * add these VM arguments to run your code: `--module-path "[insert your local machines path to the JavaFX 17.0.9 lib folder here]" --add-modules javafx.controls,javafx.fxml`
 * 
-
-
 
 ## Lecture 21 - [Databases (ORM, JPA, Hibernate)](https://drive.google.com/file/d/1SPh86IguyBFgc3JEeXpUV2ZiypmYfgvp/view?usp=drive_link)
 
@@ -181,9 +177,6 @@ Using Hibernate:
     ```
 * Hibernate turns off committing by default
 * 
-
-
-
 
 
 ## Lecture 20 - [Design Patterns 2](https://drive.google.com/file/d/1i1Dl2s2ZSq7AYdEpWCnvAP4rbpVh2kHJ/view?usp=sharing)
