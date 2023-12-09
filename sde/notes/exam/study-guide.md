@@ -53,11 +53,125 @@ Anyways, all explanations for SDE from both midterm and final. Starting w/final,
 
 Persistence is teh idea that we want some information to be saved from one run to the next. This can be done through two main ways - _files_ and _databases_. Files include stuff like source code, documents files, executable programs, and media files. Databases are used to store data long term but abstract how the data is stored. They can either rbe local (sqlite) or use a server (Postgres, MySql, etc). 
 
+Common File Formats:
+* `.txt` - text
+* `.csv` - comma separated values. 
+* `.tsv` - tab separated values
+* `json/xml/yml` - yummy.
+
 ### JSON Parsin'
 
+* JSON Syntax and datatype. JSON is a structured data format that allows for nesting of data and human readability. The data types include:
+    * Integers (whole numbers)
+    * Floats (decimal numbers)
+    * Strings 
+    * booleans
+    * lists
+    * Other objects (maps)
+* To use:
+    * add to dependencies in build.gradle: `implementation 'org.json:json:20231013'`
+* JSON to objects, objects to JSON:
+    * ```java
+        // taking a json file and parsing it using org.json
+        String fileName = "json_files/simple.json";
+        BufferedReader br = new BufferedReader(new FileReader(fileName));
+        StringBuilder sb = new StringBuilder();
+        String line = br.readLine();
+        while (line != null) {
+            sb.append(line).append("\n");
+            line = br.readLine();
+        }
+        String text = sb.toString();
+        var root = new JSONObject(text);```
+    * you can then get different values from the JSON like:
+        * `var list = root.getJSONArray("listKey")`
+        * `var object = root.getJSONObject("objectKey")`
+        * `var string = root.getString("someStringKey")`
+        * `var int = root.getInt("someIntKey")`
+    * Furthermore, to create a JSON Object (like from a POJO)
+        * If you have an array of basic datatypes, it's easy:
+        * ```java
+            var root = new JSONObject();
+            root.append("key", value);
+            root.append("key2", value2);```
+        * Appending objects:
+        * `root.append("objKey", someJSONObject)`
+        * Arrays of stuff are more difficult. If you have an array of strings, you can just do `root.put("arrayKey", new JSONObject(new ArrayList<>(List.of("hello, "world"))))` or with a `ArrayList<String/boolean/Integer>`, anything in the collections framework. If you have a list of objects, you must iterate over that list, create the JSON, and put it.
+        
 ### Database Concepts.
 
+* Common terms:
+    * Table - a table of data (generally an object)
+    * Record - a row of data in a table
+    * Primary Key - unique identifier for each record in a table. Can be specified by `INTEGER PRIMARY KEY` and sqlite handles the auto-increment.
+    * Foreign Key - an identifier within a record of one table that maps to a primary key of data in another table.
+    * Constraints:
+        * Unique - must be unique. (however, you could have repeated null values).
+        * Non-null - must be non-null
+        * Check - can be used to test values whenever they are inserted/updated within a column. For example, you could add a `CHECK(length(phone) >= 10)` to add a check to ensure that all phones are both non-null and have a length of 10 or less.
+        * Default - specifies a default value that will be added if that value is not specified in an insert. For example, we could have a column `Price INTEGER DEFAULT 100`, so if we do `INSERT INTO Products (product_id, product_name) VALUES(1, "Hello")` but don't specify price, the price will default to 100.
+* SQLite vs. MySQL/Postgres
+    * Sqlite uses a file, whereas Postgres/MySQL use a server. 
+    * SQlite query syntax is slightly different.
+    * Sqlite doesn't support user accounts within the database.
+
+
 ### SQL to be familiar with.
+
+* Creating tables
+    * ```sql
+        create table if not exists Courses (
+            Crn INTEGER PRIMARY KEY,
+            Subject TEXT, 
+            Number INTEGER,
+            Section INTEGER,
+            MeetingTime TEXT
+        );``` 
+* Foreign Keys - foreign keys connect multiple tables together.
+    * For example, when creating something like this:
+    * ```sql
+        create table if not exists coursesTaken(
+            CourseTakenID int NOT NULL AUTO_INCREMENT,
+            StudentNumber int, 
+            CRN int, 
+            FOREIGN KEY (StudentNumber) references students(StudentNumber) ON DELETE CASCADE
+            FOREIGN KEY (CRN) references courses (CRN) ON DELETE CASCADE
+            PRIMARY KEY (CourseTakenID)
+        )
+        ```
+    * Note that `ON DELETE CASCADE` ensures that if you delete a student with nunmber 4, it deletes all records in students where StudentNumber is 4 and all records in coursesTaken where StudentNumber is 4.
+* Inserting into tables.
+    * ```sql
+        insert into Courses (CRN, Subject, Number, Section, MeetingTime)
+        values (12345, "CS", 2501, 300, "TR 12:30 - 1:45");
+        ```
+    * Can also do something that doesn't supply the column names, just:
+    * ```sql
+        insert into Courses values (12345, "CS", 2501, 300, "TR 12:30 - 1:45");
+        ```
+    * Can do multiple inserts in one line, and note that also that CRN is an integer primary key and thus auto increments, we do not have to specify the Crn. 
+    * ```sql
+        insert into Courses (CRN, Subject, Number, Section, MeetingTime)
+        values ("CS", 2501, 300, "TR 12:30 - 1:45"), 
+        values("APMA", 2120, 001, "MWF 12:00 - 12:50");
+        ```
+* Selecting Stuff
+    * `Select * from courses` - gets all data from courses table
+    * `Select Subject, Number from courses` - gets just those specific columns from each row from the table.
+    * Filtered Queries:
+        * `Select * from courses where Subject = "CS"` - Only rows of data for CS
+        * `Select * from courses where Subject = "CS" AND Number = 2501`. You get the idea.
+* Joining Stuff - these are queries where you can get data from a table and also other tables that are connected by foreign keys. Here are some examples of joining:
+    * Joining the courses and lecturers tables:
+    * `Select * from Courses join Lecturers on Courses.Lecturer = Lecturers.Id`
+        * the "on" is the condition says to only join rows where Courses.Lecturer = Lecturers.id
+    * `Select Courses.Subject, Courses.Number, Courses.Section, Lecturers.FirstName, Lecturers.LastName from Courses join Lecturers on Courses.Lecturer = Lecturers.Id`
+    * `select StudentNumber from coursesTaken join courses on coursesTaken.CRN = courses.CRN where courses.CRN = 123456`
+    * `select LastName, FirstName from Students where StudentNumber in (select StudentNumber from coursesTaken join courses on coursesTaken.CRN = courses.CRN where courses.CRN = 12345)`
+
+* Update
+* Delete
+* Begin, commit, and rollback. 
 
 ### JDBC
 
