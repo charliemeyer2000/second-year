@@ -161,6 +161,13 @@ Common File Formats:
     * Filtered Queries:
         * `Select * from courses where Subject = "CS"` - Only rows of data for CS
         * `Select * from courses where Subject = "CS" AND Number = 2501`. You get the idea.
+    * and, or, not, others.
+        * And/or allows you to chain booleans in a query - `SELECT * from table_name where [condition1] and [condition2]` or `SELECT * from table_name where [condition1] or [condition2]`.
+        * Other queries include using comparisons like `SELECT * from COMPANY WHERE AGE >= 25`
+    * `like` for String comparators - the LIKE operator is used to match text values against a pattern using wildcards. You can use two wildcards, but you only need to know the % sign. 
+        * `...WHERE SALARY LIKE 200%` - any values that start with 200
+        * `...WHERE SALARY LIKE %200%` - any values that have 200 in any position.
+        * `...WHERE SALARY LIKE %200` - any values that end with 200.
 * Joining Stuff - these are queries where you can get data from a table and also other tables that are connected by foreign keys. Here are some examples of joining:
     * Joining the courses and lecturers tables:
     * `Select * from Courses join Lecturers on Courses.Lecturer = Lecturers.Id`
@@ -168,20 +175,182 @@ Common File Formats:
     * `Select Courses.Subject, Courses.Number, Courses.Section, Lecturers.FirstName, Lecturers.LastName from Courses join Lecturers on Courses.Lecturer = Lecturers.Id`
     * `select StudentNumber from coursesTaken join courses on coursesTaken.CRN = courses.CRN where courses.CRN = 123456`
     * `select LastName, FirstName from Students where StudentNumber in (select StudentNumber from coursesTaken join courses on coursesTaken.CRN = courses.CRN where courses.CRN = 12345)`
-
 * Update
+    * an example of an update query is something that could look like `update Courses set Course=3130 where Course = 3100`
 * Delete
+    * To delete everything, do `delete from Courses`. 
+    * most likely, you'd want to delete something specific from a table, so you should almost always add a `where` clause or you will entirely drop everything.
 * Begin, commit, and rollback. 
+    * SQlite 3 uses an "auto commit" by default and thus all changes are permanent. To avoid, this:
+        1. Begin a transaction: `begin transaction;`
+        1. Add your queries.
+        1. `commit transaction;` to create a safe point to which you can return to with `rollback` in case you make any mistakes. 
 
 ### JDBC
 
+* Connecting and setting up a database connection to a sqlite database using JDBC:
+    * Need to add this to the build.gradle's dependencies:
+        * ```java
+            implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.43.2.1'
+            implementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.9'```
+    * Connection string - `connection = DriverManager.getConnection("jdbc:sqlite:database_filename.sqlite")`. This creates and opens our connection. Use `connection.close()` to close it.
+    * `connection.createStatement().execute("PRAGMA foreign_keys = ON")` - allows foreign keys
+    * `connection.setAutoCommit(false)` - turns off auto commit.
+* Using the Connection:
+    * Use `connection.commit()` and `connection.rollback()` to commit changes to the database since you've connected, or rollback to rollback to the last commit.
+    * use `connection.disconnect()` to disconnect.
+* Statements - the general order is `var statement = connection.prepareStatement(sqlQueryString)`.
+    * These are sql queries, but when adding in your arguments, you add them in using .`set[Attribute]` corresponding to the 1-indexed `?`:
+        * ```java
+            String sql = "SELECT * from BUILDINGS WHERE ID = ? AND NAME = ?";
+            var statement = connection.prepareStatement(sql);
+            statement.setInt(1, 1099);
+            statement.setString(2, "Rice Hall");
+            ResultSet results = statement.executeQuery();```
+    * To then get values from a resultset, you can do something like:
+    * ```java
+        var id = resultSet.getInt("ID");
+        var isActive = resultSet.getBoolean("isActive");
+        var longName = resultSet.getString("LongName");
+        // dot dot dot```
+    * Also you have to notice that there's a difference between `executeQuery()` and `executeUpdate()`. ExecuteQuery returns a ResultSet, whereas executeUpdate returns an int (either (1) the row count for SQL Data Manipulation Language (DML) statements or (2) 0 for SQL statements that return nothing).
+    * Either ensure that you are explicitly stating `statement.close()` at the end and have your method throw an `SQLException` or wrap your creating statement in `try(var statement =) catch.`
+
 ### Hibernate & ORMs
+
+* The ORM (Object Relational Model) goes from Object to Record/row in a database and back. This allows you to remove a lot of the boilerplate JDBC code that you'll find yourself repeating. 
+* Hibernate Config:
+    * You must create a `hibernate.cfg.xml` stored in `src/main/resources` file that creates the configuration for your file. There is a lot of boilerplate but here is the main breakdown:
+        * `<property name="connection.url">jdbc:sqlite:my_db.sqlite3</property>` - path to your db so hibernate knows where it is.
+        * `<mapping class="path.to.some.project.MyClass />` - all of the classes hibernate should use. 
+    * For each class mapping (entity), you must provide a zero-argument constructor and default getters and setters for hibernate to work properly. 
+* Common Hibernate Things:
+    * `@Entity` - defines an entity.
+    * `@Table(name="table_name")` - this is underneath the entity and specifies the table name associated with this entity.
+    * `@Column(name="column_name")` - for each `private` field, provide a column name for that field within the table.
+    * Primary Key Column should have all of these attributes:
+        * ```java
+            @Id
+            @GeneratedValue(strategy = GenerationType.AUTO)
+            @Column(name="ID")
+            private int id;
+            ``` 
+    * Join Columns:
+        * `@ManyToOne` - Many records in the current entity can correspond to one entity mentioned . An example is having like:
+            * ```java
+                @ManyToOne
+                @JoinColumn(name="Course_ID", referencedColumnName="ID")
+                private Course course;
+                ```
+        * `@OneToMany` - one record in the first entity can correspond to many records in the second entity (i.e. one Course can have many reviews. )
+* Working with `session` methods to add/remove/fetch data:
+    * `session.persist(object)`.
+    * `session.remove(object)`.
+    * Transactions:
+        * `var transaction = session.beginTransaction()`
+        * `transaction.commit()` or `session.getTransaction().commit()`
+        * `transaction.rollback()` or `session.getTransaction().rollback()`
+    * Querying:
+        * Getting an object - `var object = session.get(ClassName.class, id)`
+        * Getting Results:
+            * `query.getResultList()` or `query.getSingleResult()`
+        * queries - `var query = session.createQuery(hqlString, ClassName.class)`
+            * HQL Can look like: `select e from States where e.name = :name` and then you do `query.setParameter("name", "Arkansas")`.
+            * Ensure that you are using the **CLASS NAMES**, not the table names. 
 
 ### Design Patterns
 
+* Design Patterns - best practice for creation of objects or projects for a specific purpose. 
+    * Advantages - Can be beneficial if they solve a design problem you are trying to solve. They tend to improve the internal quality of software. 
+    * Disadvantages - can lead to over-design for small systems that do not require them. 
+* **Creation Patterns** - handle object creation/instantiation and _hide_ or _limit_ the constructor usage. 
+    * **Singleton** - ensures that only one instance of a class can exist at a time. That instance can be shared by multiple modules. Common usage in logging, ui settings, and service locators. 
+    * **Simple Factory** - class that chooses which concrete implementation of some abstract class to produce. 
+    * **Abstract Factory** - returns abstract types. 
+    * **Builder** - build complicated objects over multiple steps, aka doing a ton of `.setAttribute()` calls on an empty constructor. 
+* **Structural Patterns** - way to structure modules to interact.
+    * **Adapter** - allow classes to adhere to a ne interface without changing the implementation. Helpful when adapting legacy code to work with new stuff. 
+    * **Decorator** - lets you attach new behaviors by attaching them inside of special wrapper objects that contain the behaviors. 
+    * **Bridge** - split a large class/set of closely related classes into separate hierarchies which can be developed independently. This basically focuses on _object composition_ over inheritance, where you can compose objects using hierarchies rather than having each class have all of its state and behaviors. 
+    * **Facade** - hide complex interactions behind a simple interface. 
+* **Behavioral** - give a way to manifest flexible behavior
+    * **Iterator** - allow oyu to visit all elements of collections at once. They provide functional independence and information hiding. 
+    * **Strategy** - allows you to define a family of algorithms, put each of them into a separate class, and make their objects interchangeable. 
+        * An example of this is breaking down something that creates a route into separate strategies.
+    * **Observer** - allows you to define a subscription mechanism to notify multiple objects about any events that happen to an object they're observing.
+
 ### JavaFX
 
+* High-level application setup. 
+    * You highest-level class must extend `Application`, whose main method looks like `psvn(String[] args) { launch(args) }`
+    * Have a start method that looks like:
+    * ```java
+        public void start(Stage stage) throws Exception {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
+            Scene scene = new Scene(loader.load());
+            var controller = (MySceneController) loader.getController();
+
+            controller.setPrimaryStage(stage);
+
+            stage.setTitle("Course Reviews Application");
+            stage.setScene(scene);
+            stage.show();
+        }```
+    * Ensure that each FXML file is attached to a controller class - the `AnchorPane` has a property `fx:controller` that you specify the controller class to.
+    * GUI Elements:
+        * Stage - the overall window
+        * Scene - a particular representation of the application.
+        * Pane - a scene contains one or more panes, each pane containing one or more widgets.
+        * Widgets: labels, buttons, textfield/textarea.
+    * Setting handlers both in code and in FXML for Buttons
+        * _FXML_: Each button will have an `fx:id` associated with a button in the controller class. Each button can have a `onAction` property to which you can set a handler, for example `onAction=#handleClick`.
+        * _Code_: in your `initialize()` method, for each fxml element that you've defined, you can do something like `myButton.setOnAction(event -> { // code })`
+    * Labels - 
+        * _FXML_: attach the `fx:id` to a label. you can then supply `.setText()` or `.setVisible()` to change those corresponding properties.
+        * _CODE_: same deal.
+    * TextField/TextArea - 
+        * `onKeyPressed` - allows you to filter by the key searched to then do text entry:
+        * ```java
+            @FXML
+            // for an "on key pressed" 
+            protected void onTextEntryEnter(KeyEvent event) {
+                if (event.getCode().equals(KeyCode.ENTER)) {
+                    try {
+                        entryTextArea.setText(entryTextArea.getText().strip());
+                        errorLabel.setText("");
+
+                    } catch (NumberFormatException e) {
+                        errorLabel.setText("Enter a valid int");
+                    }
+                }
+            }
+            ```
+        * `typedEvent` - WTF
+
+    * Common Things for a controller class
+        * ensure that you connect your controller class with your `fx:controller="path.to.controller.class.MyController`.
+        * Contains private instance variables corresponding to the attributes in the FXML file. 
+        * A controller should only handle actions from the view, updating the view, and call functions in the model when needed. _No meaningful business logic should be handled in the controller class._
+* MVC - Model View Controller:
+    * Model - handles interactions with data storage
+    * View - defines what is displayed to the user
+    * Controller - receives requests (request to change information, request to get some information). 
+    * MVC is a form of TLA, where View = presentation layer, model = data layer. 
+    * MVC Design Benefits:
+        * Modularity - cohesion for separating requests, data, and user output
+        * Modifiable - easy to add more pages, model over time.
+
 ### Optimization
+
+* Premature optimization (is the root of all evil): 
+    * Bad becuase programmers think about the speed of noncritical parts of their program. We should forget about small efficiencies, about 97% of the time. 
+* Critical Section - section that takes the most compute time and is difficult. Should be optimized. This is generally the code that is executed the most.
+* profilers tell you how long certain parts of your code take to execute to determine what takes the longest. 
+* Optimization Patterns:
+    * Lazy Evaluation - only evaluate something when you need to, rather than every time.
+    * Lazy Initialization - initialize object only when you need to (i.e. when it's not null), since memory allocation is a trade off. 
+    * Memoization - a trade off of more memory space for improved time performance later. You make ure to only "invalidate" the existing stored memo when the inputs to that calculation change. 
+    * Short-circuiting - evaluate less-time intensive things in a conditional first. 
 
 ## Midterm
 
