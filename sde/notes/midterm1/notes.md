@@ -87,6 +87,7 @@ This is a study guide for the first SDE midterm (note that this is condensed, as
         * `public` and NOT STATIC.
         * return `void`
         * take in no arguments. 
+    * `@BeforeEach` and `@AfterEach` - methods that run before and after each test. These are effecitvely "setup" and "teardown" methods. 
     * Assertions:
         * AssertEquals:
             * asserts two things are equal. - `assertEquals(Object expected, Object actual,)`
